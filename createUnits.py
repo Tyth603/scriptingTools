@@ -59,8 +59,7 @@ if __name__=="__main__":
              'D:\\working\\forChuck\\project1\\x for English speakers\\Japanese',
              'D:\\working\\forChuck\\project1\\x for Chinese speakers\\English',
              'D:\\working\\forChuck\\project1\\x for Spanish speakers\\English',
-             'D:\\working\\forChuck\\project1\\x for Indonesian Speakers\\English',
-             'D:\\working\\forChuck\\project1\\x for English Speakers\\']
+             'D:\\working\\forChuck\\project1\\x for Indonesian Speakers\\English']
 
     tmpOrganize(paths)
     proj1Dir = "C:\Users\Delelopment\Desktop\\Efficienc-E\project1"
