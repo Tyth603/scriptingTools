@@ -2,19 +2,18 @@ import os
 import time
 from batch_b4u_converter import B4U_Convert
 
-def quickConvertB4U(file):
-    convert = B4U_Convert()
-    outputDir = os.path.join(os.path.split(file)[0], "B4X_OUTPUT")
-    finalDir = os.path.join(outputDir, os.path.split(file)[1][:-4])
-    if not os.path.exists(finalDir):
-            try:
-                time.sleep(1)
-                convert.processMessage(file, outputDir)
-            except TypeError:
-                print "CONVERSION FAILED"
-    else:
-        print "FIX ME"
-        pass
+def quickConvertB4U(folder):
+    for directory, dirnames, filenames in os.walk(folder):
+        for file in filenames:
+            if file.endswith(('b4u')):
+                input_dir = os.path.join(directory,file)
+                output_dir = os.path.join(directory,"OUTPUT_B4Xs_1")
+                b4xPath = os.path.join(directory,"OUTPUT_B4Xs_1",file)
+                finalPath =  b4xPath[:-4]
+                if not os.path.exists(finalPath):
+                    convert.processMessage(input_dir,output_dir)
+                else:
+                    print "Skipping - File Already Exists"
 
 
 class convert():
