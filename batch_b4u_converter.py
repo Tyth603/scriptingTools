@@ -83,8 +83,8 @@ class B4U_Convert(object):
     def check(self):                        #defining the function
         count = 0                           #setting position to 0 to start
         for x in self.processes:            #for every process in the list
-            if x.poll() == None:            #if the process is active
-                count = count + 1           #advance the position count by 1
+            if x.poll() is None:            #if the process is active
+                count += 1                  #advance the position count by 1
             else:                           #if the process is not active
                 self.processes.remove(x)    #remove this process from the list of processes
                 break                       #break the loop as we have changed the list

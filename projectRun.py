@@ -75,7 +75,7 @@ def createRevision(dir):
             else:
                 f = open(filePath, "w+")
                 f.write("1")
-                f.close
+                f.close()
 
 def runUnitGenerator(paths):
     for path in paths:
