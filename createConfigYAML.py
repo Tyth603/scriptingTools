@@ -4,12 +4,13 @@ import os
 def createYAML(unitDir):
     configLocation = os.path.join(unitDir, "config.yaml")
     unit = os.path.split(unitDir)[1]
-    activities = ["previewIt","notPreviewIt"]
+    activities = ["Reading", "Preview", "SelfReportingRecognize", "Pronunciation", "AudioMultiChoice",
+                  "MultipleChoice2", "Matching", "SelfReportingProduce", "Dictation2", "ProduceWritten"]
     maxItems = 10
     minScore = 65
     showHints = 'true'
     description = 'Description'
-    modules = ["previewA", "notPreviewA"]
+    modules = ["ListeningRecognitionA", "WrittenProduceA"]
     Line1 = "activities: %s \n" % activities
     Line2 = "tlx_activities: []\n"
     Line3 = "name: '%s' \n" % unit

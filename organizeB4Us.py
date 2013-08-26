@@ -3,28 +3,38 @@ import os, sys, re, shutil, convertB4Us, createUnits, createConfigYAML
 class organizeB4U():
     def __init__(self):
         self.proj1UnitNameList = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Direction", "At-the-Hotel", "Asking-the-Time", "At-the-Restaurant", "Taking-a-Taxi", "Buying-Tickets", "Going-to-the-Bank", "Post-Office", "Shopping", "Emergencies", "Helper-Relationship", "Language-Learning-Facilitation", "Communication-Facilitation", "Translation-Facilitation", "Weather"]
-        self.proj2UnitNameList = ["Possessive-Adjectives", "Adjectives", "Adverbs", "Conjunctions", "Personal-Pronouns", "Prepositions", "Verbs", "Beverages", "Dairy", "Dessert", "Fruit", "Grains", "Meals", "Meat", "Seafood", "Spices-Condiments", "Vegetables", "Bathroom", "Bedroom","Dining-Room", "House-Apartment", "Kitchen", "Living-Room", "Office", "Days-of-the-Week", "Months", "Numbers", "Seasons", "Time", "Animals", "Clothing", "Colors", "Countries", "Family", "Languages", "Musical-Instruments", "Nature", "Parts-of-the-Body", "Places", "Professions", "Recreation", "School", "Shapes", "Useful-Expressions"]    
+        self.languageDict = {
+            "x for English speakers": "Spanish",
+            "x for English speakers": "Chinese, Mandarin",
+            "x for English speakers": "Japanese",
+            "x for Chinese speakers": "English",
+            "x for Spanish speakers": "English",
+            "x for Indonesian Speakers": "English"
+            }
+        self.languageCheck()
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, "project1")
-        self.proj2Dir = os.path.join(self.pathName, "project2")
         self.areaPrep(self.proj1Dir)
-        self.areaPrep(self.proj2Dir)
-        self.projLists = self.getProjLists()
+        self.projList = self.getProjLists()
         self.proj1List = []
-        self.proj2List = []
-        for file in self.projLists[0]:
+        for file in self.projList:
             newLocation = self.moveLists(file, self.proj1Dir)
             self.proj1List.append(newLocation)
-        for file in self.projLists[1]:
-            newLocation = self.moveLists(file, self.proj2Dir)
-            self.proj2List.append(newLocation)
-    
+
     def areaPrep(self, fullPath):    
         if os.path.exists(fullPath):
             pass
         else:
             self.createDir(fullPath)
-            print "Failed"    
+            print "Failed"
+
+    def languageCheck(self):
+        for item in self.languageDict:
+            languagePath = os.path.join(item, self.languageDict[item])
+            print languagePath
+
+
+
     
     def createDir(self, fullPath):
         try:
@@ -36,16 +46,12 @@ class organizeB4U():
     
     def getProjLists(self):
         proj1 = []
-        proj2 = []
-        for directory, dirnames, filenames in os.walk(self.pathName):      
+        for directory, dirnames, filenames in os.walk(self.pathName):
             for file in filenames:
                 if file.endswith(".b4u"):
                     if self.unitNameCheck(file, self.proj1UnitNameList) != None:
                         proj1.append(os.path.join(directory, file))
-                    if self.unitNameCheck(file, self.proj2UnitNameList) != None:
-                        proj2.append(os.path.join(directory, file))
-        outList = [proj1, proj2]
-        return outList    
+        return proj1
     
     def unitNameCheck(self, fileName, unitList):
         for unitName in unitList:
@@ -72,3 +78,6 @@ class organizeB4U():
                 except:
                     print "Move List Error"
         return finalDir
+
+if __name__ == "__main__":
+    organizeB4U()
