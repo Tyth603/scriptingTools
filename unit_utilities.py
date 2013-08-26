@@ -110,8 +110,8 @@ def build_unit_xml2(language_data, basedir, config):
     lesson_files = os.listdir(os.path.join(basedir, 'data'))
 
     root = etree.Element('cw1Unit')
-    root.attrib['xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance'
-    root.attrib['xsi:noNamespaceSchemaLocation'] = 'cw1Unit_schema.xsd'
+    #root.attrib['xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance'
+    #root.attrib['xsi:noNamespaceSchemaLocation'] = 'cw1Unit_schema.xsd'
     unit_name = os.path.split(basedir)[1]
     root.attrib['name'] = config['name']
     root.attrib['knownLanguage'] = 'ENGLISH'

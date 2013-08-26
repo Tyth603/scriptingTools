@@ -36,14 +36,17 @@ def runCreateYAML(dir):
 def cleanUp(dir):
     for language in os.listdir(dir):
         langDir = os.path.join(dir, language)
-        for unit in os.listdir(langDir):
-            if unit != "not_enough_units":
-                unitDir = os.path.join(langDir, unit)
+        for lang2 in os.listdir(langDir):
+            lang2Dir = os.path.join(langDir, lang2)
+            for unit in lang2Dir:
+                unitDir = os.path.join(lang2Dir, unit)
                 for B4X in os.listdir(unitDir):
                     b4xDir = os.path.join(unitDir, B4X)
-                    if B4X == "B4X_OUTPUT":
+                    if B4X == "OUTPUT_B4Xs_1":
                         os.rmdir(b4xDir)
                     elif unit.endswith(".b4u"):
+                        os.remove(b4xDir)
+                    elif unit.endswith(".yaml"):
                         os.remove(b4xDir)
 
 #dir = project level directory
@@ -81,11 +84,10 @@ def runUnitGenerator(paths):
 if __name__ == "__main__":
     organize = organizeB4Us.organizeB4U()
     createUnits.tmpOrganize(organize.finalPathNames)
-    cleanUp(organize.proj1Dir)
     runCreateYAML(organize.proj1Dir)
     runUnitGenerator(organize.finalPathNames)
     createRevision(organize.proj1Dir)
-
+    cleanUp(organize.proj1Dir)
 
     '''
     checkNumberOfUnits(organize.proj1Dir, organize.proj1UnitNameList)
