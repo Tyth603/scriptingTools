@@ -6,9 +6,9 @@ proj1 = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Di
 
 
 
-def organizeB4Xs(unitNames, dir, paths):
-    #languages = os.listdir(dir)
-    for lang in paths:
+def organizeB4Xs(unitNames, dir):
+    languages = os.listdir(dir)
+    for lang in languages:
         if lang != "not_enough_units":
             for unit in unitNames:
                 path = os.path.join(dir, lang, unit, "B4X_OUTPUT")
@@ -32,8 +32,8 @@ def organizeB4Xs(unitNames, dir, paths):
                                     shutil.move(b4xLocation, finalLocation)
 
 #dir = project directory
-def organizeB4Us(unitNames, dir):
-    for language in os.listdir(dir):
+def organizeB4Us(unitNames, dir, paths):
+    for language in paths:
         langDir = os.path.join(dir, language)
         listOfB4Us = os.listdir(langDir)
         for unit in unitNames:
