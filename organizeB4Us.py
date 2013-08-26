@@ -10,7 +10,6 @@ class organizeB4U():
             ["x for Chinese speakers", "English"],
             ["x for Spanish speakers", "English"],
             ["x for Indonesian Speakers", "English"],
-            ["x for English Speakers", ""]
             ]
         self.pathNames = []
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))

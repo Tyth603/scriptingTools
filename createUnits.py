@@ -54,7 +54,14 @@ def organizeB4Us(unitNames, dir, paths):
                             shutil.move(b4uPath, finalPath)
 
 if __name__=="__main__":
-    paths = []
+    paths = ['D:\\working\\forChuck\\project1\\x for English speakers\\Spanish',
+             'D:\\working\\forChuck\\project1\\x for English speakers\\Chinese, Mandarin',
+             'D:\\working\\forChuck\\project1\\x for English speakers\\Japanese',
+             'D:\\working\\forChuck\\project1\\x for Chinese speakers\\English',
+             'D:\\working\\forChuck\\project1\\x for Spanish speakers\\English',
+             'D:\\working\\forChuck\\project1\\x for Indonesian Speakers\\English',
+             'D:\\working\\forChuck\\project1\\x for English Speakers\\']
+
     tmpOrganize(paths)
     proj1Dir = "C:\Users\Delelopment\Desktop\\Efficienc-E\project1"
     #proj2Dir = "C:\Users\Delelopment\Desktop\\Efficienc-E\project2"
