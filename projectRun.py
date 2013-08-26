@@ -77,22 +77,22 @@ def createRevision(dir):
 if __name__ == "__main__":
     organize = organizeB4Us.organizeB4U()
     translitCheck.translitCheck(organize.proj1Dir, organize)
-    translitCheck.translitCheck(organize.proj2Dir, organize)
+
     createUnits.organizeB4Us(organize.proj1UnitNameList, organize.proj1Dir)
-    createUnits.organizeB4Us(organize.proj2UnitNameList, organize.proj2Dir)
+
     checkNumberOfUnits(organize.proj1Dir, organize.proj1UnitNameList)
-    checkNumberOfUnits(organize.proj2Dir, organize.proj2UnitNameList)
+
     convertB4Us.convert(organize.proj1Dir)
-    convertB4Us.convert(organize.proj2Dir)
+
     createUnits.organizeB4Xs(organize.proj1UnitNameList, organize.proj1Dir)
-    createUnits.organizeB4Xs(organize.proj2UnitNameList, organize.proj2Dir)
+
     time.sleep(5)
     cleanUp(organize.proj1Dir)
-    cleanUp(organize.proj2Dir)
+
     runCreateYAML(organize.proj1Dir)
-    runCreateYAML(organize.proj2Dir)
+
     createRevision(organize.proj1Dir)
-    createRevision(organize.proj2Dir)
+
 
 
     #path = "C:\Users\Delelopment\Desktop\Efficienc-E\project2" 
