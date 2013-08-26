@@ -14,7 +14,13 @@ def tmpOrganize(paths):
             quickConvertB4U(unitPath)
         for unit in units:
             for file, dirnames, filenames in os.walk(os.path.join(path, unit)):
-                print dirnames
+                for file in filenames:
+                    if file.endswith(".b4u"):
+                        os.remove(os.path.join(path, unit, file))
+                    if file.endswith(".b4x"):
+                        b4xPath = os.path.join(path, unit, 'OUTPUT_B4Xs', file[:-4])
+                        shutil.move(b4xPath, os.path.join(path, unit, file[:-4]))
+
 
 
 def organizeB4Xs(unitNames, dir):
