@@ -11,10 +11,11 @@ class organizeB4U():
             "x for Spanish speakers": "English",
             "x for Indonesian Speakers": "English"
             }
-        self.languageCheck()
+
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, "project1")
         self.areaPrep(self.proj1Dir)
+        self.languageCheck()
         self.projList = self.getProjLists()
         self.proj1List = []
         for file in self.projList:
