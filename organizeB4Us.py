@@ -31,7 +31,7 @@ class organizeB4U():
 
     def languageCheck(self):
         for item in self.languageDict:
-            languagePath = os.path.join(self.pathName, os.path.join(item, self.languageDict[item]))
+            languagePath = os.path.join(self.pathName, 'b4u', os.path.join(item, self.languageDict[item]))
             print languagePath
 
 
