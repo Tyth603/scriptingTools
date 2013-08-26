@@ -2,6 +2,21 @@ import os
 import time
 from batch_b4u_converter import B4U_Convert
 
+def quickConvertB4U(file):
+    convert = B4U_Convert()
+    outputDir = os.path.join(os.path.split(file)[0], "B4X_OUTPUT")
+    finalDir = os.path.join(outputDir, os.path.split(file)[1][:-4])
+    if not os.path.exists(finalDir):
+            try:
+                time.sleep(1)
+                convert.processMessage(file, outputDir)
+            except TypeError:
+                print "CONVERSION FAILED %s" %file
+        else:
+            print "FIX ME"
+        pass
+
+
 class convert():
     def __init__(self, dir):
         for language in os.listdir(dir):

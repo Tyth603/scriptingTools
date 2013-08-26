@@ -1,4 +1,6 @@
-import os, shutil
+import os
+import shutil
+from convertB4Us import quickConvertB4U
 
 proj2 = ["Possessive-Adjectives","Adjectives", "Adverbs", "Conjunctions", "Personal-Pronouns",  "Prepositions", "Verbs", "Beverages", "Dairy", "Dessert", "Fruit", "Grains", "Meals", "Meat", "Seafood", "Spices-Condiments", "Vegetables", "Bathroom", "Bedroom","Dining-Room", "House-Apartment", "Kitchen", "Living-Room", "Office", "Days-of-the-Week", "Months", "Numbers", "Seasons", "Time", "Animals", "Clothing", "Colors", "Countries", "Family", "Languages", "Musical-Instruments", "Nature", "Parts-of-the-Body", "Places", "Professions", "Recreation", "School", "Shapes", "Useful-Expressions"]
 
@@ -9,6 +11,8 @@ def tmpOrganize(paths):
         units = os.listdir(path)
         for unit in units:
             unitPath = os.path.join(path, unit)
+            quickConvertB4U(unitPath)
+
 
 def organizeB4Xs(unitNames, dir):
     languages = os.listdir(dir)
