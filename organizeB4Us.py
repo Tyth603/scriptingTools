@@ -4,17 +4,19 @@ class organizeB4U():
     def __init__(self):
         self.proj1UnitNameList = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Direction", "At-the-Hotel", "Asking-the-Time", "At-the-Restaurant", "Taking-a-Taxi", "Buying-Tickets", "Going-to-the-Bank", "Post-Office", "Shopping", "Emergencies", "Helper-Relationship", "Language-Learning-Facilitation", "Communication-Facilitation", "Translation-Facilitation", "Weather"]
         self.languageDict = [
-            {"x for English speakers": "Spanish"},
-            {"x for English speakers": "Chinese, Mandarin"},
-            {"x for English speakers": "Japanese"},
-            {"x for Chinese speakers": "English"},
-            {"x for Spanish speakers": "English"},
-            {"x for Indonesian Speakers": "English"},
+            ["x for English speakers", "Spanish"],
+            ["x for English speakers", "Chinese, Mandarin"],
+            ["x for English speakers", "Japanese"],
+            ["x for Chinese speakers", "English"],
+            ["x for Spanish speakers", "English"],
+            ["x for Indonesian Speakers", "English"],
             ]
+        self.pathNames = []
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, "project1")
         self.areaPrep(self.proj1Dir)
         self.languageCheck()
+
         self.projList = self.getProjLists()
         self.proj1List = []
         for file in self.projList:
@@ -30,11 +32,11 @@ class organizeB4U():
 
     def languageCheck(self):
         for item in self.languageDict:
-            languagePath = os.path.join(self.pathName, 'b4u', os.path.join(item, self.languageDict[item]))
+            languagePath = os.path.join(self.pathName, 'b4u', os.path.join(item[0], item[1]))
             if os.path.exists(languagePath):
-                return True
+                self.pathNames.append(languagePath)
             else:
-                return False
+                self.pathNames.append(languagePath)
 
 
 
@@ -50,11 +52,12 @@ class organizeB4U():
     def getProjLists(self):
         proj1 = []
         for directory, dirnames, filenames in os.walk(self.pathName):
-            for file in filenames:
-                if file.endswith(".b4u"):
-                    if self.unitNameCheck(file, self.proj1UnitNameList) != None:
-                        proj1.append(os.path.join(directory, file))
-        return proj1
+            if directory in self.pathNames:
+                for file in filenames:
+                    if file.endswith(".b4u"):
+                        if self.unitNameCheck(file, self.proj1UnitNameList) != None:
+                            proj1.append(os.path.join(directory, file))
+            return proj1
     
     def unitNameCheck(self, fileName, unitList):
         for unitName in unitList:
