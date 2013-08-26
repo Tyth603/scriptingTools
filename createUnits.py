@@ -22,7 +22,8 @@ def tmpOrganize(paths):
                     if file.endswith(".xml"):
                         b4xPath = os.path.join(path, unit, 'OUTPUT_B4Xs_1', file[:-4])
                         print b4xPath
-                        shutil.move(b4xPath, os.path.join(path, unit, file[:-4]))
+                        finalPath = os.path.join(path, unit, 'data', file[:-4])
+                        shutil.move(b4xPath, finalPath)
 
 
 

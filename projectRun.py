@@ -73,12 +73,17 @@ def createRevision(dir):
                 f.write("1")
                 f.close
 
+def runUnitGenerator(paths):
+    for path in paths:
+        cmd = 'python "D:\working\\forChuck\\unit_generator.py" -b -p "%s"' % path
+        os.system(cmd)
 
 if __name__ == "__main__":
     organize = organizeB4Us.organizeB4U()
     createUnits.tmpOrganize(organize.finalPathNames)
     cleanUp(organize.proj1Dir)
     runCreateYAML(organize.proj1Dir)
+    runUnitGenerator(organize.finalPathNames)
     createRevision(organize.proj1Dir)
 
 
