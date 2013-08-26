@@ -13,7 +13,6 @@ class organizeB4U():
             }
         self.languageCheck()
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
-        print self.pathName
         self.proj1Dir = os.path.join(self.pathName, "project1")
         self.areaPrep(self.proj1Dir)
         self.projList = self.getProjLists()
@@ -31,7 +30,7 @@ class organizeB4U():
 
     def languageCheck(self):
         for item in self.languageDict:
-            languagePath = os.path.join(item, self.languageDict[item])
+            languagePath = os.path.join(self.pathName, os.path.join(item, self.languageDict[item]))
             print languagePath
 
 
