@@ -11,7 +11,7 @@ def quickConvertB4U(file):
                 time.sleep(1)
                 convert.processMessage(file, outputDir)
             except TypeError:
-                print "CONVERSION FAILED %s" %file
+                print "CONVERSION FAILED "
         else:
             print "FIX ME"
         pass
