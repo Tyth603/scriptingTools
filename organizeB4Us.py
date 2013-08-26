@@ -3,15 +3,14 @@ import os, sys, re, shutil, convertB4Us, createUnits, createConfigYAML
 class organizeB4U():
     def __init__(self):
         self.proj1UnitNameList = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Direction", "At-the-Hotel", "Asking-the-Time", "At-the-Restaurant", "Taking-a-Taxi", "Buying-Tickets", "Going-to-the-Bank", "Post-Office", "Shopping", "Emergencies", "Helper-Relationship", "Language-Learning-Facilitation", "Communication-Facilitation", "Translation-Facilitation", "Weather"]
-        self.languageDict = {
-            "x for English speakers": "Spanish",
-            "x for English speakers": "Chinese, Mandarin",
-            "x for English speakers": "Japanese",
-            "x for Chinese speakers": "English",
-            "x for Spanish speakers": "English",
-            "x for Indonesian Speakers": "English"
-            }
-
+        self.languageDict = [
+            {"x for English speakers": "Spanish"},
+            {"x for English speakers": "Chinese, Mandarin"},
+            {"x for English speakers": "Japanese"},
+            {"x for Chinese speakers": "English"},
+            {"x for Spanish speakers": "English"},
+            {"x for Indonesian Speakers": "English"},
+            ]
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, "project1")
         self.areaPrep(self.proj1Dir)
@@ -32,7 +31,10 @@ class organizeB4U():
     def languageCheck(self):
         for item in self.languageDict:
             languagePath = os.path.join(self.pathName, 'b4u', os.path.join(item, self.languageDict[item]))
-            print languagePath
+            if os.path.exists(languagePath):
+                return True
+            else:
+                return False
 
 
 
