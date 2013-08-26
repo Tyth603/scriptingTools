@@ -1,4 +1,5 @@
-import os, time
+import os
+import time
 from batch_b4u_converter import B4U_Convert
 
 class convert():

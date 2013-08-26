@@ -4,7 +4,11 @@ proj2 = ["Possessive-Adjectives","Adjectives", "Adverbs", "Conjunctions", "Perso
 
 proj1 = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Direction", "At-the-Hotel", "Asking-the-Time", "At-the-Restaurant", "Taking-a-Taxi", "Buying-Tickets", "Going-to-the-Bank", "Post-Office", "Shopping", "Emergencies", "Helper-Relationship", "Language-Learning-Facilitation", "Communication-Facilitation", "Translation-Facilitation", "Weather"]
 
-
+def tmpOrganize(paths):
+    for path in paths:
+        units = os.listdir(path)
+        for unit in units:
+            unitPath = os.path.join(path, unit)
 
 def organizeB4Xs(unitNames, dir):
     languages = os.listdir(dir)
@@ -50,6 +54,8 @@ def organizeB4Us(unitNames, dir, paths):
                             shutil.move(b4uPath, finalPath)
 
 if __name__=="__main__":
+    paths = []
+    tmpOrganize(paths)
     proj1Dir = "C:\Users\Delelopment\Desktop\\Efficienc-E\project1"
     #proj2Dir = "C:\Users\Delelopment\Desktop\\Efficienc-E\project2"
     #organizeB4Xs(proj1, proj1Dir)

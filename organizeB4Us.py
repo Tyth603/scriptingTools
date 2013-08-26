@@ -33,6 +33,7 @@ class organizeB4U():
                     os.mkdir(os.path.split(newPath)[0])
                     os.mkdir(newPath)
                     self.getProjLists(path, newPath)
+        print self.finalPathNames
 
 
 
