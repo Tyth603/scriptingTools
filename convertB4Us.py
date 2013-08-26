@@ -3,6 +3,7 @@ import time
 from batch_b4u_converter import B4U_Convert
 
 def quickConvertB4U(folder):
+    convert = B4U_Convert()
     for directory, dirnames, filenames in os.walk(folder):
         for file in filenames:
             if file.endswith(('b4u')):
