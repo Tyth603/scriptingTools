@@ -1,0 +1,44 @@
+import os
+
+
+def createYAML(unitDir):
+    configLocation = os.path.join(unitDir, "config.yaml")
+    unit = os.path.split(unitDir)[1]
+    activities = ["previewIt","notPreviewIt"]
+    maxItems = 10
+    minScore = 65
+    showHints = 'true'
+    description = 'Description'
+    modules = ["previewA", "notPreviewA"]
+    Line1 = "activities: %s \n" % activities
+    Line2 = "tlx_activities: []\n"
+    Line3 = "name: '%s' \n" % unit
+    Line4 = "assessment: \n"
+    Line5 = "\tmaxitems: %d \n" % maxItems
+    Line6 = "\tminscore: %d \n" % minScore
+    Line7 = "\tmodules: %s \n" % modules
+    Line8 = "\tshowhints: %s \n" % showHints
+    Line9 = "description: '%s' \n" % description
+    lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9]
+    f = open(configLocation, "w+")
+    for line in lines:
+        f.write(line)
+    f.close
+    pass
+    
+
+if __name__ == "__main__":
+    unitDir = "C:\Users\Delelopment\Desktop\\forChuck\project1\Afrikaans\Asking-for-Direction"
+    createYAML(unitDir)
+
+'''
+activities: []
+tlx_activities: []
+name: a unit name
+assessment:
+  maxitems: 10
+  minscore: 90
+  modules: []
+  showhints: 'true'
+description: my unit
+'''
