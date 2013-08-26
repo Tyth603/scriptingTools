@@ -104,4 +104,3 @@ class organizeB4U():
 
 if __name__ == "__main__":
     organizeB4U()
-    print organizeB4U.finalPathNames

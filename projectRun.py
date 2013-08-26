@@ -75,7 +75,7 @@ def createRevision(dir):
 
 def runUnitGenerator(paths):
     for path in paths:
-        cmd = 'python "D:\working\\forChuck\\unit_generator.py" -b -p "%s"' % path
+        cmd = 'python "D:\working\\forChuck\\unit_generator.py" -p "%s"' % path
         os.system(cmd)
 
 if __name__ == "__main__":

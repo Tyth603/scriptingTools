@@ -161,9 +161,9 @@ def build_unit_xml2(language_data, basedir, config):
     for module in config['assessment']['modules']:
         module_str += 'modules/{0:s}.swf'.format(module)
     assessment_tag.attrib['moduleUrl'] = module_str[:-1]
-    assessment_tag.attrib['minscore'] = config['assessment']['minscore']
-    assessment_tag.attrib['maxitems'] = config['assessment']['maxitems']
-    assessment_tag.attrib['showhints'] = config['assessment']['showhints']
+    assessment_tag.attrib['minscore'] = str(config['assessment']['minscore'])
+    assessment_tag.attrib['maxitems'] = str(config['assessment']['maxitems'])
+    assessment_tag.attrib['showhints'] = str(config['assessment']['showhints'])
     for lesson in lesson_files:
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
