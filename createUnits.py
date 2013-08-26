@@ -12,6 +12,9 @@ def tmpOrganize(paths):
         for unit in units:
             unitPath = os.path.join(path, unit)
             quickConvertB4U(unitPath)
+        for unit in units:
+            for file, dirnames, filenames in os.walk(os.path.join(path, unit)):
+                print dirnames
 
 
 def organizeB4Xs(unitNames, dir):

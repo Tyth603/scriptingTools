@@ -12,6 +12,7 @@ def quickConvertB4U(folder):
                 b4xPath = os.path.join(directory,"OUTPUT_B4Xs_1",file)
                 finalPath =  b4xPath[:-4]
                 if not os.path.exists(finalPath):
+                    pass
                     convert.processMessage(input_dir,output_dir)
                 else:
                     print "Skipping - File Already Exists"

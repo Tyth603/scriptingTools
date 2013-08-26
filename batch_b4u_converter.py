@@ -110,9 +110,9 @@ class B4U_Convert(object):
         #"C:\\b4ujar\\B4U_Util.jar"  #give static path self.jar_file = absolute path 
         #b4u_location = os.path.join(*input_dir)
         #destination = os.path.join(*output_dir)
-        cmd = ["java", "-jar", jar_file, str(input_dir), str(output_dir)]
+        cmd = 'java -jar "%s" "%s" "%s"' % (jar_file, input_dir, output_dir)
         #print os.path.exists(str(input_dir))
         #print os.path.exists(jar_file)
         if os.path.exists(str(input_dir)) and os.path.exists(jar_file):
             print "process request"
-            self.processRequest(cmd)
+            os.system(cmd)
