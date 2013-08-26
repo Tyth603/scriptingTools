@@ -80,7 +80,7 @@ if __name__ == "__main__":
     #translitCheck.translitCheck(organize.proj1Dir, organize)
 
     createUnits.organizeB4Us(organize.proj1UnitNameList, organize.proj1Dir, organize.finalPathNames)
-
+    '''
     checkNumberOfUnits(organize.proj1Dir, organize.proj1UnitNameList)
 
     convertB4Us.convert(organize.proj1Dir)
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     runCreateYAML(organize.proj1Dir)
 
     createRevision(organize.proj1Dir)
-
+    '''
 
 
     #path = "C:\Users\Delelopment\Desktop\Efficienc-E\project2" 
