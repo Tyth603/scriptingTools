@@ -78,8 +78,8 @@ if __name__ == "__main__":
     organize = organizeB4Us.organizeB4U()
     ##under armor contract does not include Translit courses
     #translitCheck.translitCheck(organize.proj1Dir, organize)
-
-    createUnits.organizeB4Us(organize.proj1UnitNameList, organize.proj1Dir, organize.finalPathNames)
+    createUnits.tmpOrganize(organize.finalPathNames)
+    #createUnits.organizeB4Us(organize.proj1UnitNameList, organize.proj1Dir, organize.finalPathNames)
     '''
     checkNumberOfUnits(organize.proj1Dir, organize.proj1UnitNameList)
 
