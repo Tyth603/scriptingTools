@@ -16,12 +16,12 @@ class organizeB4U():
         self.proj1Dir = os.path.join(self.pathName, "project1")
         self.areaPrep(self.proj1Dir)
         self.languageCheck()
+        for path in self.pathNames:
+            learnLang = os.path.basename(path)
+            knownlang = os.path.basename(os.path.split(path)[0])
+            newPath = os.path.join(self.proj1Dir, knownlang, learnLang)
+            self.getProjLists(path, newPath)
 
-        self.projList = self.getProjLists()
-        self.proj1List = []
-        for file in self.projList:
-            newLocation = self.moveLists(file, self.proj1Dir)
-            self.proj1List.append(newLocation)
 
     def areaPrep(self, fullPath):    
         if os.path.exists(fullPath):
@@ -49,15 +49,15 @@ class organizeB4U():
         
     
     
-    def getProjLists(self):
-        proj1 = []
-        for directory, dirnames, filenames in os.walk(self.pathName):
-            if directory in self.pathNames:
-                for file in filenames:
-                    if file.endswith(".b4u"):
-                        if self.unitNameCheck(file, self.proj1UnitNameList) != None:
-                            proj1.append(os.path.join(directory, file))
-            return proj1
+    def getProjLists(self, initialDir, finalDir):
+        for directory, dirnames, filenames in os.walk(initialDir):
+            for file in filenames:
+                if file.endswith(".b4u"):
+                    if self.unitNameCheck(file, self.proj1UnitNameList) != None:
+                        print directory
+                        print file
+                        self.moveLists(os.path.join(directory, file))
+
     
     def unitNameCheck(self, fileName, unitList):
         for unitName in unitList:
