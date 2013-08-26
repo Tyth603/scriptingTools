@@ -23,9 +23,14 @@ class organizeB4U():
             if os.path.exists(newPath):
                 self.getProjLists(path, newPath)
             else:
-                os.mkdir(os.path.split(newPath)[0])
-                os.mkdir(newPath)
-                self.getProjLists(path, newPath)
+                if os.path.exists(os.path.split(newPath)[0]):
+                    os.mkdir(newPath)
+                    self.getProjLists(path, newPath)
+                else:
+                    os.mkdir(os.path.split(newPath)[0])
+                    os.mkdir(newPath)
+                    self.getProjLists(path, newPath)
+
 
 
     def areaPrep(self, fullPath):    
