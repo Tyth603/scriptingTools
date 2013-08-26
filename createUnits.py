@@ -9,18 +9,19 @@ proj1 = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Di
 def tmpOrganize(paths):
     for path in paths:
         units = os.listdir(path)
-        '''
         for unit in units:
             unitPath = os.path.join(path, unit)
             quickConvertB4U(unitPath)
-        '''
         for unit in units:
             for file, dirnames, filenames in os.walk(os.path.join(path, unit)):
                 for file in filenames:
                     if file.endswith(".b4u"):
                         os.remove(os.path.join(path, unit, file))
-                    if file.endswith(".b4x"):
+            for file, dirnames, filenames in os.walk(os.path.join(path, unit, "OUTPUT_B4Xs_1")):
+                for file in filenames:
+                    if file.endswith(".xml"):
                         b4xPath = os.path.join(path, unit, 'OUTPUT_B4Xs_1', file[:-4])
+                        print b4xPath
                         shutil.move(b4xPath, os.path.join(path, unit, file[:-4]))
 
 

@@ -76,13 +76,11 @@ def createRevision(dir):
 
 if __name__ == "__main__":
     organize = organizeB4Us.organizeB4U()
-    ##under armor contract does not include Translit courses
-    #translitCheck.translitCheck(organize.proj1Dir, organize)
     createUnits.tmpOrganize(organize.finalPathNames)
-    #createUnits.organizeB4Us(organize.proj1UnitNameList, organize.proj1Dir, organize.finalPathNames)
     cleanUp(organize.proj1Dir)
     runCreateYAML(organize.proj1Dir)
     createRevision(organize.proj1Dir)
+
 
     '''
     checkNumberOfUnits(organize.proj1Dir, organize.proj1UnitNameList)
