@@ -10,16 +10,19 @@ class organizeB4U():
             ["x for Chinese speakers", "English"],
             ["x for Spanish speakers", "English"],
             ["x for Indonesian Speakers", "English"],
+            ["x for English Speakers", ""]
             ]
         self.pathNames = []
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, "project1")
         self.areaPrep(self.proj1Dir)
         self.languageCheck()
+        self.finalPathNames = []
         for path in self.pathNames:
             learnLang = os.path.basename(path)
             knownlang = os.path.basename(os.path.split(path)[0])
             newPath = os.path.join(self.proj1Dir, knownlang, learnLang)
+            self.finalPathNames.append(newPath)
             if os.path.exists(newPath):
                 self.getProjLists(path, newPath)
             else:
