@@ -77,7 +77,7 @@ class organizeB4U():
     def unitNameCheck(self, fileName, unitList):
         for unitName in unitList:
             if unitName in fileName:
-                return fileName
+                return unitName
             else:
                 pass
     
