@@ -22,7 +22,7 @@ activityName = {
     "ProduceWritten": "Produce & Write It"
 }
 knownLanguageValues = {
-    "MANDARIN": {"uiFont": "Chinese", "knownFont": "Chinese", },
+    "CHINESE": {"uiFont": "Chinese", "knownFont": "Chinese", },
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", },
     "SPANISH": {"uiFont": "Latin", "knownFont": "Latin", },
     "INDONESIAN": {"uiFont": "Latin", "knownFont": "Latin", },
