@@ -35,12 +35,12 @@ def runCreateYAML(dir):
 
 def cleanUp(dir):
     for language in os.listdir(dir):
-        langDir = os.path.join(dir, language)
-        for lang2 in os.listdir(langDir):
-            print lang2
-            lang2Dir = os.path.join(langDir, lang2)
-            for unit in lang2Dir:
-                unitDir = os.path.join(lang2Dir, unit)
+        knownLangPath = os.path.join(dir, language)
+        for learnLangDir in os.listdir(knownLangPath):
+            print learnLangDir
+            learnLangPath = os.path.join(knownLangPath, learnLangDir)
+            for unit in os.listdir(learnLangPath):
+                unitDir = os.path.join(learnLangPath, unit)
                 for B4X in os.listdir(unitDir):
                     b4xDir = os.path.join(unitDir, B4X)
                     if B4X == "OUTPUT_B4Xs_1":
