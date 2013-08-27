@@ -12,6 +12,20 @@ byki_modes=['Preview', 'SelfReportingRecognize', 'RecognizeWritten', 'SelfReport
 def build_unit_xml(language_data, basedir, config):
     '''accepts language data as a dictionary and a basedir for the unit.xml to be generated in.
     '''
+    #module name to activity name map
+    activityName = {
+        "Reading":"Language Comparison",
+        "Preview":"Preview It",
+        "SelfReportingRecognize":"Recognize &amp; Say It",
+        "Pronunciation":"Pronunciation Practice",
+        "AudioMultiChoice":"Audio Multiple Choice",
+        "MultipleChoice2":"Multiple Choice",
+        "Matching":"Matching",
+        "SelfReportingProduce":"Produce &amp; Say It",
+        "Dictation2":"Dictation",
+        "ProduceWritten":"Produce &amp; Write It"
+        }
+
     translit_state='false'
     lesson_files = os.listdir(os.path.join(basedir, 'data'))
     soup=BeautifulStoneSoup()
@@ -58,7 +72,7 @@ def build_unit_xml(language_data, basedir, config):
         for activity in config[activity_group]:
             activity_tag = Tag(soup, 'activity')
             activity_tag['required'] = 'false'
-            activity_tag['name'] = 'Lesson {0:>d}'.format(lesson_counter)
+            activity_tag['name'] = activityName[activity] #'Lesson {0:>d}'.format(lesson_counter)
             activity_tag['moduleUrl'] = 'modules/{0:>s}.swf'.format(activity)
             activity_tag['dataUrl'] = 'data/{0:>s}'.format(lesson)
             if activity in byki_modes:
