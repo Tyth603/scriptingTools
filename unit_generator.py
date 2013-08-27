@@ -50,8 +50,10 @@ def run_generator():
             sys.exit(2)
         path = os.path.split(args.path)
         if len(path)==1:
+            print path.upper()
             lang_data = get_language_data(path.upper())
         else:
+            print path[1].upper()
             lang_data = get_language_data(path[1].upper())
 
         if lang_data is not None:
