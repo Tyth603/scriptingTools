@@ -12,14 +12,14 @@ byki_modes=['Preview', 'SelfReportingRecognize', 'RecognizeWritten', 'SelfReport
 activityName = {
         "Reading":"Language Comparison",
         "Preview":"Preview It",
-        "SelfReportingRecognize":"Recognize &amp; Say It",
+        "SelfReportingRecognize":"Recognize & Say It",
         "Pronunciation":"Pronunciation Practice",
         "AudioMultiChoice":"Audio Multiple Choice",
         "MultipleChoice2":"Multiple Choice",
         "Matching":"Matching",
-        "SelfReportingProduce":"Produce &amp; Say It",
+        "SelfReportingProduce":"Produce & Say It",
         "Dictation2":"Dictation",
-        "ProduceWritten":"Produce &amp; Write It"
+        "ProduceWritten":"Produce & Write It"
         }
 
 def build_unit_xml(language_data, basedir, config):
