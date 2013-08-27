@@ -39,7 +39,7 @@ def build_unit_xml(language_data, basedir, config):
     top_tag['name']=config['name']
     top_tag['knownLanguage']='ENGLISH'
     top_tag['learningLanguage']=language_data['code']
-    top_tag['learningFontUrl']='fonts/{0:>s}.swf'.format(language_data['font'])
+    top_tag['learningFontUrl']='fonts/{0:>s}.swf'.format(language_data['swfFont'])
     if 'rtl' in language_data.attrMap:
         top_tag['isRTL']=language_data['rtl']
     else:
@@ -127,11 +127,13 @@ def build_unit_xml2(language_data, basedir, config):
     root = etree.Element('cw1Unit')
     #root.attrib['xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance'
     #root.attrib['xsi:noNamespaceSchemaLocation'] = 'cw1Unit_schema.xsd'
+    knownLanguage = os.path.split(os.path.split(basedir)[0])[1]
+    print knownLanguage
     unit_name = os.path.split(basedir)[1]
     root.attrib['name'] = config['name']
     root.attrib['knownLanguage'] = 'ENGLISH'
     root.attrib['learningLanguage'] = language_data['code']
-    root.attrib['learningFontUrl'] = 'fonts/{0:s}.swf'.format(language_data['font'])
+    root.attrib['learningFontUrl'] = 'fonts/{0:s}.swf'.format(language_data['swfFont'])
     if 'rtl' in language_data.attrMap:
         root.attrib['isRTL'] = language_data['rtl']
     else:
