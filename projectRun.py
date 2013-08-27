@@ -42,6 +42,7 @@ def cleanUp(dir):
             for unit in os.listdir(learnLangPath):
                 unitDir = os.path.join(learnLangPath, unit)
                 for B4X in os.listdir(unitDir):
+                    print B4X
                     b4xDir = os.path.join(unitDir, B4X)
                     if B4X == "OUTPUT_B4Xs_1":
                         os.rmdir(b4xDir)
