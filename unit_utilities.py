@@ -77,9 +77,9 @@ def build_unit_xml(language_data, basedir, config):
             activity_tag['moduleUrl'] = 'modules/{0:>s}.swf'.format(activity)
             activity_tag['dataUrl'] = 'data/{0:>s}'.format(lesson)
             if activity in byki_modes:
-                activity_tag['isB4u'] = 'true'
+                activity_tag.attrib['isB4u'] = 'true'
             else:
-                activity_tag['isB4u'] = 'false'
+                activity_tag.attrib['isB4u'] = 'false'
             lesson_tag.insert(counter, activity_tag)
             counter+=1
         lesson_counter+=1
