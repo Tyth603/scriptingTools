@@ -174,7 +174,7 @@ def build_unit_xml2(language_data, basedir, config):
     assessment_tag.attrib['name'] = 'Assessment'
     module_str = ''
     for module in config['assessment']['modules']:
-        module_str += 'modules/{0:s}.swf'.format(module)
+        module_str += 'modules/{0:s}.swf,'.format(module)
     assessment_tag.attrib['moduleUrl'] = module_str[:-1]
     assessment_tag.attrib['minscore'] = str(config['assessment']['minscore'])
     assessment_tag.attrib['maxitems'] = str(config['assessment']['maxitems'])
