@@ -74,15 +74,17 @@ def checkNumberOfUnits(dir, projUnitNameList):
 def createRevision(dir):
     for lang in os.listdir(dir):
         langDir = os.path.join(dir, lang)
-        if lang != "not_enough_units":
-            fileName = "revision.txt"
-            filePath = os.path.join(langDir, fileName)
-            if os.path.exists(filePath):
-                pass
-            else:
-                f = open(filePath, "w+")
-                f.write("1")
-                f.close()
+        for lang2 in os.listdir(langDir):
+            if lang2 != "not_enough_units":
+                lang2Dir = os.path.join(langDir, lang2)
+                fileName = "revision.txt"
+                filePath = os.path.join(lang2Dir, fileName)
+                if os.path.exists(filePath):
+                    pass
+                else:
+                    f = open(filePath, "w+")
+                    f.write("1")
+                    f.close()
 
 def runUnitGenerator(paths):
     for path in paths:
