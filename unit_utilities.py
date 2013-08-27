@@ -133,7 +133,7 @@ def build_unit_xml2(language_data, basedir, config):
     knownLanguage = knownLanguage.replace("speakers", "")
     unit_name = os.path.split(basedir)[1]
     root.attrib['name'] = config['name']
-    root.attrib['knownLanguage'] = knownLanguage.capitalize()
+    root.attrib['knownLanguage'] = knownLanguage.upper()
     root.attrib['learningLanguage'] = language_data['code']
     root.attrib['learningFontUrl'] = 'fonts/{0:s}.swf'.format(language_data['font'])
     if 'rtl' in language_data.attrMap:
