@@ -144,8 +144,8 @@ def build_unit_xml2(language_data, basedir, config):
     root.attrib['knownLanguage'] = knownLanguage.upper()
     root.attrib['learningLanguage'] = language_data['code']
     root.attrib['learningFontUrl'] = 'fonts/{0:s}.swf'.format(language_data['font'])
-    root.attrib['uiFont'] =  knownLanguageValues[knownLanguage.upper()[:-1]]['uiFont']
-    root.attrib['knownFont'] = knownLanguageValues[knownLanguage.upper()[:-1]]['knownFont']
+    root.attrib['uiFont'] =  'fonts/{0:s}.swf'.format(knownLanguageValues[knownLanguage.upper()[:-1]]['uiFont'])
+    root.attrib['knownFont'] = 'fonts/{0:s}.swf'.format(knownLanguageValues[knownLanguage.upper()[:-1]]['knownFont'])
     if 'rtl' in language_data.attrMap:
         root.attrib['isRTL'] = language_data['rtl']
     else:
