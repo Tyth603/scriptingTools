@@ -160,13 +160,13 @@ def build_unit_xml2(language_data, basedir, config):
         for activity in config[activity_group]:
             activity_tag = etree.SubElement(lesson_tag, 'activity')
             activity_tag.attrib['required'] = 'false'
-            activity_tag.attrib['name'] = 'Lesson {0:d}'.format(lesson_counter)
+            activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
             activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
             activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson)
             if activity in byki_modes:
-                activity_tag['isB4u'] = u'true'
+                activity_tag.attrib['isB4u'] = u'true'
             else:
-                activity_tag['isB4u'] = u'false'
+                activity_tag.attrib['isB4u'] = u'false'
             counter += 1
         lesson_counter += 1
 
