@@ -63,7 +63,7 @@ def build_unit_xml(language_data, basedir, config):
             continue
         name = re.sub('_', ' ', lesson)
         lesson_tag = Tag(soup, 'lesson')
-        lesson_tag['name'] = 'Lesson {0:>d}'.format(lesson_counter)
+        lesson_tag['name'] = basedir #'Lesson {0:>d}'.format(lesson_counter)
         top_tag.insert(lesson_counter-1, lesson_tag)
         counter = 0
         #generate the activity tag within the lesson tag
