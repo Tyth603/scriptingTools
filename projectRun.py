@@ -42,7 +42,7 @@ def cleanUp(dir):
             for unit in os.listdir(learnLangPath):
                 unitDir = os.path.join(learnLangPath, unit)
                 if unit == "config.yaml":
-                    os.rmdir(unitDir)
+                    os.remove(unitDir)
                 else:
                     for B4X in os.listdir(unitDir):
                         print B4X
