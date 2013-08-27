@@ -9,11 +9,7 @@ __author__ = 'S. P. Powers'
 
 byki_modes=['Preview', 'SelfReportingRecognize', 'RecognizeWritten', 'SelfReportingRecognize',
             'ProduceWritten']
-def build_unit_xml(language_data, basedir, config):
-    '''accepts language data as a dictionary and a basedir for the unit.xml to be generated in.
-    '''
-    #module name to activity name map
-    activityName = {
+activityName = {
         "Reading":"Language Comparison",
         "Preview":"Preview It",
         "SelfReportingRecognize":"Recognize &amp; Say It",
@@ -25,6 +21,11 @@ def build_unit_xml(language_data, basedir, config):
         "Dictation2":"Dictation",
         "ProduceWritten":"Produce &amp; Write It"
         }
+
+def build_unit_xml(language_data, basedir, config):
+    '''accepts language data as a dictionary and a basedir for the unit.xml to be generated in.
+    '''
+    #module name to activity name map
 
     translit_state='false'
     lesson_files = os.listdir(os.path.join(basedir, 'data'))
