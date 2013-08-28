@@ -44,18 +44,21 @@ def cleanUp(dir):
                 learnLangPath = os.path.join(knownLangPath, learnLangDir)
                 for unit in os.listdir(learnLangPath):
                     unitDir = os.path.join(learnLangPath, unit)
-                    if unit == "config.yaml":
-                        os.remove(unitDir)
+                    if unit == "revision.txt":
+                        pass
                     else:
-                        for B4X in os.listdir(unitDir):
-                            print B4X
-                            b4xDir = os.path.join(unitDir, B4X)
-                            if B4X == "OUTPUT_B4Xs_1":
-                                os.rmdir(b4xDir)
-                            elif unit.endswith(".b4u"):
-                                os.remove(b4xDir)
-                            elif unit.endswith(".yaml"):
-                                os.remove(b4xDir)
+                        if unit == "config.yaml":
+                            os.remove(unitDir)
+                        else:
+                            for B4X in os.listdir(unitDir):
+                                print B4X
+                                b4xDir = os.path.join(unitDir, B4X)
+                                if B4X == "OUTPUT_B4Xs_1":
+                                    os.rmdir(b4xDir)
+                                elif unit.endswith(".b4u"):
+                                    os.remove(b4xDir)
+                                elif unit.endswith(".yaml"):
+                                    os.remove(b4xDir)
 
 #dir = project level directory
 def checkNumberOfUnits(dir, projUnitNameList):
