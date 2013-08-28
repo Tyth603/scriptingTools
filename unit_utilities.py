@@ -173,16 +173,30 @@ def build_unit_xml2(language_data, basedir, config):
         if 'TLX' in lesson:
             activity_group = 'tlx_activities'
         for activity in config[activity_group]:
-            activity_tag = etree.SubElement(lesson_tag, 'activity')
-            activity_tag.attrib['required'] = 'false'
-            activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
-            activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
-            activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson)
-            if activity in byki_modes:
-                activity_tag.attrib['isB4u'] = u'true'
+            if activity == "Pronunciation" or activity == "MultipleChoice2":
+                activity_tag = etree.SubElement(lesson_tag, 'activity')
+                config_tag = etree.SubElement(activity_tag, 'config')
+                config_tag.attrib['speech'] = 'true'
+                activity_tag.attrib['required'] = 'false'
+                activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
+                activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
+                activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson)
+                if activity in byki_modes:
+                    activity_tag.attrib['isB4u'] = u'true'
+                else:
+                    activity_tag.attrib['isB4u'] = u'false'
+                counter += 1
             else:
-                activity_tag.attrib['isB4u'] = u'false'
-            counter += 1
+                activity_tag = etree.SubElement(lesson_tag, 'activity')
+                activity_tag.attrib['required'] = 'false'
+                activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
+                activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
+                activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson)
+                if activity in byki_modes:
+                    activity_tag.attrib['isB4u'] = u'true'
+                else:
+                    activity_tag.attrib['isB4u'] = u'false'
+                counter += 1
         lesson_counter += 1
 
     assessment_tag = etree.SubElement(root, 'assessment')
