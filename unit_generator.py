@@ -63,7 +63,6 @@ def run_generator():
                 lang_data = get_language_data(path[1].upper())
 
         if lang_data is not None:
-            print args.unit
             if not args.unit:
                 config = unit_utilities.get_configuration(args.path)
                 if config:
@@ -73,6 +72,7 @@ def run_generator():
             else:
                 for dir in os.listdir(args.path):
                     if dir != 'config.yaml':
+                        print dir
                         if dir.endswith(".b4u") is not True:
                             config = unit_utilities.get_configuration(os.path.join(args.path, dir))
                         if config:
