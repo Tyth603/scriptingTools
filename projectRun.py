@@ -107,6 +107,6 @@ if __name__ == "__main__":
     organize = organizeB4Us.organizeB4U()
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize.proj1Dir)
-    runUnitGenerator(organize.finalPathNames)
+    runUnitGenerator(organize.proj1Dir)
     createRevision(organize.proj1Dir)
     cleanUp(organize.proj1Dir)
