@@ -30,7 +30,7 @@ def runCreateYAML(dir):
             else:
                 pass
 
-            #dir = project level directory
+                #dir = project level directory
 
 
 def cleanUp(dir):
@@ -89,10 +89,12 @@ def createRevision(dir):
                     f.write("1")
                     f.close()
 
+
 def runUnitGenerator(paths):
     for path in paths:
         cmd = 'python "D:\working\\forChuck\\unit_generator.py" -p "%s"' % path
         os.system(cmd)
+
 
 if __name__ == "__main__":
     organize = organizeB4Us.organizeB4U()

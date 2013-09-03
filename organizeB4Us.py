@@ -102,7 +102,7 @@ class organizeB4U():
         for directory, dirnames, filenames in os.walk(initialDir):
             for file in filenames:
                 if file.endswith(".b4u"):
-                    if self.unitNameMapCheck(file, self.proj1UnitMap) != None:
+                    if self.unitNameMapCheck(file, self.proj1UnitMap) is not None:
                         unitName = self.unitNameMapCheck(file, self.proj1UnitMap)
                         finalPath = os.path.join(finalDir, unitName, file)
                         originalPath = os.path.join(directory, file)
@@ -123,10 +123,11 @@ class organizeB4U():
                     #         shutil.copyfile(originalPath, finalPath)
 
     def unitNameMapCheck(self, fileName, unitMap):
-        for array in unitMap.keys():
-            for list in array:
-                if list in fileName:
-                    return list
+        for unitName in unitMap.keys():
+            listNames = unitMap[unitName]
+            for name in listNames:
+                if name in fileName:
+                    return unitName
 
     def unitNameCheck(self, fileName, unitList):
         for unitName in unitList:
