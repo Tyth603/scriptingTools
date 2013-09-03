@@ -230,7 +230,7 @@ def build_unit_xml2(language_data, basedir, config):
 def get_configuration(basedir):
     '''gets the activities from the config file and returns it as a list.
     '''
-    stream = file(os.path.join(os.path.split(basedir)[0], 'config.yaml'))
+    stream = file(os.path.join(basedir, 'data', 'config.yaml'))
     config = yaml.load(stream)
     stream.close()
     return config
