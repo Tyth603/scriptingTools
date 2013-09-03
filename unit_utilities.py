@@ -130,8 +130,8 @@ def build_unit_xml2(language_data, basedir, config):
     '''accepts language data as a dictionary and a basedir for the unit.xml to be generated in.
     '''
     translit_state = 'false'
-    #lesson_files = os.listdir(os.path.join(basedir, 'data'))
-    lesson_files = basedir
+    lesson_files = os.listdir(os.path.join(basedir, 'data'))
+    #lesson_files = basedir
     root = etree.Element('cw1Unit')
     #root.attrib['xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance'
     #root.attrib['xsi:noNamespaceSchemaLocation'] = 'cw1Unit_schema.xsd'

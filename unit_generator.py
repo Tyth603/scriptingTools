@@ -48,6 +48,7 @@ def run_generator():
         if not os.path.isdir(args.path):
             sys.stderr.write('the path specified does not exist')
             sys.exit(2)
+        print args.path
         path1 = os.path.split(args.path)
         path = os.path.split(path1[0])
         print path
