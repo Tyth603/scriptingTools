@@ -24,7 +24,7 @@ def runCreateYAML(dir):
     for learnLanguage in os.listdir(dir):
         learnDir = os.path.join(dir, learnLanguage)
         for knownLanguage in os.listdir(learnDir):
-            knownDir = os.path.join(langDir, knownLanguage)
+            knownDir = os.path.join(learnDir, knownLanguage)
             for unit in os.listdir(knownDir):
                 unitDir = os.path.join(knownDir, unit)
                 if os.path.isdir(unitDir) == True:
