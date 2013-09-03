@@ -4,7 +4,7 @@ from UnitObjectives import unitObjectives
 
 def createYAML(unitDir):
     configLocation = os.path.join(unitDir, "config.yaml")
-    unit = os.path.split(unitDir)[1]
+    unit = os.path.split(os.path.split(unitDir)[0])[1]
     activities = ["Reading", "Preview", "SelfReportingRecognize", "Pronunciation", "AudioMultiChoice",
                   "MultipleChoice2", "Matching", "SelfReportingProduce", "Dictation2", "ProduceWritten"]
 
