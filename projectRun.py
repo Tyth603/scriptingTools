@@ -101,24 +101,3 @@ if __name__ == "__main__":
     runUnitGenerator(organize.finalPathNames)
     createRevision(organize.proj1Dir)
     cleanUp(organize.proj1Dir)
-
-    '''
-    checkNumberOfUnits(organize.proj1Dir, organize.proj1UnitNameList)
-
-    convertB4Us.convert(organize.proj1Dir)
-
-    createUnits.organizeB4Xs(organize.proj1UnitNameList, organize.proj1Dir)
-
-    time.sleep(5)
-    cleanUp(organize.proj1Dir)
-
-    runCreateYAML(organize.proj1Dir)
-
-    createRevision(organize.proj1Dir)
-    '''
-
-
-    #path = "C:\Users\Delelopment\Desktop\Efficienc-E\project2" 
-    #createUnits.organizeB4Xs(proj2, path)    
-    #checkNumberOfUnits("C:\Users\Delelopment\Desktop\Efficienc-E\project1", proj1)
-    #checkNumberOfUnits("C:\Users\Delelopment\Desktop\Efficienc-E\project2", proj2)

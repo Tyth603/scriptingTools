@@ -2,7 +2,7 @@ import os, sys, re, shutil, convertB4Us, createUnits, createConfigYAML
 
 class organizeB4U():
     def __init__(self):
-        self.proj1UnitNameList = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Direction", "At-the-Hotel", "Asking-the-Time", "At-the-Restaurant", "Taking-a-Taxi", "Buying-Tickets", "Going-to-the-Bank", "Post-Office", "Shopping", "Emergencies", "Helper-Relationship", "Language-Learning-Facilitation", "Communication-Facilitation", "Translation-Facilitation", "Weather"]
+        self.proj1UnitNameList = ["Meeting and Greeting","Getting Help with your Language Learning","Getting More Help with your Language Learning","Polite Conversation","Shapes and Colors","Clothing","Shopping and Stores","Houses and Apartments","Rooms in a House","Family","Office and Professions","Parts of the Body","Emergencies","Places and Asking for Directions","School","Musical Instruments","Recreation","Nature","Animals","Food 1","Food 2","Going to a Restaurant","Languages","Countries","Travel","Buying Tickets","Taking a Taxi","Staying at a Hotel","Going to the Bank","Numbers","Days of the Week and Time","Seasons and Weather","Personal Pronouns and","Possessive Adjectives","Adjectives and Adverbs","Verbs","Prepositions"]
         self.languageDict = [
             ["x for English speakers", "Spanish"],
             ["x for English speakers", "Chinese, Mandarin"],

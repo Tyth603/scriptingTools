@@ -1,5 +1,15 @@
 import os
 
+unitNameMap = {"Meeting and Greeting" : "Meeting and Greeting",
+               "Communication Facilitation":"Getting Help with your Language Learning",
+               "":"",
+               "":"",
+               "":"",
+               "":"",
+               "":"",
+               "":"",
+               "":"",
+               }
 
 def createYAML(unitDir):
     configLocation = os.path.join(unitDir, "config.yaml")
