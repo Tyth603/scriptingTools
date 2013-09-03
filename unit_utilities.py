@@ -140,7 +140,7 @@ def build_unit_xml2(language_data, basedir, config):
     knownLanguage = knownLanguage.replace("Speakers", "")
     knownLanguage = knownLanguage.replace("speakers", "")
     unit_name = os.path.split(basedir)[1].replace('-', ' ')
-    root.attrib['name'] = os.path.split(basedir)[1].replace('-', ' ')
+    root.attrib['name'] = os.path.split(os.path.split(basedir)[0])[1].replace('-', ' ')
     root.attrib['knownLanguage'] = knownLanguage.upper()
     root.attrib['learningLanguage'] = language_data['code']
     root.attrib['learningFontUrl'] = 'fonts/{0:s}.swf'.format(language_data['font'])
