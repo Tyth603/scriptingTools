@@ -135,7 +135,7 @@ def build_unit_xml2(language_data, basedir, config):
     root = etree.Element('cw1Unit')
     #root.attrib['xmlns:xsi'] = 'http://www.w3.org/2001/XMLSchema-instance'
     #root.attrib['xsi:noNamespaceSchemaLocation'] = 'cw1Unit_schema.xsd'
-    knownLanguage = os.path.split(os.path.split(os.path.split(basedir)[0])[0])[1]
+    knownLanguage = os.path.split(os.path.split(os.path.split(os.path.split(basedir)[0])[0])[0])[1]
     knownLanguage = knownLanguage[6:]
     knownLanguage = knownLanguage.replace("Speakers", "")
     knownLanguage = knownLanguage.replace("speakers", "")
@@ -222,7 +222,7 @@ def build_unit_xml2(language_data, basedir, config):
     desc_tag = etree.SubElement(root, 'description')
     desc_tag.text = description
 
-    fd = open(os.path.join(basedir, 'data', 'unit.xml'), 'w')
+    fd = open(os.path.join(basedir, 'unit.xml'), 'w')
     fd.write(lxml.etree.tostring(root, method='xml', encoding='UTF-8', pretty_print=True, xml_declaration=True))
     fd.close()
 
@@ -230,7 +230,7 @@ def build_unit_xml2(language_data, basedir, config):
 def get_configuration(basedir):
     '''gets the activities from the config file and returns it as a list.
     '''
-    stream = file(os.path.join(basedir, 'config.yaml'))
+    stream = file(os.path.join(os.path.split(basedir)[0], 'config.yaml'))
     config = yaml.load(stream)
     stream.close()
     return config

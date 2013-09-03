@@ -73,7 +73,8 @@ def run_generator():
             else:
                 for dir in os.listdir(args.path):
                     if dir != 'config.yaml':
-                        config = unit_utilities.get_configuration(os.path.join(args.path, dir))
+                        if dir.endswith(".b4u") is not True:
+                            config = unit_utilities.get_configuration(os.path.join(args.path, dir))
                         if config:
                             unit_utilities.build_unit_xml2(lang_data, os.path.join(args.path, dir), config)
         else:
