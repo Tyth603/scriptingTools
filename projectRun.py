@@ -99,7 +99,7 @@ def runUnitGenerator(paths):
             learnDir = os.path.join(knownDir, learnLanguage)
             for unit in os.listdir(learnDir):
                 unitDir = os.path.join(learnDir, unit)
-                cmd = 'python "D:\working\\forChuck\\unit_generator.py" -p "%s"' % unitDir
+                cmd = 'python "D:\working\\forChuck\\unit_generator.py" -u -p "%s"' % unitDir
                 os.system(cmd)
 
 
