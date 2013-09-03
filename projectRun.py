@@ -21,14 +21,16 @@ proj1 = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Di
 
 #dir = project level directory
 def runCreateYAML(dir):
-    for language in os.listdir(dir):
-        langDir = os.path.join(dir, language)
-        for unit in os.listdir(langDir):
-            unitDir = os.path.join(langDir, unit)
-            if os.path.isdir(unitDir) == True:
-                createConfigYAML.createYAML(unitDir)
-            else:
-                pass
+    for learnLanguage in os.listdir(dir):
+        learnDir = os.path.join(dir, learnLanguage)
+        for knownLanguage in os.listdir(learnDir):
+            knownDir = os.path.join(langDir, knownLanguage)
+            for unit in os.listdir(knownDir):
+                unitDir = os.path.join(knownDir, unit)
+                if os.path.isdir(unitDir) == True:
+                    createConfigYAML.createYAML(unitDir)
+                else:
+                    pass
 
                 #dir = project level directory
 
