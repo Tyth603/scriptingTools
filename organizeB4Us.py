@@ -11,6 +11,43 @@ class organizeB4U():
             ["x for Spanish speakers", "English"],
             ["x for Indonesian Speakers", "English"],
             ]
+        self.proj1UnitMap = {"Meeting and Greeting":["Meeting-and-Greeting"],
+            "Getting Help with your Language Learning": ["Communication-Facilitation"],
+            "Getting More Help with your Language Learning":["Helper-Relationship","Language-Learning-Facilitation","Translation-Facilitation"],
+            "Polite Conversation":["Polite-Conversation","Useful-Expressions"],
+            "Shapes and Colors":["Shapes","Colors"],
+            "Clothing":["Clothing"],
+            "Shopping and Stores":["Shopping"],
+            "Houses and Apartments":["House-Apartment"],
+            "Rooms in a House":["Living-Room","Dining-Room","Kitchen","Bathroom","Bedroom"],
+            "Family":["Family"],
+            "Office and Professions":["Office","Professions"],
+            "Parts of the Body":["Parts-of-the-Body"],
+            "Emergencies":["Emergencies"],
+            "Places and Asking for Directions":["Places","Asking-for-Directions"],
+            "School":["School"],
+            "Musical Instruments":["Musical-Instruments"],
+            "Recreation":["Recreation"],
+            "Nature":["Nature"],
+            "Animals":["Animals"],
+            "Food 1":["Meals","Beverages","Fruit","Vegetables","Grains"],
+            "Food 2":["Dairy","Meat","Seafood","Spices-Condiments","Dessert"],
+            "Going to a Restaurant":["At-the-Restaurant"],
+            "Languages":["Languages"],
+            "Countries":["Continents","Countries"],
+            "Travel":["Travel"],
+            "Buying Tickets":["Buying-Tickets"],
+            "Taking a Taxi":["Taking-a-Taxi"],
+            "Staying at a Hotel":["At-the-Hotel"],
+            "Going to the Bank":["Going-to-the-Bank"],
+            "Numbers":["Numbers-Cardinal","Numbers-Ordinal","Numbers-Other"],
+            "Days of the Week and Time":["Days-of-the-Week","Time","Asking-the-Time"],
+            "Seasons and Weather":["Months","Seasons","Weather"],
+            "Personal Pronouns and Possessive Adjectives":["Personal-Pronouns","Possessive-Adjectives","Conjunctions"],
+            "Adjectives and Adverbs":["Adjectives","Adverbs"],
+            "Verbs":["Verbs"],
+            "Prepositions":["Prepositions"],
+            }
         self.pathNames = []
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, "project1")
@@ -65,17 +102,32 @@ class organizeB4U():
         for directory, dirnames, filenames in os.walk(initialDir):
             for file in filenames:
                 if file.endswith(".b4u"):
-                    if self.unitNameCheck(file, self.proj1UnitNameList) != None:
-                        unitName = self.unitNameCheck(file, self.proj1UnitNameList)
+                    if self.unitNameMapCheck(file, proj1UnitMap) != None:
+                        unitName = self.unitNameMapCheck(file, proj1UnitMap)
                         finalPath = os.path.join(finalDir, unitName, file)
                         originalPath = os.path.join(directory, file)
                         if os.path.exists(os.path.split(finalPath)[0]):
                             shutil.copyfile(originalPath, finalPath)
                         else:
-                            os.mkdir(os.path.split(finalPath)[0])
-                            shutil.copyfile(originalPath, finalPath)
+                             os.mkdir(os.path.split(finalPath)[0])
+                             shutil.copyfile(originalPath, finalPath)
 
-    
+                    # if self.unitNameCheck(file, self.proj1UnitNameList) != None:
+                    #     unitName = self.unitNameCheck(file, self.proj1UnitNameList)
+                    #     finalPath = os.path.join(finalDir, unitName, file)
+                    #     originalPath = os.path.join(directory, file)
+                    #     if os.path.exists(os.path.split(finalPath)[0]):
+                    #         shutil.copyfile(originalPath, finalPath)
+                    #     else:
+                    #         os.mkdir(os.path.split(finalPath)[0])
+                    #         shutil.copyfile(originalPath, finalPath)
+
+    def unitNameMapCheck(self, fileName, unitMap):
+        for array in unitMap.keys():
+            for list in array:
+                if list in fileName:
+                    return list
+
     def unitNameCheck(self, fileName, unitList):
         for unitName in unitList:
             if unitName in fileName:
