@@ -91,9 +91,14 @@ def createRevision(dir):
 
 
 def runUnitGenerator(paths):
-    for path in paths:
-        cmd = 'python "D:\working\\forChuck\\unit_generator.py" -p "%s"' % path
-        os.system(cmd)
+    for knownLanguage in os.listdir(paths):
+        knownDir = os.path.join(paths, knownLanguage)
+        for learnLanguage in os.listdir(knownDir):
+            learnDir = os.path.join(knownDir, learnLanguage)
+            for unit in os.listdir(learnDir):
+                unitDir = os.path.join(learnDir, unit)
+                cmd = 'python "D:\working\\forChuck\\unit_generator.py" -p "%s"' % unitDir
+                os.system(cmd)
 
 
 if __name__ == "__main__":

@@ -49,6 +49,7 @@ def run_generator():
             sys.stderr.write('the path specified does not exist')
             sys.exit(2)
         path = os.path.split(args.path)
+        print path
         if len(path)==1:
             if path.upper() == "CHINESE, MANDARIN":
                 lang_data = get_language_data("MANDARIN")
