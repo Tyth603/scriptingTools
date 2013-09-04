@@ -19,6 +19,42 @@ proj1 = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Di
          "Shopping", "Emergencies", "Helper-Relationship", "Language-Learning-Facilitation",
          "Communication-Facilitation", "Translation-Facilitation", "Weather"]
 
+unitNumbers = {"Meeting and Greeting": 1,
+               "Getting Help with your Language Learning": 2,
+               "Getting More Help with your Language Learning": 3,
+               "Polite Conversation": 4,
+               "Shapes and Colors": 5,
+               "Clothing": 6,
+               "Shopping and Stores": 7,
+               "Houses and Apartments": 8,
+               "Rooms in a House": 9,
+               "Family": 10,
+               "Office and Professions": 11,
+               "Parts of the Body": 12,
+               "Emergencies": 13,
+               "Places and Asking for Directions": 14,
+               "School": 15,
+               "Musical Instruments": 16,
+               "Recreation": 17,
+               "Nature": 18,
+               "Animals": 19,
+               "Food 1": 20,
+               "Food 2": 21,
+               "Going to a Restaurant": 22,
+               "Languages": 23,
+               "Countries": 24,
+               "Travel": 25,
+               "Buying Tickets": 26,
+               "Taking a Taxi": 27,
+               "Staying at a Hotel": 28,
+               "Going to the Bank": 29,
+               "Numbers": 30,
+               "Days of the Week and Time": 31,
+               "Seasons and Weather": 32,
+               "Personal Pronouns and Possessive Adjectives": 33,
+               "Adjectives and Adverbs": 34,
+               "Verbs": 35,
+               "Prepositions": 36}
 #dir = project level directory
 def runCreateYAML(dir):
     for learnLanguage in os.listdir(dir):
@@ -32,7 +68,7 @@ def runCreateYAML(dir):
                 else:
                     pass
 
-                #dir = project level directory
+                    #dir = project level directory
 
 
 def cleanUp(dir):
@@ -46,6 +82,8 @@ def cleanUp(dir):
                 learnLangPath = os.path.join(knownLangPath, learnLangDir)
                 for unit in os.listdir(learnLangPath):
                     unitDir = os.path.join(learnLangPath, unit)
+                    finalUnitDir = os.path.join(learnLangPath, "unit" + unitNumbers[unit])
+                    os.rename(unitDir, finalUnitDir)
                     if unit == "revision.txt":
                         pass
                     else:
