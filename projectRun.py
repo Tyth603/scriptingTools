@@ -83,7 +83,7 @@ def cleanUp(dir):
                 for unit in os.listdir(learnLangPath):
                     unitDir = os.path.join(learnLangPath, unit)
                     print unitNumbers[unit]
-                    finalUnitDir = os.path.join(learnLangPath, "unit" + unitNumbers[unit])
+                    finalUnitDir = os.path.join(learnLangPath, "unit" + str(unitNumbers[unit]))
                     os.rename(unitDir, finalUnitDir)
                     if unit == "revision.txt":
                         pass
