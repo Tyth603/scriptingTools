@@ -89,11 +89,11 @@ def cleanUp(dir):
                         pass
                     else:
                         if unit == "config.yaml":
-                            os.remove(unitDir)
+                            os.remove(finalUnitDir)
                         else:
-                            for B4X in os.listdir(unitDir):
+                            for B4X in os.listdir(finalUnitDir):
                                 print B4X
-                                b4xDir = os.path.join(unitDir, B4X)
+                                b4xDir = os.path.join(finalUnitDir, B4X)
                                 if B4X == "OUTPUT_B4Xs_1":
                                     os.rmdir(b4xDir)
                                 elif unit.endswith(".b4u"):
