@@ -139,6 +139,7 @@ def build_unit_xml2(language_data, basedir, config):
     knownLanguage = knownLanguage[6:]
     knownLanguage = knownLanguage.replace("Speakers", "")
     knownLanguage = knownLanguage.replace("speakers", "")
+    knownLanguage = knownLanguage.replace(" ", "")
     unit_name = os.path.split(basedir)[1].replace('-', ' ')
     root.attrib['name'] = os.path.split(os.path.split(basedir)[0])[1].replace('-', ' ')
     root.attrib['knownLanguage'] = knownLanguage.upper()
@@ -211,7 +212,7 @@ def build_unit_xml2(language_data, basedir, config):
     assessment_tag.attrib['moduleUrl'] = module_str[:-1]
     assessment_tag.attrib['minscore'] = str(config['assessment']['minscore'])
     assessment_tag.attrib['maxitems'] = str(config['assessment']['maxitems'])
-    assessment_tag.attrib['showhints'] = str(config['assessment']['showhints'])
+    assessment_tag.attrib['showhints'] = str(config['assessment']['showhints']).lower()
     for lesson in new_lesson_files:
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
