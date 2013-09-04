@@ -163,6 +163,7 @@ def build_unit_xml2(language_data, basedir, config):
 
     lesson_counter = 1
     for lesson in lesson_files:
+        print lesson
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
         lesson_tag = etree.SubElement(root, 'lesson')
