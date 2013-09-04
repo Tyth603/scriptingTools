@@ -191,7 +191,7 @@ englishForIndonesianLessonOrder = {
         "Pelajaran 4",
         "Pelajaran 5",
         "Pelajaran 6"
-    ]
+    ],
     "Start Cepat Unit 3" : [
         "Pelajaran 7",
         "Pelajaran 8",
