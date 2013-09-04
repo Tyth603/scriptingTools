@@ -163,7 +163,7 @@ def build_unit_xml2(language_data, basedir, config):
 
     lesson_counter = 1
     for lesson in lesson_files:
-        if lesson in config['lessonOrder']:
+        if lesson[12:] in config['lessonOrder']:
             print lesson
 
     for lesson in lesson_files:
