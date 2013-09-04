@@ -166,8 +166,7 @@ def build_unit_xml2(language_data, basedir, config):
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
         lesson_tag = etree.SubElement(root, 'lesson')
-        lesson_tag.attrib['name'] = lesson #.replace('-', ' ') + " " + str(
-            #lesson_counter) #'Lesson {0:d}'.format(lesson_counter)
+        lesson_tag.attrib['name'] = lesson[12:].replace("-", " ")
         counter = 0
         activity_group = 'activities'
         if 'TLX' in lesson:
