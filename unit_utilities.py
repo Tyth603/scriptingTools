@@ -162,12 +162,12 @@ def build_unit_xml2(language_data, basedir, config):
     root.attrib['formatversion'] = '1'
 
     lesson_counter = 1
-    new_Lesson_files = []
+    new_lesson_files = []
     for lesson in lesson_files:
         if lesson[12:] in config['lessonOrder']:
-            new_Lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
-
-    for lesson in new_Lesson_files:
+            print lesson[12:]
+            new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
+    for lesson in new_lesson_files:
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
         lesson_tag = etree.SubElement(root, 'lesson')
