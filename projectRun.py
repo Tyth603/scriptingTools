@@ -39,7 +39,7 @@ def cleanUp(dir):
     for language in os.listdir(dir):
         knownLangPath = os.path.join(dir, language)
         for learnLangDir in os.listdir(knownLangPath):
-            print learnLangDir
+            #print learnLangDir
             if learnLangDir == "revision.txt":
                 pass
             else:
