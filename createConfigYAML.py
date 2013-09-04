@@ -24,7 +24,7 @@ def createYAML(unitDir):
     Line7 = "  modules: %s \n" % modules
     Line8 = "  showhints: %s \n" % showHints
     Line9 = "description: '%s' \n" % description
-    Line10 = "lessonOrder: '%s' \n" % lessonOrder
+    Line10 = "lessonOrder: '%s' \n" % lessonOrder[unit]
     lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9, Line10]
     f = open(configLocation, "w+")
     for line in lines:
