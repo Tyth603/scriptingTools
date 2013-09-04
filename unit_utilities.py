@@ -212,7 +212,7 @@ def build_unit_xml2(language_data, basedir, config):
     assessment_tag.attrib['minscore'] = str(config['assessment']['minscore'])
     assessment_tag.attrib['maxitems'] = str(config['assessment']['maxitems'])
     assessment_tag.attrib['showhints'] = str(config['assessment']['showhints'])
-    for lesson in lesson_files:
+    for lesson in new_lesson_files:
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
         item_tag = etree.SubElement(assessment_tag, 'item')
