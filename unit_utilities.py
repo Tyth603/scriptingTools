@@ -177,10 +177,11 @@ def build_unit_xml2(language_data, basedir, config):
                 new_lesson_files.update({config['lessonOrder'].index(lesson[12:]): [lesson[12:], lesson]})
     for lesson in new_lesson_files:
         print lesson
-        if lesson == 'config.yaml' or lesson == 'unit.xml':
+        lesson = new_lesson_files[lesson]
+        if lesson[1] == 'config.yaml' or lesson[1] == 'unit.xml':
             continue
         lesson_tag = etree.SubElement(root, 'lesson')
-        lesson_tag.attrib['name'] = lesson[12:].replace("-", " ")
+        lesson_tag.attrib['name'] = lesson[0].replace("-", " ")
         counter = 0
         activity_group = 'activities'
         if 'TLX' in lesson:
@@ -194,7 +195,7 @@ def build_unit_xml2(language_data, basedir, config):
                 activity_tag.attrib['required'] = 'false'
                 activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
                 activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
-                activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson)
+                activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson[1])
                 if activity in byki_modes:
                     activity_tag.attrib['isB4u'] = u'true'
                 else:
