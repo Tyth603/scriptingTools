@@ -85,13 +85,6 @@ class organizeB4U():
                 if name in fileName:
                     return unitName
 
-    def unitNameCheck(self, fileName, unitList):
-        for unitName in unitList:
-            if unitName in fileName:
-                return unitName
-            else:
-                pass
-
     def moveLists(self, file, projDir):
         langDir = os.path.join(projDir, os.path.split(os.path.split(file)[0])[1])
         finalDir = os.path.join(projDir, os.path.split(os.path.split(file)[0])[1], os.path.split(file)[1])
