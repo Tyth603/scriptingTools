@@ -163,19 +163,21 @@ def build_unit_xml2(language_data, basedir, config):
     root.attrib['formatversion'] = '1'
 
     lesson_counter = 1
-    new_lesson_files = []
-    if config['isESLTrue'] == 'True':
+    new_lesson_files = {}
+    if config['isESLTrue'] == True:
         for lesson in lesson_files:
             print lesson
             if lesson[12:] in config['lessonListMap'].keys():
                 print config['lessonListMap'][lesson[12:]]
-                new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
+
+                new_lesson_files.update({config['lessonOrder'].index(config['lessonListMap'][lesson[12:]]) : [config['lessonListMap'][lesson[12:], lesson]})
     else:
         for lesson in lesson_files:
             if lesson[12:] in config['lessonOrder']:
-                print config['lessonListMap'][lesson[12:]]
-                new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
+                #print config['lessonListMap'][lesson[12:]]
+                new_lesson_files.update({config['lessonOrder'].index(lesson[12:]): [lesson[12:], lesson]})
     for lesson in new_lesson_files:
+        print lesson
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
         lesson_tag = etree.SubElement(root, 'lesson')
