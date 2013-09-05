@@ -219,9 +219,9 @@ def build_unit_xml2(language_data, basedir, config):
         item_tag = etree.SubElement(assessment_tag, 'item')
         item_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson)
     if unit_name in config.keys():
-        description = '<![CDATA[<div>{0:s}</div>]]'.format(config[unit_name])
+        description = '<![CDATA[<div>%s</div>]]>' % config[unit_name]
     elif 'description' in config.keys():
-        description = '<![CDATA[<div>{0:s}</div>]]'.format(config['description'])
+        description = '<![CDATA[<div>%s</div>]]>' % config['description']
     else:
         description = ''
     desc_tag = etree.SubElement(root, 'description')
