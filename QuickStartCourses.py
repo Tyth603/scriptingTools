@@ -94,16 +94,16 @@ unitNumbers = {"Start Cepat Unit 1": 1,
                "Start Cepat Unit 3": 3}
 
 lessonNameToListNameMap = {
-    "01-Quick-Start": "Pelajaran 1",
-    "02-Quick-Start": "Pelajaran 2",
-    "03-Quick-Start": "Pelajaran 3",
-    "04-Quick-Start": "Pelajaran 4",
-    "05-Quick-Start": "Pelajaran 5",
-    "06-Quick-Start": "Pelajaran 6",
-    "07-Quick-Start": "Pelajaran 7",
-    "08-Quick-Start": "Pelajaran 8",
-    "09-Quick-Start": "Pelajaran 9",
-    "10-Quick-Start": "Pelajaran 10",
+    "Pelajaran 1":"01-Quick-Start",
+    "Pelajaran 2":"02-Quick-Start",
+    "Pelajaran 3":"03-Quick-Start",
+    "Pelajaran 4":"04-Quick-Start",
+    "Pelajaran 5":"05-Quick-Start",
+    "Pelajaran 6":"06-Quick-Start",
+    "Pelajaran 7":"07-Quick-Start",
+    "Pelajaran 8":"08-Quick-Start",
+    "Pelajaran 9":"09-Quick-Start",
+    "Pelajaran 10":"10-Quick-Start",
 }
 
 
