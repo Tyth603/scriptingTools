@@ -55,7 +55,8 @@ unitNumbers = {"Meeting and Greeting": 1,
                "Verbs": 35,
                "Prepositions": 36}
 #dir = project level directory
-def runCreateYAML(dir):
+def runCreateYAML(course):
+    dir = course.proj1Dir
     for learnLanguage in os.listdir(dir):
         learnDir = os.path.join(dir, learnLanguage)
         for knownLanguage in os.listdir(learnDir):
