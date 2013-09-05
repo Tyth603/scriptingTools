@@ -11,7 +11,8 @@ def createYAML(course):
     activities = ["Reading", "Preview", "SelfReportingRecognize", "Pronunciation", "AudioMultiChoice",
                   "MultipleChoice2", "Matching", "SelfReportingProduce", "Dictation2", "ProduceWritten"]
     lessonMap = {}
-    for lesson in lessonOrder[unit]:
+
+    for lesson in course.proj1UnitMap[unit]:
         print lesson
         lessonMap.update({ course.lessonMap[lesson]: lesson})
     lessonMapString = ""
