@@ -332,6 +332,8 @@ unitNumbers = {"Meeting and Greeting": 1,
                "Adjectives and Adverbs": 34,
                "Verbs": 35,
                "Prepositions": 36}
+isESLTrue = False
+lessonNameToListNameMap = ""
 
 def createSVCConfiguration():
     configObject = courseConfiguration()
@@ -342,4 +344,8 @@ def createSVCConfiguration():
     configObject.unitObjectives = unitObjectives
     configObject.lessonOrder = lessonOrder
     configObject.unitNumbers = unitNumbers
+
+    configObject.lessonToList = lessonNameToListNameMap
+    configObject.isESLTrue = isESLTrue
+
     return configObject

@@ -4,6 +4,7 @@ from BeautifulSoup import BeautifulStoneSoup, Tag, NavigableString
 import lxml
 from lxml import etree
 import yaml
+import collections
 
 __author__ = 'S. P. Powers'
 
@@ -166,17 +167,15 @@ def build_unit_xml2(language_data, basedir, config):
     new_lesson_files = {}
     if config['isESLTrue'] == True:
         for lesson in lesson_files:
-            print lesson
             if lesson[12:] in config['lessonListMap'].keys():
                 print config['lessonListMap'][lesson[12:]]
                 new_lesson_files.update({config['lessonOrder'].index(config['lessonListMap'][lesson[12:]]) : [ config['lessonListMap'][lesson[12:]], lesson]})
     else:
         for lesson in lesson_files:
             if lesson[12:] in config['lessonOrder']:
-                #print config['lessonListMap'][lesson[12:]]
                 new_lesson_files.update({config['lessonOrder'].index(lesson[12:]): [lesson[12:], lesson]})
+    new_lesson_files = collections.OrderedDict(sorted(new_lesson_files.keys()))
     for lesson in new_lesson_files:
-        print lesson
         lesson = new_lesson_files[lesson]
         if lesson[1] == 'config.yaml' or lesson[1] == 'unit.xml':
             continue

@@ -10,12 +10,15 @@ def createYAML(course):
 
     activities = ["Reading", "Preview", "SelfReportingRecognize", "Pronunciation", "AudioMultiChoice",
                   "MultipleChoice2", "Matching", "SelfReportingProduce", "Dictation2", "ProduceWritten"]
-    lessonMap = {}
-    for lesson in lessonOrder[unit]:
-        lessonMap.update({lesson : course.lessonMap[lesson]})
-    lessonMapString = ""
-    for item in lessonMap:
-        lessonMapString = str(lessonMapString) + "\n" + " " + str(course.lessonMap[item]) + ": " + str(item)
+    if course.isESLTrue:
+        lessonMap = {}
+        for lesson in lessonOrder[unit]:
+            lessonMap.update({lesson : course.lessonMap[lesson]})
+        lessonMapString = ""
+        for item in lessonMap:
+            lessonMapString = str(lessonMapString) + "\n" + " " + str(course.lessonMap[item]) + ": " + str(item)
+    else:
+        lessonMapString = ""
 
     maxItems = 10
     minScore = 65

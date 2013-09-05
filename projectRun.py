@@ -99,7 +99,8 @@ if __name__ == "__main__":
     supplementalConfig = SVC.createSVCConfiguration()
     organize = organizeB4U(supplementalConfig.unitNameList, supplementalConfig.languageDict, supplementalConfig.unitMap,
                            supplementalConfig.projectName, supplementalConfig.unitObjectives,
-                           supplementalConfig.lessonOrder, supplementalConfig.unitNumbers)
+                           supplementalConfig.lessonOrder, supplementalConfig.unitNumbers,
+                           supplementalConfig.lessonTolist, supplementalConfig.isESLTrue)
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize)
     runUnitGenerator(organize.proj1Dir)
@@ -108,7 +109,8 @@ if __name__ == "__main__":
 
     qsConfig = QS.createConfiguration()
     qsOrganize = organizeB4U(qsConfig.unitNameList, qsConfig.languageDict, qsConfig.unitMap, qsConfig.projectName,
-                             qsConfig.unitObjectives, qsConfig.lessonOrder, qsConfig.unitNumbers, qsConfig.lessonToList, qsConfig.isESLTrue)
+                             qsConfig.unitObjectives, qsConfig.lessonOrder, qsConfig.unitNumbers, qsConfig.lessonToList,
+                             qsConfig.isESLTrue)
     createUnits.tmpOrganize(qsOrganize.finalPathNames)
     runCreateYAML(qsOrganize)
     runUnitGenerator(qsOrganize.proj1Dir)
