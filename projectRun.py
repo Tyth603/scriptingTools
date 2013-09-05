@@ -108,7 +108,7 @@ if __name__ == "__main__":
 
     qsConfig = QS.createConfiguration()
     qsOrganize = organizeB4U(qsConfig.unitNameList, qsConfig.languageDict, qsConfig.unitMap, qsConfig.projectName,
-                             qsConfig.unitObjectives, qsConfig.lessonOrder, qsConfig.unitNumbers)
+                             qsConfig.unitObjectives, qsConfig.lessonOrder, qsConfig.unitNumbers, qsConfig.lessonToList)
     createUnits.tmpOrganize(qsOrganize.finalPathNames)
     runCreateYAML(qsOrganize)
     runUnitGenerator(qsOrganize.proj1Dir)
