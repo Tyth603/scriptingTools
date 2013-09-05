@@ -8,19 +8,6 @@ import QuickStartCourses as QS
 import time
 
 
-proj2 = ["Possessive-Adjectives", "Adjectives", "Adverbs", "Conjunctions", "Personal-Pronouns", "Prepositions", "Verbs",
-         "Beverages", "Dairy", "Dessert", "Fruit", "Grains", "Meals", "Meat", "Seafood", "Spices-Condiments",
-         "Vegetables", "Bathroom", "Bedroom", "Dining-Room", "House-Apartment", "Kitchen", "Living-Room", "Office",
-         "Days-of-the-Week", "Months", "Numbers", "Seasons", "Time", "Animals", "Clothing", "Colors", "Countries",
-         "Family", "Languages", "Musical-Instruments", "Nature", "Parts-of-the-Body", "Places", "Professions",
-         "Recreation", "School", "Shapes", "Useful-Expressions"]
-
-proj1 = ["Meeting-and-Greeting", "Polite-Conversation", "Travel", "Asking-for-Direction", "At-the-Hotel",
-         "Asking-the-Time", "At-the-Restaurant", "Taking-a-Taxi", "Buying-Tickets", "Going-to-the-Bank", "Post-Office",
-         "Shopping", "Emergencies", "Helper-Relationship", "Language-Learning-Facilitation",
-         "Communication-Facilitation", "Translation-Facilitation", "Weather"]
-
-
 def runCreateYAML(course):
     dir = course.proj1Dir
     for learnLanguage in os.listdir(dir):
@@ -37,7 +24,6 @@ def runCreateYAML(course):
 
 
 def cleanUp(course):
-    course.unitNumbers
     dir = course.proj1Dir
     for language in os.listdir(dir):
         knownLangPath = os.path.join(dir, language)
