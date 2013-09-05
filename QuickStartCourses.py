@@ -89,6 +89,10 @@ Kemudian, lengkapi aktivitas menyimak dan mengetik untuk mempraktikkan produksi 
 
 Akhirnya, lengkapi aktivitas penilaian pada akhir unit untuk menguji pengetahuan Anda atas kata-kata dan frasa-frasa yang diberikan.""",}
 
+unitNumbers = {"Start Cepat Unit 1": 1,
+               "Start Cepat Unit 2": 2,
+               "Start Cepat Unit 3": 3}
+
 def createConfiguration():
     configObject = courseConfiguration()
     configObject.projectName = englishForIndonesianProjectName
@@ -96,7 +100,8 @@ def createConfiguration():
     configObject.languageDict = languageDict
     configObject.lessonOrder = englishForIndonesianLessonOrder
     configObject.unitMap = unitMap
-    configObject.englishForIndonesianUnitObjectives = englishForIndonesianUnitObjectives
+    configObject.unitObjectives = englishForIndonesianUnitObjectives
+    configObject.unitNumbers = unitNumbers
 
     return configObject
 
