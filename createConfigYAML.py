@@ -15,7 +15,6 @@ def createYAML(course):
         lessonMap.update({lesson : course.lessonMap[lesson]})
     lessonMapString = ""
     for item in lessonMap:
-        print item
         lessonMapString = str(lessonMapString) + "\n" + " " + str(course.lessonMap[item]) + ": " + str(item)
 
     maxItems = 10
