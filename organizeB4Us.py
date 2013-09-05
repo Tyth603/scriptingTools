@@ -11,7 +11,6 @@ class organizeB4U():
         self.pathNames = []
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, projectName)
-        self.unitDir = self.proj1Dir
         self.areaPrep(self.proj1Dir)
         self.languageCheck()
         self.finalPathNames = []
