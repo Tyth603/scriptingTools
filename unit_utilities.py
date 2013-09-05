@@ -166,7 +166,7 @@ def build_unit_xml2(language_data, basedir, config):
     new_lesson_files = []
     for lesson in lesson_files:
         if lesson[12:] in config['lessonOrder']:
-            print lesson[12:]
+            #print lesson[12:]
             new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
     for lesson in new_lesson_files:
         if lesson == 'config.yaml' or lesson == 'unit.xml':
@@ -177,6 +177,7 @@ def build_unit_xml2(language_data, basedir, config):
         activity_group = 'activities'
         if 'TLX' in lesson:
             activity_group = 'tlx_activities'
+
         for activity in config[activity_group]:
             if activity == "Pronunciation" or activity == "MultipleChoice2":
                 activity_tag = etree.SubElement(lesson_tag, 'activity')
