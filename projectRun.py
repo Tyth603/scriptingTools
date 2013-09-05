@@ -154,5 +154,11 @@ if __name__ == "__main__":
     createRevision(organize.proj1Dir)
     cleanUp(organize.proj1Dir)
 
-    # qsConfig = QS.createConfiguration()
-    # organize = organizeB4U(qsConfig.unitNameList, qsConfig.languageDict)
+    qsConfig = QS.createConfiguration()
+    qsOrganize = organizeB4U(qsConfig.unitNameList, qsConfig.languageDict. qsConfig.unitMap, qsConfig.projectName,
+                           qsConfig.unitObjectives, qsConfig.lessonOrder)
+    createUnits.tmpOrganize(qsOrganize.finalPathNames)
+    runCreateYAML(qsOrganize)
+    runUnitGenerator(qsOrganize.proj1Dir)
+    createRevision(qsOrganize.proj1Dir)
+    cleanUp(qsOrganize.proj1Dir)
