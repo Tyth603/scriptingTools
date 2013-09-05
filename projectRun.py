@@ -100,7 +100,7 @@ if __name__ == "__main__":
     organize = organizeB4U(supplementalConfig.unitNameList, supplementalConfig.languageDict, supplementalConfig.unitMap,
                            supplementalConfig.projectName, supplementalConfig.unitObjectives,
                            supplementalConfig.lessonOrder, supplementalConfig.unitNumbers,
-                           supplementalConfig.lessonTolist, supplementalConfig.isESLTrue)
+                           supplementalConfig.lessonToList, supplementalConfig.isESLTrue)
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize)
     runUnitGenerator(organize.proj1Dir)
