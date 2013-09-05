@@ -1,13 +1,10 @@
-import organizeB4Us
 from organizeB4Us import organizeB4U
-import convertB4Us
 import createUnits
 import createConfigYAML
 import os
-import time
 import shutil
-import translitCheck
 import SupplementalVocabularyCourses as SVC
+
 
 proj2 = ["Possessive-Adjectives", "Adjectives", "Adverbs", "Conjunctions", "Personal-Pronouns", "Prepositions", "Verbs",
          "Beverages", "Dairy", "Dessert", "Fruit", "Grains", "Meals", "Meat", "Seafood", "Spices-Condiments",
@@ -146,7 +143,9 @@ def runUnitGenerator(paths):
 
 
 if __name__ == "__main__":
-    organize = organizeB4U(SVC.unitNameList, SVC.languageDict, SVC.unitMap, SVC.projectName)
+    supplementalConfig = SVC.createSVCConfiguration()
+    organize = organizeB4U(supplementalConfig.unitNameList, supplementalConfig.languageDict, supplementalConfig.unitMap,
+                           supplementalConfig.projectName)
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize.proj1Dir)
     runUnitGenerator(organize.proj1Dir)

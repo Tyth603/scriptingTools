@@ -1,5 +1,7 @@
 __author__ = 'vagrant'
 
+from CourseConfiguration import courseConfiguration
+
 projectName = "supplementalVocabCoursesNonESL"
 
 unitNameList = ["Meeting and Greeting", "Getting Help with your Language Learning",
@@ -61,3 +63,11 @@ unitMap = {"Meeting and Greeting": ["Meeting-and-Greeting"],
                 "Verbs": ["Verbs"],
                 "Prepositions": ["Prepositions"],
 }
+
+def createSVCConfiguration():
+    configObject = courseConfiguration()
+    configObject.projectName = projectName
+    configObject.unitNameList = unitNameList
+    configObject.languageDict = languageDict
+    configObject.unitMap = unitMap
+    return configObject
