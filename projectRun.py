@@ -205,7 +205,7 @@ def runUnitGenerator(paths):
 
 
 if __name__ == "__main__":
-    organize = organizeB4U(proj1UnitNameList, languageDict, proj1UnitMap)
+    organize = organizeB4U(proj1UnitNameList, languageDict, proj1UnitMap, "supplementalVocabCoursesNonESL")
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize.proj1Dir)
     runUnitGenerator(organize.proj1Dir)
