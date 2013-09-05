@@ -93,17 +93,30 @@ unitNumbers = {"Start Cepat Unit 1": 1,
                "Start Cepat Unit 2": 2,
                "Start Cepat Unit 3": 3}
 
+lessonNameToListNameMap = {
+    "Pelajaran 1":"01-Quick-Start",
+    "Pelajaran 2":"02-Quick-Start",
+    "Pelajaran 3":"03-Quick-Start",
+    "Pelajaran 4":"04-Quick-Start",
+    "Pelajaran 5":"05-Quick-Start",
+    "Pelajaran 6":"06-Quick-Start",
+    "Pelajaran 7":"07-Quick-Start",
+    "Pelajaran 8":"08-Quick-Start",
+    "Pelajaran 9":"09-Quick-Start",
+    "Pelajaran 10":"10-Quick-Start",
+}
+
+
 def createConfiguration():
     configObject = courseConfiguration()
     configObject.projectName = englishForIndonesianProjectName
     configObject.unitNameList = englishForIndonesianUnitNameList
-    print englishForIndonesianUnitNameList
     configObject.languageDict = languageDict
     configObject.lessonOrder = englishForIndonesianLessonOrder
     configObject.unitMap = unitMap
     configObject.unitObjectives = englishForIndonesianUnitObjectives
     configObject.unitNumbers = unitNumbers
-
+    configObject.lessonToList = lessonNameToListNameMap
     return configObject
 
 

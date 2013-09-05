@@ -10,6 +10,12 @@ def createYAML(course):
 
     activities = ["Reading", "Preview", "SelfReportingRecognize", "Pronunciation", "AudioMultiChoice",
                   "MultipleChoice2", "Matching", "SelfReportingProduce", "Dictation2", "ProduceWritten"]
+    lessonMap = {}
+    for lesson in lessonOrder[unit]:
+        lessonMap.update({lesson : course.lessonMap[lesson]})
+    lessonMapString = ""
+    for item in lessonMap:
+        lessonMapString = str(lessonMapString) + "\n"+ str(item.key()) + str(item.value())
 
     maxItems = 10
     minScore = 65
@@ -26,6 +32,7 @@ def createYAML(course):
     Line8 = "  showhints: %s \n" % showHints
     Line9 = "description: '%s' \n" % description
     Line10 = "lessonOrder: %s \n" % lessonOrder[unit]
+    Line11 = "lessonListMap: %s \n" % lessonMapString
     lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9, Line10]
     f = open(configLocation, "w+")
     for line in lines:
