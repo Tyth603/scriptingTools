@@ -174,7 +174,7 @@ def build_unit_xml2(language_data, basedir, config):
         for lesson in lesson_files:
             if lesson[12:] in config['lessonOrder']:
                 new_lesson_files.update({config['lessonOrder'].index(lesson[12:]): [lesson[12:], lesson]})
-    new_lesson_files = collections.OrderedDict(sorted(new_lesson_files.keys()))
+    new_lesson_files = collections.OrderedDict(new_lesson_files)
     for lesson in new_lesson_files:
         lesson = new_lesson_files[lesson]
         if lesson[1] == 'config.yaml' or lesson[1] == 'unit.xml':
