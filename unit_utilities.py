@@ -169,11 +169,11 @@ def build_unit_xml2(language_data, basedir, config):
             if lesson[12:] in config['lessonListMap'].keys():
                 print config['lessonListMap'][lesson[12:]]
                 new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
-
-    for lesson in lesson_files:
-        if lesson[12:] in config['lessonOrder']:
-            print config['lessonListMap'][lesson[12:]]
-            new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
+    else:
+        for lesson in lesson_files:
+            if lesson[12:] in config['lessonOrder']:
+                print config['lessonListMap'][lesson[12:]]
+                new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
     for lesson in new_lesson_files:
         if lesson == 'config.yaml' or lesson == 'unit.xml':
             continue
