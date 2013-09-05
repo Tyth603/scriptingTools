@@ -4,6 +4,7 @@ import createConfigYAML
 import os
 import shutil
 import SupplementalVocabularyCourses as SVC
+import QuickStartCourses as QS
 
 
 proj2 = ["Possessive-Adjectives", "Adjectives", "Adverbs", "Conjunctions", "Personal-Pronouns", "Prepositions", "Verbs",
@@ -63,12 +64,10 @@ def runCreateYAML(course):
             knownDir = os.path.join(learnDir, knownLanguage)
             for unit in os.listdir(knownDir):
                 unitDir = os.path.join(knownDir, unit, "data")
-                if os.path.isdir(unitDir) == True:
-                    createConfigYAML.createYAML(unitDir)
+                if os.path.isdir(unitDir):
+                    createConfigYAML.createYAML(course)
                 else:
                     pass
-
-                    #dir = project level directory
 
 
 def cleanUp(dir):
@@ -146,9 +145,13 @@ def runUnitGenerator(paths):
 if __name__ == "__main__":
     supplementalConfig = SVC.createSVCConfiguration()
     organize = organizeB4U(supplementalConfig.unitNameList, supplementalConfig.languageDict, supplementalConfig.unitMap,
-                           supplementalConfig.projectName, supplementalConfig.unitObjectives, supplementalConfig.lessonOrder)
+                           supplementalConfig.projectName, supplementalConfig.unitObjectives,
+                           supplementalConfig.lessonOrder)
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize)
     runUnitGenerator(organize.proj1Dir)
     createRevision(organize.proj1Dir)
     cleanUp(organize.proj1Dir)
+
+    # qsConfig = QS.createConfiguration()
+    # organize = organizeB4U(qsConfig.unitNameList, qsConfig.languageDict)
