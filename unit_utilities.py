@@ -219,13 +219,13 @@ def build_unit_xml2(language_data, basedir, config):
         item_tag = etree.SubElement(assessment_tag, 'item')
         item_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson)
     if unit_name in config.keys():
-        description = '<![CDATA[<div>%s</div>]]>' % config[unit_name]
+        description = config[unit_name]
     elif 'description' in config.keys():
-        description = '<![CDATA[<div>%s</div>]]>' % config['description']
+        description = config['description']
     else:
         description = ''
     desc_tag = etree.SubElement(root, 'description')
-    desc_tag.text = description
+    desc_tag.CDATA = description
 
     fd = open(os.path.join(basedir, 'unit.xml'), 'w+')
     fd.write(lxml.etree.tostring(root, method='xml', encoding='UTF-8', pretty_print=True, xml_declaration=True))

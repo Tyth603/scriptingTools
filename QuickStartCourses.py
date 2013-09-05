@@ -4,17 +4,17 @@ from CourseConfiguration import courseConfiguration
 
 englishForIndonesianProjectName = "QS_ESL_Courses"
 englishForIndonesianLessonOrder = {
-    "Start Cepat Unit 1":[
+    "Start Cepat Unit 1": [
         "Pelajaran 1",
         "Pelajaran 2",
         "Pelajaran 3"
     ],
-    "Start Cepat Unit 2" : [
+    "Start Cepat Unit 2": [
         "Pelajaran 4",
         "Pelajaran 5",
         "Pelajaran 6"
     ],
-    "Start Cepat Unit 3" : [
+    "Start Cepat Unit 3": [
         "Pelajaran 7",
         "Pelajaran 8",
         "Pelajaran 9",
