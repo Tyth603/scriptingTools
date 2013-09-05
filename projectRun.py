@@ -145,9 +145,9 @@ def runUnitGenerator(paths):
 if __name__ == "__main__":
     supplementalConfig = SVC.createSVCConfiguration()
     organize = organizeB4U(supplementalConfig.unitNameList, supplementalConfig.languageDict, supplementalConfig.unitMap,
-                           supplementalConfig.projectName, supplementalConfig.unitObjectives)
+                           supplementalConfig.projectName, supplementalConfig.unitObjectives, supplementalConfig.lessonOrder)
     createUnits.tmpOrganize(organize.finalPathNames)
-    runCreateYAML(organize.proj1Dir)
+    runCreateYAML(organize)
     runUnitGenerator(organize.proj1Dir)
     createRevision(organize.proj1Dir)
     cleanUp(organize.proj1Dir)
