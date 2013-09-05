@@ -65,6 +65,7 @@ def runCreateYAML(course):
             for unit in os.listdir(knownDir):
                 unitDir = os.path.join(knownDir, unit, "data")
                 if os.path.isdir(unitDir):
+                    course.unitDir = unitDir
                     createConfigYAML.createYAML(course)
                 else:
                     pass
