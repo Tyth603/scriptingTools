@@ -106,6 +106,7 @@ lessonNameToListNameMap = {
     "Pelajaran 10":"10-Quick-Start",
 }
 
+isESLTrue = True
 
 def createConfiguration():
     configObject = courseConfiguration()
@@ -117,6 +118,7 @@ def createConfiguration():
     configObject.unitObjectives = englishForIndonesianUnitObjectives
     configObject.unitNumbers = unitNumbers
     configObject.lessonToList = lessonNameToListNameMap
+    configObject.isESLTrue = isESLTrue
     return configObject
 
 

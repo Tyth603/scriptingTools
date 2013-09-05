@@ -2,8 +2,9 @@ import os, sys, shutil
 
 
 class organizeB4U():
-    def __init__(self, unitNameList, languageDict, unitMap, projectName, unitObjectives, lessonOrder, unitNumbers, lessonMap):
+    def __init__(self, unitNameList, languageDict, unitMap, projectName, unitObjectives, lessonOrder, unitNumbers, lessonMap, isESLTrue):
         self.proj1UnitNameList = unitNameList
+        self.isESLTrue = isESLTrue
         self.lessonMap = lessonMap
         self.unitNumbers = unitNumbers
         self.lessonOrder = lessonOrder

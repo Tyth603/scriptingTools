@@ -164,6 +164,12 @@ def build_unit_xml2(language_data, basedir, config):
 
     lesson_counter = 1
     new_lesson_files = []
+    if config['isESLTrue'] == 'True':
+        for lesson in lesson_files:
+            if lesson[12:] in config['lessonListMap'].keys():
+                print config['lessonListMap'][lesson[12:]]
+                new_lesson_files.insert(config['lessonOrder'].index(lesson[12:]), lesson)
+
     for lesson in lesson_files:
         if lesson[12:] in config['lessonOrder']:
             print config['lessonListMap'][lesson[12:]]
