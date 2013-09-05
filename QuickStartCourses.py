@@ -97,6 +97,7 @@ def createConfiguration():
     configObject = courseConfiguration()
     configObject.projectName = englishForIndonesianProjectName
     configObject.unitNameList = englishForIndonesianUnitNameList
+    print englishForIndonesianUnitNameList
     configObject.languageDict = languageDict
     configObject.lessonOrder = englishForIndonesianLessonOrder
     configObject.unitMap = unitMap

@@ -225,7 +225,7 @@ def build_unit_xml2(language_data, basedir, config):
     else:
         description = ''
     desc_tag = etree.SubElement(root, 'description')
-    desc_tag.CDATA = description
+    desc_tag.text = etree.CDATA(description)
 
     fd = open(os.path.join(basedir, 'unit.xml'), 'w+')
     fd.write(lxml.etree.tostring(root, method='xml', encoding='UTF-8', pretty_print=True, xml_declaration=True))
