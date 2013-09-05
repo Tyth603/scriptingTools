@@ -2,13 +2,15 @@ import os, sys, re, shutil, convertB4Us, createUnits, createConfigYAML
 
 
 class organizeB4U():
-    def __init__(self, unitNameList, languageDict, unitMap, projectName):
+    def __init__(self, unitNameList, languageDict, unitMap, projectName, unitObjectives):
         self.proj1UnitNameList = unitNameList
+        self.unitObjectives = unitObjectives
         self.languageDict = languageDict
         self.proj1UnitMap = unitMap
         self.pathNames = []
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, projectName)
+        self.unitDir = self.proj1Dir
         self.areaPrep(self.proj1Dir)
         self.languageCheck()
         self.finalPathNames = []

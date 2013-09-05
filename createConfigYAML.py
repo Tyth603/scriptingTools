@@ -3,7 +3,10 @@ from UnitObjectives import unitObjectives
 from LessonOrder import lessonOrder
 
 
-def createYAML(unitDir):
+def createYAML(course):
+    unitDir = course.unitDir
+    unitObjectives = course.unitObjectives
+
     configLocation = os.path.join(unitDir, "config.yaml")
     unit = os.path.split(os.path.split(unitDir)[0])[1]
 
