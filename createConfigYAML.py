@@ -16,7 +16,7 @@ def createYAML(course):
     lessonMapString = ""
     for item in lessonMap:
         print item
-        lessonMapString = str(lessonMapString) + "\n" + " " + str(item) + ": " + str(course.lessonMap[item])
+        lessonMapString = str(lessonMapString) + "\n" + " " + str(course.lessonMap[item]) + ": " + str(item)
 
     maxItems = 10
     minScore = 65
