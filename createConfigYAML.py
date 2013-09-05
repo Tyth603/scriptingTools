@@ -34,7 +34,7 @@ def createYAML(course):
     Line9 = "description: '%s' \n" % description
     Line10 = "lessonOrder: %s \n" % lessonOrder[unit]
     Line11 = "lessonListMap: %s \n" % lessonMapString
-    lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9, Line10]
+    lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9, Line10, Line11]
     f = open(configLocation, "w+")
     for line in lines:
         f.write(line)
