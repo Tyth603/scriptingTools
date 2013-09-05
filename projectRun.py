@@ -5,6 +5,7 @@ import os
 import shutil
 import SupplementalVocabularyCourses as SVC
 import QuickStartCourses as QS
+import time
 
 
 proj2 = ["Possessive-Adjectives", "Adjectives", "Adverbs", "Conjunctions", "Personal-Pronouns", "Prepositions", "Verbs",
@@ -128,7 +129,7 @@ def createRevision(dir):
                     pass
                 else:
                     f = open(filePath, "w+")
-                    f.write("1")
+                    f.write(time.time())
                     f.close()
 
 
