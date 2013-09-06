@@ -126,7 +126,7 @@ lessonOrder = {"Meeting and Greeting": ["Meeting-and-Greeting-1",
                                                           "Communication-Facilitation-6",
                                                           "Communication-Facilitation-7",],
 
-             "Getting More Help with your Language Learning": ["Helper-Relationship",
+             "Getting More Help with your Language Learning": ["Helper-Relationship-Facilitation",
                                                                "Language-Learning-Facilitation-1",
                                                                "Language-Learning-Facilitation-2",
                                                                "Translation-Facilitation"],
