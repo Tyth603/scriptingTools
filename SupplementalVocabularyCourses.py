@@ -79,41 +79,517 @@ Continue on to the speech-driven Multiple Choice and Matching activities to rein
 Then, complete the Dictation and other typing activities to practice producing and writing the language.
 
 Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
-    "Getting Help with your Language Learning":"This unit teaches useful words and phrases related to getting help with your language learning.",
-    "Getting More Help with your Language Learning":"This unit teaches useful words and phrases related to getting more help with your language learning.",
-    "Polite Conversation":"This unit teaches useful words and phrases related to polite conversation.",
-    "Shapes and Colors":"This unit teaches useful words and phrases related to shapes and colors.",
-    "Clothing":"This unit teaches useful words and phrases related to clothing.",
-    "Shopping and Stores":"This unit teaches useful words and phrases related to shopping and stores.",
-    "Houses and Apartments":"This unit teaches useful words and phrases related to houses and apartments.",
-    "Rooms in a House":"This unit teaches useful words and phrases related to rooms in a house.",
-    "Family":"This unit teaches useful words and phrases related to family.",
-    "Office and Professions":"This unit teaches useful words and phrases related to office and professions.",
-    "Parts of the Body":"This unit teaches useful words and phrases related to parts of the body.",
-    "Emergencies":"This unit teaches useful words and phrases related to emergencies.",
-    "Places and Asking for Directions":"This unit teaches useful words and phrases related to places and asking for directions.",
-    "School":"This unit teaches useful words and phrases related to school.",
-    "Musical Instruments":"This unit teaches useful words and phrases related to musical instruments.",
-    "Recreation":"This unit teaches useful words and phrases related to recreation.",
-    "Nature":"This unit teaches useful words and phrases related to nature.",
-    "Animals":"This unit teaches useful words and phrases related to animals.",
-    "Food 1":"This unit teaches useful words and phrases related to food.",
-    "Food 2":"This unit teaches useful words and phrases related to food.",
-    "Going to a Restaurant":"This unit teaches useful words and phrases related to going to a restaurant.",
-    "Languages":"This unit teaches useful words and phrases related to languages.",
-    "Countries":"This unit teaches useful words and phrases related to countries.",
-    "Travel":"This unit teaches useful words and phrases related to travel.",
-    "Buying Tickets":"This unit teaches useful words and phrases related to buying tickets.",
-    "Taking a Taxi":"This unit teaches useful words and phrases related to taking a taxi.",
-    "Staying at a Hotel":"This unit teaches useful words and phrases related to staying at a hotel.",
-    "Going to the Bank":"This unit teaches useful words and phrases related to going to the bank.",
-    "Numbers":"This unit teaches useful words and phrases related to numbers.",
-    "Days of the Week and Time":"This unit teaches useful words and phrases related to days of the week and time.",
-    "Seasons and Weather":"This unit teaches useful words and phrases related to seasons and weather.",
-    "Personal Pronouns and Possessive Adjectives":"This unit teaches useful words and phrases related to personal pronouns and possessive adjectives.",
-    "Adjectives and Adverbs":"This unit teaches useful words and phrases related to adjectives and adverbs.",
-    "Verbs":"This unit teaches useful words and phrases related to verbs.",
-    "Prepositions":"This unit teaches useful words and phrases related to prepositions.",
+    "Getting Help with your Language Learning":"""This unit teaches useful words and phrases related to getting help with your language learning.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Getting More Help with your Language Learning":"""This unit teaches useful words and phrases related to getting more help with your language learning.""",
+    "Polite Conversation":"""This unit teaches useful words and phrases related to polite conversation.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Shapes and Colors":"""This unit teaches useful words and phrases related to shapes and colors.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Clothing":"""This unit teaches useful words and phrases related to clothing.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Shopping and Stores":"""This unit teaches useful words and phrases related to shopping and stores.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Houses and Apartments":"""This unit teaches useful words and phrases related to houses and apartments.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Rooms in a House":"""This unit teaches useful words and phrases related to rooms in a house.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Family":"""This unit teaches useful words and phrases related to family.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Office and Professions":"""This unit teaches useful words and phrases related to office and professions.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Parts of the Body":"""This unit teaches useful words and phrases related to parts of the body.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Emergencies":"""This unit teaches useful words and phrases related to emergencies.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Places and Asking for Directions":"""This unit teaches useful words and phrases related to places and asking for directions.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "School":"""This unit teaches useful words and phrases related to school.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Musical Instruments":"""This unit teaches useful words and phrases related to musical instruments.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Recreation":"""This unit teaches useful words and phrases related to recreation.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Nature":"""This unit teaches useful words and phrases related to nature.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Animals":"""This unit teaches useful words and phrases related to animals.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Food 1":"""This unit teaches useful words and phrases related to food.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Food 2":"""This unit teaches useful words and phrases related to food.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Going to a Restaurant":"""This unit teaches useful words and phrases related to going to a restaurant.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Languages":"""This unit teaches useful words and phrases related to languages.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Countries":"""This unit teaches useful words and phrases related to countries.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Travel":"""This unit teaches useful words and phrases related to travel.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Buying Tickets":"""This unit teaches useful words and phrases related to buying tickets.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Taking a Taxi":"""This unit teaches useful words and phrases related to taking a taxi.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Staying at a Hotel":"""This unit teaches useful words and phrases related to staying at a hotel.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Going to the Bank":"""This unit teaches useful words and phrases related to going to the bank.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Numbers":"""This unit teaches useful words and phrases related to numbers.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Days of the Week and Time":"""This unit teaches useful words and phrases related to days of the week and time.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Seasons and Weather":"""This unit teaches useful words and phrases related to seasons and weather.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Personal Pronouns and Possessive Adjectives":"""This unit teaches useful words and phrases related to personal pronouns and possessive adjectives.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Adjectives and Adverbs":"""This unit teaches useful words and phrases related to adjectives and adverbs.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Verbs":"""This unit teaches useful words and phrases related to verbs.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
+    "Prepositions":"""This unit teaches useful words and phrases related to prepositions.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven Multiple Choice and Matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the Dictation and other typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities at the end of the unit to test your knowledge of the words and phrases.""",
     }
 lessonOrder = {"Meeting and Greeting": ["Meeting-and-Greeting-1",
                                         "Meeting-and-Greeting-2"],
