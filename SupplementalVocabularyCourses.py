@@ -19,9 +19,9 @@ languageDict = [
     ["x for English speakers", "Spanish"],
     ["x for English speakers", "Chinese, Mandarin"],
     ["x for English speakers", "Japanese"],
-    ["x for Chinese speakers", "English"],
-    ["x for Spanish speakers", "English"],
-    ["x for Indonesian Speakers", "English"],
+    # ["x for Chinese speakers", "English"],
+    # ["x for Spanish speakers", "English"],
+    # ["x for Indonesian Speakers", "English"],
 ]
 unitMap = {"Meeting and Greeting": ["Meeting-and-Greeting"],
                 "Getting Help with your Language Learning": ["Communication-Facilitation"],

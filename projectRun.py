@@ -95,24 +95,21 @@ def runUnitGenerator(paths):
                 os.system(cmd)
 
 
-if __name__ == "__main__":
-    supplementalConfig = SVC.createSVCConfiguration()
-    organize = organizeB4U(supplementalConfig.unitNameList, supplementalConfig.languageDict, supplementalConfig.unitMap,
-                           supplementalConfig.projectName, supplementalConfig.unitObjectives,
-                           supplementalConfig.lessonOrder, supplementalConfig.unitNumbers,
-                           supplementalConfig.lessonToList, supplementalConfig.isESLTrue)
+def createCourse(courseConfig):
+    organize = organizeB4U(courseConfig.unitNameList, courseConfig.languageDict, courseConfig.unitMap,
+                           courseConfig.projectName, courseConfig.unitObjectives,
+                           courseConfig.lessonOrder, courseConfig.unitNumbers,
+                           courseConfig.lessonToList, courseConfig.isESLTrue)
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize)
     runUnitGenerator(organize.proj1Dir)
     createRevision(organize.proj1Dir)
     cleanUp(organize)
 
+
+if __name__ == "__main__":
+    supplementalConfig = SVC.createSVCConfiguration()
+    createCourse(supplementalConfig)
+
     qsConfig = QS.createConfiguration()
-    qsOrganize = organizeB4U(qsConfig.unitNameList, qsConfig.languageDict, qsConfig.unitMap, qsConfig.projectName,
-                             qsConfig.unitObjectives, qsConfig.lessonOrder, qsConfig.unitNumbers, qsConfig.lessonToList,
-                             qsConfig.isESLTrue)
-    createUnits.tmpOrganize(qsOrganize.finalPathNames)
-    runCreateYAML(qsOrganize)
-    runUnitGenerator(qsOrganize.proj1Dir)
-    createRevision(qsOrganize.proj1Dir)
-    cleanUp(qsOrganize)
+    createCourse(qsConfig)
