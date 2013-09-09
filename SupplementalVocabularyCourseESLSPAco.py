@@ -914,7 +914,7 @@ lessonNameToListNameMap = {
     "Polite-Conversation-1": "La conversación cortés 1",
     "Polite-Conversation-2": "La conversación cortés 2",
     "Polite-Conversation-3": "La conversación cortés 3",
-    "Possesive-Adjectives": "Los determinantes posesivos",
+    "Possessive-Adjectives": "Los determinantes posesivos",
     "Prepositions-1": "Preposiciones 1",
     "Prepositions-2": "Preposiciones 2",
     "Prepositions-3": "Preposiciones 3",
