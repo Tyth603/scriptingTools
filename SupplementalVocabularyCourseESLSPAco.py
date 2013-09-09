@@ -774,7 +774,7 @@ lessonOrder = unitMap
 def createUnitNumbers(unitNameList):
     unitNumbers = {}
     for item in unitNameList:
-        unitNumbers.update(item, unitNameList.index(item))
+        unitNumbers.update({item: unitNameList.index(item)})
     return unitNumbers
 
 
