@@ -811,7 +811,13 @@ unitNumbers = {"Meeting and Greeting": 1,
 isESLTrue = False
 lessonNameToListNameMap = ""
 
+
 def createSVCConfiguration():
+    """
+    takes the above information and builds a course object for the rest of the scripts
+
+    :return: a filled out course object
+    """
     configObject = courseConfiguration()
     configObject.projectName = projectName
     configObject.unitNameList = unitNameList

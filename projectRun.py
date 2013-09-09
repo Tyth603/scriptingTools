@@ -5,6 +5,7 @@ import os
 import shutil
 import SupplementalVocabularyCourses as SVC
 import QuickStartCourses as QS
+import SupplementalVocabularyCourseESLSPAco as SVCSPAco
 import time
 
 
@@ -113,3 +114,6 @@ if __name__ == "__main__":
 
     qsConfig = QS.createConfiguration()
     createCourse(qsConfig)
+
+    eslSPAcoConfig = SVCSPAco.createSVCConfiguration()
+    createCourse(eslSPAcoConfig)
