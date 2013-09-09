@@ -936,7 +936,7 @@ lessonNameToListNameMap = {
 "Shopping-4": "Las compras 4",
 "Shopping-5": "Las compras 5",
 "Shopping-Stores": "Las compras: Las tiendas",
-"Spices-and-Condiments": "Los condimentos y las especias",
+"Spices-Condiments": "Los condimentos y las especias",
 "Taking-a-Taxi-1": "Tomar un taxi 1",
 "Taking-a-Taxi-2": "Tomar un taxi 2",
 "Taking-a-Taxi-3": "Tomar un taxi 3",
