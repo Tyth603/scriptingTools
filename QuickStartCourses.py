@@ -120,7 +120,7 @@ def createConfiguration():
     configObject.unitNumbers = unitNumbers
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
-    configObject.createUnitNumberToNames = createUnitNumberToNames(unitMap.keys())
+    configObject.unitNumberToNames = createUnitNumberToNames(unitMap.keys())
     return configObject
 
 
