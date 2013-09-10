@@ -255,7 +255,7 @@ lessonNameToListNameMap = {
 "Going-to-the-Bank-3": "去银行 3",
 "Going-to-the-Bank-4": "去银行 4",
 "Grains": "谷类",
-"Helper-Relationship-Facilitation": "促进与帮手沟通",
+"Helper-Relationship": "促进与帮手沟通",
 "House-Apartment-1": "房子／公寓 1",
 "House-Apartment-2": "房子／公寓 2",
 "Kitchen": "厨房",
