@@ -3,14 +3,14 @@ import os, sys, shutil
 
 class organizeB4U():
     def __init__(self, unitNameList, languageDict, unitMap, projectName, unitObjectives, lessonOrder, unitNumbers, lessonMap, isESLTrue):
-        self.proj1UnitNameList = unitNameList
+        self.unitNameList = unitNameList
         self.isESLTrue = isESLTrue
         self.lessonMap = lessonMap
         self.unitNumbers = unitNumbers
         self.lessonOrder = lessonOrder
         self.unitObjectives = unitObjectives
         self.languageDict = languageDict
-        self.proj1UnitMap = unitMap
+        self.unitMap = unitMap
         self.pathNames = []
         self.pathName = os.path.abspath(os.path.dirname(sys.argv[0]))
         self.proj1Dir = os.path.join(self.pathName, projectName)
@@ -61,8 +61,8 @@ class organizeB4U():
         for directory, dirnames, filenames in os.walk(initialDir):
             for file in filenames:
                 if file.endswith(".b4u"):
-                    if self.unitNameMapCheck(file, self.proj1UnitMap) is not None:
-                        unitName = self.unitNameMapCheck(file, self.proj1UnitMap)
+                    if self.unitNameMapCheck(file, self.unitMap) is not None:
+                        unitName = self.unitNameMapCheck(file, self.unitMap)
                         finalPath = os.path.join(finalDir, unitName, file)
                         originalPath = os.path.join(directory, file)
                         if os.path.exists(os.path.split(finalPath)[0]):
@@ -86,7 +86,7 @@ class organizeB4U():
             listNames = unitMap[unitName]
             for name in listNames:
                 if name in fileName:
-                    return unitName
+                    return "unit" + str(self.unitNumbers(unitName))
 
     def moveLists(self, file, projDir):
         langDir = os.path.join(projDir, os.path.split(os.path.split(file)[0])[1])
