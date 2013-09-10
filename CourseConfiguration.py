@@ -8,7 +8,7 @@ class courseConfiguration:
     def createUnitNumbers(self, unitNameList):
         unitNumbers = {}
         for item in unitNameList:
-            unitNumbers.update({item: unitNameList.index(item)})
+            unitNumbers.update({item: unitNameList.index(item) + 1})
         return unitNumbers
 
 

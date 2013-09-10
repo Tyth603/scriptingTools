@@ -12,7 +12,7 @@ unitNameList = ["Meeting and Greeting", "Getting Help with your Language Learnin
                      "Recreation", "Nature", "Animals", "Food 1", "Food 2", "Going to a Restaurant",
                      "Languages", "Countries", "Travel", "Buying Tickets", "Taking a Taxi",
                      "Staying at a Hotel", "Going to the Bank", "Numbers", "Days of the Week and Time",
-                     "Seasons and Weather", "Personal Pronouns and", "Possessive Adjectives",
+                     "Seasons and Weather", "Personal Pronouns and Possessive Adjectives",
                      "Adjectives and Adverbs", "Verbs", "Prepositions"]
 
 languageDict = [
