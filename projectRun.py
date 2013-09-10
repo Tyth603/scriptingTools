@@ -37,9 +37,6 @@ def cleanUp(course):
                 learnLangPath = os.path.join(knownLangPath, learnLangDir)
                 for unit in os.listdir(learnLangPath):
                     unitDir = os.path.join(learnLangPath, unit)
-                    if unit != "revision.txt":
-                        finalUnitDir = os.path.join(learnLangPath, "unit" + str(course.unitNumbers[unit]))
-                        os.rename(unitDir, finalUnitDir)
                     if unit == "revision.txt":
                         pass
                     else:
