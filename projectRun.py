@@ -101,7 +101,7 @@ def createCourse(courseConfig):
     organize = organizeB4U(courseConfig.unitNameList, courseConfig.languageDict, courseConfig.unitMap,
                            courseConfig.projectName, courseConfig.unitObjectives,
                            courseConfig.lessonOrder, courseConfig.unitNumbers,
-                           courseConfig.lessonToList, courseConfig.isESLTrue, courseConfig.unitNumberToName)
+                           courseConfig.lessonToList, courseConfig.isESLTrue, courseConfig.unitNumberToNames)
     createUnits.tmpOrganize(organize.finalPathNames)
     runCreateYAML(organize)
     runUnitGenerator(organize.proj1Dir)
