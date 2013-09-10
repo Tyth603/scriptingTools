@@ -3,6 +3,7 @@ __author__ = 'vagrant'
 
 from CourseConfiguration import courseConfiguration
 from SupplementalVocabularyCourseESLSPAco import createUnitNumbers
+from SupplementalVocabularyCourseESLSPAco import createUnitNumberToNames
 
 projectName = "supplementalVocabCoursesESLCMNcn"
 
@@ -373,5 +374,6 @@ def createSVCConfiguration():
     configObject.unitNumbers = createUnitNumbers(unitNameList)
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
+    configObject.createUnitNumberToNames = createUnitNumberToNames(unitNameList)
 
     return configObject

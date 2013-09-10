@@ -775,7 +775,11 @@ def createUnitNumbers(unitNameList):
     for item in unitNameList:
         unitNumbers.update({item: unitNameList.index(item)})
     return unitNumbers
-
+def createUnitNumberToNames(unitNameList):
+    unitNumberToName = {}
+    for item in unitNameList:
+        unitNumberToName.update({"unit" + str(unitNameList.index(item)): item})
+    return unitNumberToName
 
 # unitNumbers = {
 #     "Presentaciones y saludos": 1,
@@ -979,5 +983,6 @@ def createSVCConfiguration():
     configObject.unitNumbers = createUnitNumbers(unitNameList)
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
+    configObject.unitNumberToName = createUnitNumberToNames(unitNameList)
 
     return configObject
