@@ -13,7 +13,7 @@ def createYAML(course):
     if course.isESLTrue:
         lessonMap = {}
         for lesson in lessonOrder[unit]:
-            lessonMap.update({lesson : course.lessonMap[lesson]})
+            lessonMap.update({lesson: course.lessonMap[lesson]})
         lessonMapString = ""
         for item in lessonMap:
             lessonMapString = unicode(lessonMapString) + "\n" + " " + unicode(item) + ": " + unicode(course.lessonMap[item])
