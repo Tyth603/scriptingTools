@@ -16,7 +16,7 @@ def createYAML(course):
             lessonMap.update({lesson : course.lessonMap[lesson]})
         lessonMapString = ""
         for item in lessonMap:
-            lessonMapString = str(lessonMapString) + "\n" + " " + str(course.lessonMap[item]) + ": " + str(item)
+            lessonMapString = str(lessonMapString) + "\n" + " " + str(item) + ": " + str(course.lessonMap[item])
     else:
         lessonMapString = ""
 
