@@ -43,20 +43,3 @@ def createYAML(course):
         f.write(unicode(line))
     f.close()
     pass
-    
-
-if __name__ == "__main__":
-    unitDir = "C:\Users\Delelopment\Desktop\\forChuck\project1\Afrikaans\Asking-for-Direction"
-    createYAML(unitDir)
-
-'''
-activities: []
-tlx_activities: []
-name: a unit name
-assessment:
-  maxitems: 10
-  minscore: 90
-  modules: []
-  showhints: 'true'
-description: my unit
-'''
