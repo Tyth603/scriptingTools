@@ -828,6 +828,7 @@ def createSVCConfiguration():
     configObject.unitNumbers = unitNumbers
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
-    configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitMap.keys())
+    configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitNameList)
 
     return configObject
+createSVCConfiguration()

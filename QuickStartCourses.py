@@ -105,6 +105,7 @@ lessonNameToListNameMap = {
     "Pelajaran 9":"09-Quick-Start",
     "Pelajaran 10":"10-Quick-Start",
 }
+unitList = ["Start Cepat Unit 1","Start Cepat Unit 2","Start Cepat Unit 3"]
 
 isESLTrue = True
 
@@ -119,7 +120,7 @@ def createConfiguration():
     configObject.unitNumbers = unitNumbers
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
-    configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitMap.keys())
+    configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitList)
     return configObject
 
 
