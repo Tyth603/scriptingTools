@@ -35,7 +35,7 @@ def createYAML(course):
     Line7 = "  modules: %s \n" % modules
     Line8 = "  showhints: %s \n" % showHints
     Line9 = "description: '%s' \n" % description
-    Line10 = "lessonOrder: %s \n" % lessonOrder[unit]
+    Line10 = u"lessonOrder: %s \n" % lessonOrder[unit]
     Line11 = "lessonListMap: %s \n" % lessonMapString
     Line12 = "isESLTrue: %s \n" % str(course.isESLTrue)
     lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9, Line10, Line11, Line12]
