@@ -89,7 +89,7 @@ def createConfiguration():
     configObject.projectName = englishForIndonesianProjectName
     configObject.unitNameList = englishForIndonesianUnitNameList
     configObject.languageDict = languageDict
-    configObject.lessonOrder = englishForIndonesianLessonOrder
+    configObject.lessonOrder = unitMap #englishForIndonesianLessonOrder
     configObject.unitMap = unitMap
     configObject.unitObjectives = englishForIndonesianUnitObjectives
     configObject.unitNumbers = unitNumbers
