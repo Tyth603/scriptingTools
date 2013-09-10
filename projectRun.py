@@ -7,6 +7,7 @@ import SupplementalVocabularyCourses as SVC
 import QuickStartCourses as QS
 import SupplementalVocabularyCourseESLSPAco as SVCSPAco
 import SupplementalVocabularyCourseESLCMNcn as SVCCMNcn
+import SupplementalVocabularyCourseESLINDid as SVCINDid
 import time
 
 
@@ -118,3 +119,6 @@ if __name__ == "__main__":
 
     eslCMNcnConfig = SVCCMNcn.createSVCConfiguration()
     createCourse(eslCMNcnConfig)
+
+    eslINDidConfig = SVCINDid.createSVCConfiguration()
+    createCourse(eslINDidConfig)

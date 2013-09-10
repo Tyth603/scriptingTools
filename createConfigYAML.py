@@ -7,7 +7,7 @@ def createYAML(course):
     lessonOrder = course.lessonOrder
     configLocation = os.path.join(unitDir, "config.yaml")
     unit = course.unitNumberToName[os.path.split(os.path.split(unitDir)[0])[1]]
-
+    print unit
     activities = ["Reading", "Preview", "SelfReportingRecognize", "Pronunciation", "AudioMultiChoice",
                   "MultipleChoice2", "Matching", "SelfReportingProduce", "Dictation2", "ProduceWritten"]
     if course.isESLTrue:
