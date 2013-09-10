@@ -770,16 +770,6 @@ Finalmente, completa las actividades de asesoramiento al final de la unidad para
 lessonOrder = unitMap
 
 
-def createUnitNumbers(unitNameList):
-    unitNumbers = {}
-    for item in unitNameList:
-        unitNumbers.update({item: unitNameList.index(item)})
-    return unitNumbers
-def createUnitNumberToNames(unitNameList):
-    unitNumberToName = {}
-    for item in unitNameList:
-        unitNumberToName.update({"unit" + str(unitNameList.index(item)): item})
-    return unitNumberToName
 
 # unitNumbers = {
 #     "Presentaciones y saludos": 1,
@@ -980,9 +970,9 @@ def createSVCConfiguration():
     configObject.unitMap = unitMap
     configObject.unitObjectives = unitObjectives
     configObject.lessonOrder = lessonOrder
-    configObject.unitNumbers = createUnitNumbers(unitNameList)
+    configObject.unitNumbers = configObject.createUnitNumbers(unitNameList)
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
-    configObject.unitNumberToName = createUnitNumberToNames(unitNameList)
+    configObject.unitNumberToName = configObject.createUnitNumberToNames(unitNameList)
 
     return configObject
