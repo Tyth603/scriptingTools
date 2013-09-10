@@ -168,8 +168,6 @@ def build_unit_xml2(language_data, basedir, config):
     if config['isESLTrue']:
         for lesson in lesson_files:
             if lesson[12:] in config['lessonListMap'].keys():  #config['lessonListMap'][lesson[12:]]
-                print config['lessonListMap'][lesson[12:]]
-                print lesson[12:]
                 new_lesson_files.update({config['lessonOrder'].index(lesson[12:]): [config['lessonListMap'][lesson[12:]], lesson]})
     else:
         for lesson in lesson_files:
