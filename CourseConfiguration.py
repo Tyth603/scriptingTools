@@ -15,5 +15,5 @@ class courseConfiguration:
     def createUnitNumberToNames(self, unitNameList):
         unitNumberToName = {}
         for item in unitNameList:
-            unitNumberToName.update({"unit" + str(unitNameList.index(item) + 1): item})
+            unitNumberToName.update({"unit" + unicode(unitNameList.index(item) + 1): unicode(item)})
         return unitNumberToName
