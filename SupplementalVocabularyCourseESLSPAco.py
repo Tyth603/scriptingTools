@@ -190,7 +190,7 @@ unitNameList = [
     "Preposiciones",
 ]
 unitObjectives = {
-    "Presentaciones y saludos": """Esta unidad enseña palabras y frases útiles relacionadas con las presentaciones y los saludos.
+    "Presentaciones y saludos": u"""Esta unidad enseña palabras y frases útiles relacionadas con las presentaciones y los saludos.
 
 Esta unidad te ayudará a
 
@@ -207,7 +207,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Recibir ayuda en tu aprendizaje de lengua": """Esta unidad enseña palabras y frases útiles relacionadas con recibir ayuda en tu aprendizaje de lengua.
+    "Recibir ayuda en tu aprendizaje de lengua": u"""Esta unidad enseña palabras y frases útiles relacionadas con recibir ayuda en tu aprendizaje de lengua.
 
 Esta unidad te ayudará a
 
@@ -224,7 +224,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Recibir más ayuda en tu aprendizaje de lengua": """Esta unidad enseña palabras y frases útiles relacionadas con recibir más ayuda en tu aprendizaje de lengua.
+    "Recibir más ayuda en tu aprendizaje de lengua": u"""Esta unidad enseña palabras y frases útiles relacionadas con recibir más ayuda en tu aprendizaje de lengua.
 
 Esta unidad te ayudará a
 
@@ -241,7 +241,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La conversación cortés": """Esta unidad enseña palabras y frases útiles relacionadas con la conversación cortés.
+    "La conversación cortés": u"""Esta unidad enseña palabras y frases útiles relacionadas con la conversación cortés.
 
 Esta unidad te ayudará a
 
@@ -258,7 +258,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Las formas geométricas y los colores": """Esta unidad enseña palabras y frases útiles relacionadas con las formas geométricas y los colores.
+    "Las formas geométricas y los colores": u"""Esta unidad enseña palabras y frases útiles relacionadas con las formas geométricas y los colores.
 
 Esta unidad te ayudará a
 
@@ -275,7 +275,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La ropa": """Esta unidad enseña palabras y frases útiles relacionadas con la ropa.
+    "La ropa": u"""Esta unidad enseña palabras y frases útiles relacionadas con la ropa.
 
 Esta unidad te ayudará a
 
@@ -292,7 +292,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Las compras y las tiendas": """Esta unidad enseña palabras y frases útiles relacionadas con las compras y las tiendas.
+    "Las compras y las tiendas": u"""Esta unidad enseña palabras y frases útiles relacionadas con las compras y las tiendas.
 
 Esta unidad te ayudará a
 
@@ -309,7 +309,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La casa y el apartamento": """Esta unidad enseña palabras y frases útiles relacionadas con la casa y el apartamento.
+    "La casa y el apartamento": u"""Esta unidad enseña palabras y frases útiles relacionadas con la casa y el apartamento.
 
 Esta unidad te ayudará a
 
@@ -326,7 +326,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Habitaciones de la casa": """Esta unidad enseña palabras y frases útiles relacionadas con habitaciones de la casa.
+    "Habitaciones de la casa": u"""Esta unidad enseña palabras y frases útiles relacionadas con habitaciones de la casa.
 
 Esta unidad te ayudará a
 
@@ -343,7 +343,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La familia": """Esta unidad enseña palabras y frases útiles relacionadas con la familia.
+    "La familia": u"""Esta unidad enseña palabras y frases útiles relacionadas con la familia.
 
 Esta unidad te ayudará a
 
@@ -360,7 +360,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La oficina y las profesiones": """Esta unidad enseña palabras y frases útiles relacionadas con la oficina y las profesiones.
+    "La oficina y las profesiones": u"""Esta unidad enseña palabras y frases útiles relacionadas con la oficina y las profesiones.
 
 Esta unidad te ayudará a
 
@@ -377,7 +377,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Las partes del cuerpo": """Esta unidad enseña palabras y frases útiles relacionadas con las partes del cuerpo.
+    "Las partes del cuerpo": u"""Esta unidad enseña palabras y frases útiles relacionadas con las partes del cuerpo.
 
 Esta unidad te ayudará a
 
@@ -394,7 +394,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Emergencias": """Esta unidad enseña palabras y frases útiles relacionadas con emergencias.
+    "Emergencias": u"""Esta unidad enseña palabras y frases útiles relacionadas con emergencias.
 
 Esta unidad te ayudará a
 
@@ -411,7 +411,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los lugares y preguntar el camino": """Esta unidad enseña palabras y frases útiles relacionadas con los lugares y preguntar el camino.
+    "Los lugares y preguntar el camino": u"""Esta unidad enseña palabras y frases útiles relacionadas con los lugares y preguntar el camino.
 
 Esta unidad te ayudará a
 
@@ -428,7 +428,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La escuela": """Esta unidad enseña palabras y frases útiles relacionadas con la escuela.
+    "La escuela": u"""Esta unidad enseña palabras y frases útiles relacionadas con la escuela.
 
 Esta unidad te ayudará a
 
@@ -445,7 +445,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los instrumentos musicales": """Esta unidad enseña palabras y frases útiles relacionadas con los instrumentos musicales.
+    "Los instrumentos musicales": u"""Esta unidad enseña palabras y frases útiles relacionadas con los instrumentos musicales.
 
 Esta unidad te ayudará a
 
@@ -462,7 +462,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los deportes": """Esta unidad enseña palabras y frases útiles relacionadas con los deportes.
+    "Los deportes": u"""Esta unidad enseña palabras y frases útiles relacionadas con los deportes.
 
 Esta unidad te ayudará a
 
@@ -479,7 +479,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La naturaleza": """Esta unidad enseña palabras y frases útiles relacionadas con la naturaleza.
+    "La naturaleza": u"""Esta unidad enseña palabras y frases útiles relacionadas con la naturaleza.
 
 Esta unidad te ayudará a
 
@@ -496,7 +496,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los animales": """Esta unidad enseña palabras y frases útiles relacionadas con los animales.
+    "Los animales": u"""Esta unidad enseña palabras y frases útiles relacionadas con los animales.
 
 Esta unidad te ayudará a
 
@@ -513,7 +513,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La comida 1": """Esta unidad enseña palabras y frases útiles relacionadas con la comida.
+    "La comida 1": u"""Esta unidad enseña palabras y frases útiles relacionadas con la comida.
 
 Esta unidad te ayudará a
 
@@ -530,7 +530,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "La comida 2": """Esta unidad enseña palabras y frases útiles relacionadas con la comida.
+    "La comida 2": u"""Esta unidad enseña palabras y frases útiles relacionadas con la comida.
 
 Esta unidad te ayudará a
 
@@ -547,7 +547,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Ir a un restaurante": """Esta unidad enseña palabras y frases útiles relacionadas con ir a un restaurante.
+    "Ir a un restaurante": u"""Esta unidad enseña palabras y frases útiles relacionadas con ir a un restaurante.
 
 Esta unidad te ayudará a
 
@@ -564,7 +564,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los idiomas": """Esta unidad enseña palabras y frases útiles relacionadas con los idiomas.
+    "Los idiomas": u"""Esta unidad enseña palabras y frases útiles relacionadas con los idiomas.
 
 Esta unidad te ayudará a
 
@@ -581,7 +581,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los países": """Esta unidad enseña palabras y frases útiles relacionadas con los países.
+    "Los países": u"""Esta unidad enseña palabras y frases útiles relacionadas con los países.
 
 Esta unidad te ayudará a
 
@@ -598,7 +598,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Viajar": """Esta unidad enseña palabras y frases útiles relacionadas con viajar.
+    "Viajar": u"""Esta unidad enseña palabras y frases útiles relacionadas con viajar.
 
 Esta unidad te ayudará a
 
@@ -615,7 +615,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Comprar billetes": """Esta unidad enseña palabras y frases útiles relacionadas con comprar billetes.
+    "Comprar billetes": u"""Esta unidad enseña palabras y frases útiles relacionadas con comprar billetes.
 
 Esta unidad te ayudará a
 
@@ -632,7 +632,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Tomar un taxi": """Esta unidad enseña palabras y frases útiles relacionadas con tomar un taxi.
+    "Tomar un taxi": u"""Esta unidad enseña palabras y frases útiles relacionadas con tomar un taxi.
 
 Esta unidad te ayudará a
 
@@ -649,7 +649,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Alojarse en un hotel": """Esta unidad enseña palabras y frases útiles relacionadas con alojarse en un hotel.
+    "Alojarse en un hotel": u"""Esta unidad enseña palabras y frases útiles relacionadas con alojarse en un hotel.
 
 Esta unidad te ayudará a
 
@@ -666,7 +666,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Ir al banco": """Esta unidad enseña palabras y frases útiles relacionadas con ir al banco.
+    "Ir al banco": u"""Esta unidad enseña palabras y frases útiles relacionadas con ir al banco.
 
 Esta unidad te ayudará a
 
@@ -683,7 +683,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los números": """Esta unidad enseña palabras y frases útiles relacionadas con los números.
+    "Los números": u"""Esta unidad enseña palabras y frases útiles relacionadas con los números.
 
 Esta unidad te ayudará a
 
@@ -700,7 +700,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los días de la semana": """Esta unidad enseña palabras y frases útiles relacionadas con los días de la semana.
+    "Los días de la semana": u"""Esta unidad enseña palabras y frases útiles relacionadas con los días de la semana.
 
 Esta unidad te ayudará a
 
@@ -717,7 +717,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Las estaciones y el tiempo": """Esta unidad enseña palabras y frases útiles relacionadas con las estaciones y el tiempo.
+    "Las estaciones y el tiempo": u"""Esta unidad enseña palabras y frases útiles relacionadas con las estaciones y el tiempo.
 
 Esta unidad te ayudará a
 
@@ -734,7 +734,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Pronombres personales y  adjetivos posesivos": """Esta unidad enseña palabras y frases útiles relacionadas con los pronombres personales y los adjetivos posesivos.
+    "Pronombres personales y  adjetivos posesivos": u"""Esta unidad enseña palabras y frases útiles relacionadas con los pronombres personales y los adjetivos posesivos.
 
 Esta unidad te ayudará a
 
@@ -751,7 +751,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los adjetivos y los adverbios": """Esta unidad enseña palabras y frases útiles relacionadas con los adjetivos y los adverbios.
+    "Los adjetivos y los adverbios": u"""Esta unidad enseña palabras y frases útiles relacionadas con los adjetivos y los adverbios.
 
 Esta unidad te ayudará a
 
@@ -768,7 +768,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Los verbos": """Esta unidad enseña palabras y frases útiles relacionadas con los verbos.
+    "Los verbos": u"""Esta unidad enseña palabras y frases útiles relacionadas con los verbos.
 
 Esta unidad te ayudará a
 
@@ -785,7 +785,7 @@ Luego completa las actividades de dictado y de escritura para practicar la produ
 Finalmente, completa las actividades de asesoramiento al final de la unidad para comprobar tu conocimiento de las palabras o frases."
 
 """,
-    "Preposiciones": """Esta unidad enseña palabras y frases útiles relacionadas con las preposiciones.
+    "Preposiciones": u"""Esta unidad enseña palabras y frases útiles relacionadas con las preposiciones.
 
 Esta unidad te ayudará a
 
