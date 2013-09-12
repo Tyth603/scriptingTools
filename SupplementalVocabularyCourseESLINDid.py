@@ -246,7 +246,7 @@ unitMap = {
 "Communication-Facilitation-5",
 "Communication-Facilitation-6",
 "Communication-Facilitation-7"],
-"Bantuan Lanjutan untuk Pembelajaran Bahasa": ["Helper-Relationship",
+"Bantuan Lanjutan untuk Pembelajaran Bahasa": ["Helper-Relationship-Facilitation",
 "Language-Learning-Facilitation-1",
 "Language-Learning-Facilitation-2",
 "Translation-Facilitation"],
