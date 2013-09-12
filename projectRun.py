@@ -55,6 +55,7 @@ def cleanUp(course):
                                 elif unit.endswith(".yaml"):
                                     os.remove(b4xDir)
 
+
 #dir = project level directory
 def checkNumberOfUnits(projectDir, projUnitNameList):
     nameList = projUnitNameList
@@ -67,6 +68,7 @@ def checkNumberOfUnits(projectDir, projUnitNameList):
                 src = langDir
                 dst = os.path.join(projectDir, "not_enough_units", language)
                 shutil.move(src, dst)
+
 
 #dir = project level directory
 def createRevision(projectDir):
