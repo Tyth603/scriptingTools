@@ -87,7 +87,7 @@ class organizeB4U():
             listNames = unitMap[unitName]
             for name in listNames:
                 if name in fileName:
-                    return "unit" + unicode(self.unitNumbers[unitName])
+                    return "unit" + unicode(self.unitNumbers[unicode(unitName)])
 
     def moveLists(self, file, projDir):
         langDir = os.path.join(projDir, os.path.split(os.path.split(file)[0])[1])
