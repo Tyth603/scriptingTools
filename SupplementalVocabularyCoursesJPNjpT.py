@@ -2,7 +2,7 @@ __author__ = 'vagrant'
 
 from CourseConfiguration import courseConfiguration
 
-projectName = "supplementalVocabCoursesNonESL"
+projectName = "supplementalVocabCoursesJPNjpT"
 
 unitNameList = ["Meeting and Greeting", "Getting Help with your Language Learning",
                      "Getting More Help with your Language Learning", "Polite Conversation",
@@ -16,8 +16,8 @@ unitNameList = ["Meeting and Greeting", "Getting Help with your Language Learnin
                      "Adjectives and Adverbs", "Verbs", "Prepositions"]
 
 languageDict = [
-    ["x for English speakers", "Spanish"],
-    ["x for English speakers", "Chinese, Mandarin"],
+    #["x for English speakers", "Spanish"],
+    #["x for English speakers", "Chinese, Mandarin"],
     ["x for English speakers", "Japanese"],
     # ["x for Chinese speakers", "English"],
     # ["x for Spanish speakers", "English"],
