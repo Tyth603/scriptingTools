@@ -13,9 +13,9 @@ import time
 
 
 def runCreateYAML(course):
-    dir = course.proj1Dir
-    for learnLanguage in os.listdir(dir):
-        learnDir = os.path.join(dir, learnLanguage)
+    projectDir = course.proj1Dir
+    for learnLanguage in os.listdir(projectDir):
+        learnDir = os.path.join(projectDir, learnLanguage)
         for knownLanguage in os.listdir(learnDir):
             knownDir = os.path.join(learnDir, knownLanguage)
             for unit in os.listdir(knownDir):
@@ -28,9 +28,9 @@ def runCreateYAML(course):
 
 
 def cleanUp(course):
-    dir = course.proj1Dir
-    for language in os.listdir(dir):
-        knownLangPath = os.path.join(dir, language)
+    projectDir = course.proj1Dir
+    for language in os.listdir(projectDir):
+        knownLangPath = os.path.join(projectDir, language)
         for learnLangDir in os.listdir(knownLangPath):
             #print learnLangDir
             if learnLangDir == "revision.txt":
@@ -56,22 +56,22 @@ def cleanUp(course):
                                     os.remove(b4xDir)
 
 #dir = project level directory
-def checkNumberOfUnits(dir, projUnitNameList):
+def checkNumberOfUnits(projectDir, projUnitNameList):
     nameList = projUnitNameList
-    for language in os.listdir(dir):
-        langDir = os.path.join(dir, language)
+    for language in os.listdir(projectDir):
+        langDir = os.path.join(projectDir, language)
         if language != "not_enough_units":
             if len(nameList) == len(os.listdir(langDir)):
                 pass
             else:
                 src = langDir
-                dst = os.path.join(dir, "not_enough_units", language)
+                dst = os.path.join(projectDir, "not_enough_units", language)
                 shutil.move(src, dst)
 
 #dir = project level directory
-def createRevision(dir):
-    for lang in os.listdir(dir):
-        langDir = os.path.join(dir, lang)
+def createRevision(projectDir):
+    for lang in os.listdir(projectDir):
+        langDir = os.path.join(projectDir, lang)
         for lang2 in os.listdir(langDir):
             if lang2 != "not_enough_units":
                 lang2Dir = os.path.join(langDir, lang2)
