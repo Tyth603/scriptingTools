@@ -130,7 +130,7 @@ def build_unit_xml(language_data, basedir, config):
 def build_unit_xml2(language_data, basedir, config):
     '''accepts language data as a dictionary and a basedir for the unit.xml to be generated in.
     '''
-    translit_state = config['isTranslit'].lower()
+    translit_state = str(config['isTranslit']).lower()
     lesson_files = os.listdir(basedir)
 
     root = etree.Element('cw1Unit')
