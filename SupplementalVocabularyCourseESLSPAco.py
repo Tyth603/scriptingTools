@@ -992,7 +992,7 @@ lessonNameToListNameMap = {
     u"Weather-1": u"El tiempo 1",
     u"Weather-2": u"El tiempo 2",
 }
-
+isTranslit = False
 
 def createSVCConfiguration():
     """
@@ -1011,5 +1011,6 @@ def createSVCConfiguration():
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
     configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitNameList)
+    configObject.isTranslit = isTranslit
 
     return configObject

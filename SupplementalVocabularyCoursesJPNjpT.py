@@ -809,8 +809,8 @@ unitNumbers = {"Meeting and Greeting": 1,
                "Verbs": 35,
                "Prepositions": 36}
 isESLTrue = False
-isTranslit = False
 lessonNameToListNameMap = ""
+isTranslit = True
 
 
 def createSVCConfiguration():
@@ -833,4 +833,3 @@ def createSVCConfiguration():
     configObject.isTranslit = isTranslit
 
     return configObject
-createSVCConfiguration()

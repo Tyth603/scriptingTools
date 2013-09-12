@@ -37,7 +37,8 @@ def createYAML(course):
     Line10 = u"lessonOrder: %s \n" % unicode(lessonOrder[unit])
     Line11 = u"lessonListMap: %s \n" % unicode(lessonMapString)
     Line12 = "isESLTrue: %s \n" % str(course.isESLTrue)
-    lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9, Line10, Line11, Line12]
+    Line13 = "isTranslit: %s \n" % str(course.isTranslit)
+    lines = [Line1, Line2, Line3, Line4, Line5, Line6, Line7, Line8, Line9, Line10, Line11, Line12, Line13]
     f = codecs.open(configLocation, "w+", "utf-8")
     for line in lines:
         f.write(unicode(line))

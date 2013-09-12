@@ -82,6 +82,7 @@ lessonNameToListNameMap = {
 unitList = ["Start Cepat Unit 1", "Start Cepat Unit 2", "Start Cepat Unit 3"]
 
 isESLTrue = True
+isTranslit = False
 
 
 def createConfiguration():
@@ -96,6 +97,7 @@ def createConfiguration():
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
     configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitList)
+    configObject.isTranslit = isTranslit
     return configObject
 
 

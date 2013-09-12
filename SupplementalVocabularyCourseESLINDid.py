@@ -441,6 +441,7 @@ languageDict = [
 ]
 projectName = "supplementalVocabCoursesESLINDid"
 isESLTrue = True
+isTranslit = False
 
 
 def createSVCConfiguration():
@@ -460,5 +461,6 @@ def createSVCConfiguration():
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
     configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitNameList)
+    configObject.isTranslit = isTranslit
 
     return configObject
