@@ -391,7 +391,7 @@ unitObjectives = {
     u"动词": u"本单元学习有关动词的单词和短语。" + "\n" + baseText,
     u"介词": u"本单元学习有关介词的单词和短语。" + "\n" + baseText
 }
-
+isTranslit = False
 
 def createSVCConfiguration():
     """
@@ -410,5 +410,6 @@ def createSVCConfiguration():
     configObject.lessonToList = lessonNameToListNameMap
     configObject.isESLTrue = isESLTrue
     configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitNameList)
+    configObject.isTranslit = isTranslit
 
     return configObject
