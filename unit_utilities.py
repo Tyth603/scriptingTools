@@ -234,6 +234,7 @@ def build_unit_xml2(language_data, basedir, config):
     else:
         description = ''
     desc_tag = etree.SubElement(root, 'description')
+    description = "<span whiteSpaceCollapse='preserve'>" + description + "</span>"
     desc_tag.text = etree.CDATA(description)
 
     fd = open(os.path.join(basedir, 'unit.xml'), 'w+')
