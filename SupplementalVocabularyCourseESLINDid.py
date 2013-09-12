@@ -462,5 +462,4 @@ def createSVCConfiguration():
     configObject.isESLTrue = isESLTrue
     configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitNameList)
     configObject.isTranslit = isTranslit
-
     return configObject
