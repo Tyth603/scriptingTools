@@ -112,6 +112,9 @@ def createCourse(courseConfig):
 
 
 if __name__ == "__main__":
+    SVCJPNjpTConfig = SVCJPNjpT.createSVCConfiguration()
+    createCourse(SVCJPNjpTConfig)
+
     supplementalConfig = SVC.createSVCConfiguration()
     createCourse(supplementalConfig)
 
@@ -127,5 +130,3 @@ if __name__ == "__main__":
     eslINDidConfig = SVCINDid.createSVCConfiguration()
     createCourse(eslINDidConfig)
 
-    SVCJPNjpTConfig = SVCJPNjpT.createSVCConfiguration()
-    createCourse(SVCJPNjpTConfig)
