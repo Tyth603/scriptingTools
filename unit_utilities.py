@@ -27,7 +27,9 @@ activityName = {
 spanishActivityNameDict = dict(Reading=u"Comparación de idiomas", Preview=u"Ver", SelfReportingRecognize=u'Reconozca y diga',
     Pronunciation=u"Práctica de la pronunciación", AudioMultiChoice=u"Opción múltiple (Audio)", MultipleChoice2=u"Opción múltiple",
     Matching=u"Correspondientes", SelfReportingProduce=u"Produzca y diga", Dictation2=u"Dictado", ProduceWritten=u"Produzca y escriba")
-eslActivityNames = {"SPANISH": spanishActivityNameDict,}
+eslActivityNames = {"SPANISH": spanishActivityNameDict,
+                    "INDONESIAN": activityName,
+                    "CHINESE": activityName,}
 knownLanguageValues = {
     "CHINESE": {"uiFont": "Chinese", "knownFont": "Chinese", },
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", },
