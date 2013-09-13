@@ -134,14 +134,14 @@ def createCourse(courseConfig):
 
 
 if __name__ == "__main__":
+    qsConfig = QS.createConfiguration()
+    createCourse(qsConfig)
+
     SVCJPNjpTConfig = SVCJPNjpT.createSVCConfiguration()
     createCourse(SVCJPNjpTConfig)
 
     supplementalConfig = SVC.createSVCConfiguration()
     createCourse(supplementalConfig)
-
-    qsConfig = QS.createConfiguration()
-    createCourse(qsConfig)
 
     eslSPAcoConfig = SVCSPAco.createSVCConfiguration()
     createCourse(eslSPAcoConfig)
