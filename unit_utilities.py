@@ -153,7 +153,6 @@ def build_unit_xml2(language_data, basedir, config):
     knownLanguage = knownLanguage.replace("speakers", "")
     knownLanguage = knownLanguage.replace(" ", "")
     fontFamily = knownLanguage
-    knownLanguage = knownLanguageMap[knownLanguage.upper()]
     unit_name = config["name"].replace('-', ' ') #os.path.split(basedir)[1].replace('-', ' ')
     root.attrib['name'] = config["name"].replace('-', ' ') #os.path.split(os.path.split(basedir)[0])[1].replace('-', ' ')
     root.attrib['knownLanguage'] = knownLanguageValues[knownLanguage.upper()]["knownLanguage"]
