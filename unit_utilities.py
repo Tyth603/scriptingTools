@@ -152,7 +152,6 @@ def build_unit_xml2(language_data, basedir, config):
     knownLanguage = knownLanguage.replace("Speakers", "")
     knownLanguage = knownLanguage.replace("speakers", "")
     knownLanguage = knownLanguage.replace(" ", "")
-    fontFamily = knownLanguage
     unit_name = config["name"].replace('-', ' ') #os.path.split(basedir)[1].replace('-', ' ')
     root.attrib['name'] = config["name"].replace('-', ' ') #os.path.split(os.path.split(basedir)[0])[1].replace('-', ' ')
     root.attrib['knownLanguage'] = knownLanguageValues[knownLanguage.upper()]["knownLanguage"]
@@ -255,7 +254,7 @@ def build_unit_xml2(language_data, basedir, config):
     else:
         description = ''
     desc_tag = etree.SubElement(root, 'description')
-    spanTag = "<span whiteSpaceCollapse='preserve' fontFamily='%s'>" % fontFamily
+    spanTag = "<span whiteSpaceCollapse='preserve' fontFamily='%s'>" % knownLanguageValues[knownLanguage.upper()]['knownFont']
     description = spanTag + description + "</span>"
     desc_tag.text = etree.CDATA(description)
 
