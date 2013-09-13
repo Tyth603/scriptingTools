@@ -12,6 +12,7 @@ import SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 import time
 import re
 import fileinput
+import sys
 
 def runCreateYAML(course):
     projectDir = course.proj1Dir
@@ -114,13 +115,13 @@ def stripTagging(projectDir):
                             else:
                                 b4xFolder = os.path.join(unitFolder, b4xFolder)
                                 for file in os.listdir(b4xFolder):
-                                    print file
                                     if file.endswith(".xml"):
                                         file = os.path.join(b4xFolder, file)
                                         #f = open(file, "w+")
                                         for line in fileinput.input(file, inplace=True):
                                             line = re.sub(r"&lt;.*&gt;", "", line)
-                                            print line
+                                            sys.stdout.write(line)
+
                                         # for line in f:
                                         #     line = re.sub(r"&lt;.*&gt;", "", line)
                                         #     f.write(line)
