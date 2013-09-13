@@ -143,17 +143,17 @@ if __name__ == "__main__":
     qsConfig = QS.createConfiguration()
     createCourse(qsConfig)
 
-    SVCJPNjpTConfig = SVCJPNjpT.createSVCConfiguration()
-    createCourse(SVCJPNjpTConfig)
-
-    supplementalConfig = SVC.createSVCConfiguration()
-    createCourse(supplementalConfig)
-
     eslSPAcoConfig = SVCSPAco.createSVCConfiguration()
     createCourse(eslSPAcoConfig)
 
     eslCMNcnConfig = SVCCMNcn.createSVCConfiguration()
     createCourse(eslCMNcnConfig)
+
+    SVCJPNjpTConfig = SVCJPNjpT.createSVCConfiguration()
+    createCourse(SVCJPNjpTConfig)
+
+    supplementalConfig = SVC.createSVCConfiguration()
+    createCourse(supplementalConfig)
 
     eslINDidConfig = SVCINDid.createSVCConfiguration()
     createCourse(eslINDidConfig)

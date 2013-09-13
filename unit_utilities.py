@@ -22,11 +22,13 @@ activityName = {
     "Matching": "Matching",
     "SelfReportingProduce": "Produce & Say It",
     "Dictation2": "Dictation",
-    "ProduceWritten": "Produce & Write It"
+    "ProduceWritten": "Produce & Write It",
+    "Assessment": "Assessment"
 }
 spanishActivityNameDict = dict(Reading=u"Comparación de idiomas", Preview=u"Ver", SelfReportingRecognize=u'Reconozca y diga',
     Pronunciation=u"Práctica de la pronunciación", AudioMultiChoice=u"Opción múltiple (Audio)", MultipleChoice2=u"Opción múltiple",
-    Matching=u"Correspondientes", SelfReportingProduce=u"Produzca y diga", Dictation2=u"Dictado", ProduceWritten=u"Produzca y escriba")
+    Matching=u"Correspondientes", SelfReportingProduce=u"Produzca y diga", Dictation2=u"Dictado", ProduceWritten=u"Produzca y escriba",
+    Assessment=u"Evaluación")
 eslActivityNames = {"SPANISH": spanishActivityNameDict,
                     "INDONESIAN": activityName,
                     "CHINESE": activityName}
@@ -150,6 +152,7 @@ def build_unit_xml2(language_data, basedir, config):
     knownLanguage = knownLanguage.replace("Speakers", "")
     knownLanguage = knownLanguage.replace("speakers", "")
     knownLanguage = knownLanguage.replace(" ", "")
+    fontFamily = knownLanguage
     knownLanguage = knownLanguageMap[knownLanguage.upper()]
     unit_name = config["name"].replace('-', ' ') #os.path.split(basedir)[1].replace('-', ' ')
     root.attrib['name'] = config["name"].replace('-', ' ') #os.path.split(os.path.split(basedir)[0])[1].replace('-', ' ')
@@ -214,6 +217,10 @@ def build_unit_xml2(language_data, basedir, config):
                 counter += 1
             else:
                 activity_tag = etree.SubElement(lesson_tag, 'activity')
+                if config["isESLTrue"]:
+                    activity_tag.attrib['name'] = eslActivityNames[knownLanguage.upper()][activity]
+                else:
+                    activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
                 activity_tag.attrib['required'] = 'false'
                 activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
                 activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
@@ -226,7 +233,10 @@ def build_unit_xml2(language_data, basedir, config):
         lesson_counter += 1
 
     assessment_tag = etree.SubElement(root, 'assessment')
-    assessment_tag.attrib['name'] = 'Assessment'
+    if config["isESLTrue"]:
+        assessment_tag.attrib['name'] = eslActivityNames[knownLanguage.upper()]['Assessment']
+    else:
+        assessment_tag.attrib['name'] = 'Assessment'
     module_str = ''
     for module in config['assessment']['modules']:
         module_str += 'modules/{0:s}.swf,'.format(module)
@@ -247,7 +257,8 @@ def build_unit_xml2(language_data, basedir, config):
     else:
         description = ''
     desc_tag = etree.SubElement(root, 'description')
-    description = "<span whiteSpaceCollapse='preserve'>" + description + "</span>"
+    spanTag = "<span whiteSpaceCollapse='preserve' fontFamily='%s'>" % fontFamily
+    description = spanTag + description + "</span>"
     desc_tag.text = etree.CDATA(description)
 
     fd = open(os.path.join(basedir, 'unit.xml'), 'w+')
