@@ -110,6 +110,7 @@ def stripTagging(projectDir):
                             unitFolder = os.path.join(langFolder, unitFolder)
                             for b4xFolder in os.listdir(unitFolder):
                                 for file in os.listdir(b4xFolder):
+                                    print file
                                     if file.endswith(".xml"):
                                         file = os.path.join(b4xFolder, file)
                                         f = open(file, "w+")
