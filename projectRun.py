@@ -10,7 +10,7 @@ import SupplementalVocabularyCourseESLCMNcn as SVCCMNcn
 import SupplementalVocabularyCourseESLINDid as SVCINDid
 import SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 import time
-
+import re
 
 def runCreateYAML(course):
     projectDir = course.proj1Dir
@@ -97,6 +97,24 @@ def runUnitGenerator(paths):
                 cmd = 'python "D:\working\\forChuck\\unit_generator.py" -u -p "%s"' % unitDir
                 os.system(cmd)
 
+def stripTagging(projectDir):
+    for folder in os.listdir(projectDir):
+        folder = os.path.join(projectDir, folder)
+        for subFolder in os.listdir(folder):
+            subfolder = os.path.join(folder, subfolder)
+            for langFolder in os.listdir(subFolder):
+                langFolder = os.path.join(subFolder, langFolder)
+                for unitFolder in os.listdir(langFolder):
+                    for b4xFolder in os.listdir(unitFolder):
+                        for file in os.listdir(b4xFolder):
+                            if file.endswith(".xml"):
+                                file = os.path.join(b4xFolder, file)
+                                f = open(file, "w+")
+                                for line in f:
+                                    line = re.sub(r"&lt;.*&gt;", "", line)
+                                    f.write(line)
+
+
 
 def createCourse(courseConfig):
     organize = organizeB4U(courseConfig.unitNameList, courseConfig.languageDict, courseConfig.unitMap,
@@ -109,6 +127,7 @@ def createCourse(courseConfig):
     runUnitGenerator(organize.proj1Dir)
     createRevision(organize.proj1Dir)
     cleanUp(organize)
+    stripTagging(organize.proj1Dir)
 
 
 if __name__ == "__main__":
