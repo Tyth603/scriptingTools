@@ -221,7 +221,6 @@ def build_unit_xml2(language_data, basedir, config):
                 else:
                     activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
                 activity_tag.attrib['required'] = 'false'
-                activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
                 activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
                 activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson[1])
                 if activity in byki_modes:
