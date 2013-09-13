@@ -31,11 +31,12 @@ eslActivityNames = {"SPANISH": spanishActivityNameDict,
                     "INDONESIAN": activityName,
                     "CHINESE": activityName}
 knownLanguageValues = {
-    "CHINESE": {"uiFont": "Chinese", "knownFont": "Chinese", },
+    "CHINESE": {"uiFont": "Latin", "knownFont": "Chinese", },
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", },
     "SPANISH": {"uiFont": "Latin", "knownFont": "Latin", },
     "INDONESIAN": {"uiFont": "Latin", "knownFont": "Latin", },
 }
+knownLanguageMap = dict(CHINESE="MANDARIN", ENGLISH="ENGLISH", SPANISH="SPANISH", INDONESIAN="INDONESIAN")
 
 
 def build_unit_xml(language_data, basedir, config):
@@ -149,6 +150,7 @@ def build_unit_xml2(language_data, basedir, config):
     knownLanguage = knownLanguage.replace("Speakers", "")
     knownLanguage = knownLanguage.replace("speakers", "")
     knownLanguage = knownLanguage.replace(" ", "")
+    knownLanguage = knownLanguageMap[knownLanguage.upper()]
     unit_name = config["name"].replace('-', ' ') #os.path.split(basedir)[1].replace('-', ' ')
     root.attrib['name'] = config["name"].replace('-', ' ') #os.path.split(os.path.split(basedir)[0])[1].replace('-', ' ')
     root.attrib['knownLanguage'] = knownLanguage.upper()

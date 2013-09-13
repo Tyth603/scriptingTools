@@ -14,6 +14,7 @@ import re
 import fileinput
 import sys
 
+
 def runCreateYAML(course):
     projectDir = course.proj1Dir
     for learnLanguage in os.listdir(projectDir):
@@ -99,6 +100,7 @@ def runUnitGenerator(paths):
                 cmd = 'python "D:\working\\forChuck\\unit_generator.py" -u -p "%s"' % unitDir
                 os.system(cmd)
 
+
 def stripTagging(projectDir):
     for folder in os.listdir(projectDir):
         folder = os.path.join(projectDir, folder)
@@ -121,12 +123,6 @@ def stripTagging(projectDir):
                                         for line in fileinput.input(file, inplace=True):
                                             line = re.sub(r"&lt;.*&gt;", "", line)
                                             sys.stdout.write(line)
-
-                                        # for line in f:
-                                        #     line = re.sub(r"&lt;.*&gt;", "", line)
-                                        #     f.write(line)
-                                        # f.close()
-
 
 
 def createCourse(courseConfig):
@@ -161,4 +157,3 @@ if __name__ == "__main__":
 
     eslINDidConfig = SVCINDid.createSVCConfiguration()
     createCourse(eslINDidConfig)
-
