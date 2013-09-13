@@ -117,7 +117,7 @@ def stripTagging(projectDir):
                                     print file
                                     if file.endswith(".xml"):
                                         file = os.path.join(b4xFolder, file)
-                                        f = open(file, "w+")
+                                        #f = open(file, "w+")
                                         for line in fileinput.input(file, inplace=True):
                                             line = re.sub(r"&lt;.*&gt;", "", line)
                                             print line
