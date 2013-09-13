@@ -33,12 +33,11 @@ eslActivityNames = {"SPANISH": spanishActivityNameDict,
                     "INDONESIAN": activityName,
                     "CHINESE": activityName}
 knownLanguageValues = {
-    "CHINESE": {"uiFont": "Latin", "knownFont": "Chinese", "knownLanguage": "MANDARIN" },
+    "CHINESE": {"uiFont": "Latin", "knownFont": "Chinese", "knownLanguage": "MANDARIN"},
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "ENGLISH"},
     "SPANISH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "SPANISH"},
     "INDONESIAN": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "INDONESIAN"},
 }
-#knownLanguageMap = dict(CHINESE="MANDARIN", ENGLISH="ENGLISH", SPANISH="SPANISH", INDONESIAN="INDONESIAN")
 
 
 def build_unit_xml(language_data, basedir, config):
