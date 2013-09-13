@@ -197,7 +197,7 @@ def build_unit_xml2(language_data, basedir, config):
                 config_tag = etree.SubElement(activity_tag, 'config')
                 config_tag.attrib['speech'] = 'true'
                 activity_tag.attrib['required'] = 'false'
-                if config["isESL"]:
+                if config["isESLTrue"]:
                     activity_tag.attrib['name'] = eslActivityNames[knownLanguage][activity]
                 else:
                     activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
