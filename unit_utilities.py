@@ -29,7 +29,7 @@ spanishActivityNameDict = dict(Reading=u"Comparación de idiomas", Preview=u"Ver
     Matching=u"Correspondientes", SelfReportingProduce=u"Produzca y diga", Dictation2=u"Dictado", ProduceWritten=u"Produzca y escriba")
 eslActivityNames = {"SPANISH": spanishActivityNameDict,
                     "INDONESIAN": activityName,
-                    "CHINESE": activityName,}
+                    "CHINESE": activityName}
 knownLanguageValues = {
     "CHINESE": {"uiFont": "Chinese", "knownFont": "Chinese", },
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", },
@@ -200,7 +200,7 @@ def build_unit_xml2(language_data, basedir, config):
                 config_tag.attrib['speech'] = 'true'
                 activity_tag.attrib['required'] = 'false'
                 if config["isESLTrue"]:
-                    activity_tag.attrib['name'] = eslActivityNames[knownLanguage][activity]
+                    activity_tag.attrib['name'] = eslActivityNames[knownLanguage.upper()][activity]
                 else:
                     activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
                 activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
