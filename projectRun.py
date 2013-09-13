@@ -105,14 +105,16 @@ def stripTagging(projectDir):
             for langFolder in os.listdir(subFolder):
                 langFolder = os.path.join(subFolder, langFolder)
                 for unitFolder in os.listdir(langFolder):
-                    for b4xFolder in os.listdir(unitFolder):
-                        for file in os.listdir(b4xFolder):
-                            if file.endswith(".xml"):
-                                file = os.path.join(b4xFolder, file)
-                                f = open(file, "w+")
-                                for line in f:
-                                    line = re.sub(r"&lt;.*&gt;", "", line)
-                                    f.write(line)
+                    if not unitFolder.endswith(".txt"):
+                        unitFolder = os.path.join(langFolder, unitFolder)
+                        for b4xFolder in os.listdir(unitFolder):
+                            for file in os.listdir(b4xFolder):
+                                if file.endswith(".xml"):
+                                    file = os.path.join(b4xFolder, file)
+                                    f = open(file, "w+")
+                                    for line in f:
+                                        line = re.sub(r"&lt;.*&gt;", "", line)
+                                        f.write(line)
 
 
 

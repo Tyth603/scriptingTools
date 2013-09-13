@@ -5,6 +5,7 @@ import lxml
 from lxml import etree
 import yaml
 import collections
+# -*- coding: utf-8 -*-
 
 __author__ = 'S. P. Powers'
 
@@ -22,6 +23,9 @@ activityName = {
     "Dictation2": "Dictation",
     "ProduceWritten": "Produce & Write It"
 }
+spanishActivityNameDict = dict(Reading=u"Comparación de idiomas", Preview=u"Ver", SelfReportingRecognize=u'Reconozca y diga',
+    Pronunciation=u"Práctica de la pronunciación", AudioMultiChoice=u"Opción múltiple (Audio)")
+eslActivityNames = {"SPANISH": spanishActivityNameDict,}
 knownLanguageValues = {
     "CHINESE": {"uiFont": "Chinese", "knownFont": "Chinese", },
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", },
