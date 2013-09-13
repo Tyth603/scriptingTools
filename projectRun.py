@@ -106,7 +106,7 @@ def stripTagging(projectDir):
                 if not langFolder.endswith(".txt"):
                     langFolder = os.path.join(subFolder, langFolder)
                     for unitFolder in os.listdir(langFolder):
-                        if not unitFolder.endswith(".xml"):
+                        if not unitFolder.endswith(".xml") or not unitFolder.endswith(".yaml"):
                             unitFolder = os.path.join(langFolder, unitFolder)
                             for b4xFolder in os.listdir(unitFolder):
                                 for file in os.listdir(b4xFolder):
