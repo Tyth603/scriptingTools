@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import re
 from BeautifulSoup import BeautifulStoneSoup, Tag, NavigableString
@@ -5,7 +6,7 @@ import lxml
 from lxml import etree
 import yaml
 import collections
-# -*- coding: utf-8 -*-
+
 
 __author__ = 'S. P. Powers'
 
@@ -24,7 +25,8 @@ activityName = {
     "ProduceWritten": "Produce & Write It"
 }
 spanishActivityNameDict = dict(Reading=u"Comparación de idiomas", Preview=u"Ver", SelfReportingRecognize=u'Reconozca y diga',
-    Pronunciation=u"Práctica de la pronunciación", AudioMultiChoice=u"Opción múltiple (Audio)")
+    Pronunciation=u"Práctica de la pronunciación", AudioMultiChoice=u"Opción múltiple (Audio)", MultipleChoice2=u"Opción múltiple",
+    Matching=u"Correspondientes", SelfReportingProduce=u"Produzca y diga", Dictation2=u"Dictado", ProduceWritten=u"Produzca y escriba")
 eslActivityNames = {"SPANISH": spanishActivityNameDict,}
 knownLanguageValues = {
     "CHINESE": {"uiFont": "Chinese", "knownFont": "Chinese", },
@@ -195,7 +197,10 @@ def build_unit_xml2(language_data, basedir, config):
                 config_tag = etree.SubElement(activity_tag, 'config')
                 config_tag.attrib['speech'] = 'true'
                 activity_tag.attrib['required'] = 'false'
-                activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
+                if config["isESL"]:
+                    activity_tag.attrib['name'] = eslActivityNames[knownLanguage][activity]
+                else:
+                    activity_tag.attrib['name'] = activityName[activity] #'Lesson {0:d}'.format(lesson_counter)
                 activity_tag.attrib['moduleUrl'] = 'modules/{0:s}.swf'.format(activity)
                 activity_tag.attrib['dataUrl'] = 'data/{0:s}'.format(lesson[1])
                 if activity in byki_modes:
