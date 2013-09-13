@@ -101,7 +101,7 @@ def stripTagging(projectDir):
     for folder in os.listdir(projectDir):
         folder = os.path.join(projectDir, folder)
         for subFolder in os.listdir(folder):
-            subfolder = os.path.join(folder, subfolder)
+            subFolder = os.path.join(folder, subFolder)
             for langFolder in os.listdir(subFolder):
                 langFolder = os.path.join(subFolder, langFolder)
                 for unitFolder in os.listdir(langFolder):
