@@ -11,6 +11,7 @@ import SupplementalVocabularyCourseESLINDid as SVCINDid
 import SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 import time
 import re
+import fileinput
 
 def runCreateYAML(course):
     projectDir = course.proj1Dir
@@ -106,7 +107,6 @@ def stripTagging(projectDir):
                 if not langFolder.endswith(".txt"):
                     langFolder = os.path.join(subFolder, langFolder)
                     for unitFolder in os.listdir(langFolder):
-                        # if not unitFolder.endswith(".xml") or not unitFolder.endswith(".yaml"):
                         unitFolder = os.path.join(langFolder, unitFolder)
                         for b4xFolder in os.listdir(unitFolder):
                             if b4xFolder.endswith(".xml") or b4xFolder.endswith(".yaml"):
@@ -118,9 +118,13 @@ def stripTagging(projectDir):
                                     if file.endswith(".xml"):
                                         file = os.path.join(b4xFolder, file)
                                         f = open(file, "w+")
-                                        for line in f:
+                                        for line in fileinput.input(file, inplace=True):
                                             line = re.sub(r"&lt;.*&gt;", "", line)
-                                            f.write(line)
+                                            print line
+                                        # for line in f:
+                                        #     line = re.sub(r"&lt;.*&gt;", "", line)
+                                        #     f.write(line)
+                                        # f.close()
 
 
 
