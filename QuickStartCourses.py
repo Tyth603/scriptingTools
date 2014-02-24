@@ -192,7 +192,7 @@ def createConfigurationForEnglishForThai():
     configObject.lessonOrder = unitMapEnglishForThai #englishForIndonesianLessonOrder
     configObject.unitMap = unitMapEnglishForThai
     configObject.unitObjectives = englishForThaiUnitObjectives
-    configObject.unitNumbers = unitNumbers
+    configObject.unitNumbers = unitNumbersEnglishForThai
     configObject.lessonToList = lessonNameToListNameMapEnglishForThai
     configObject.isESLTrue = isESLTrueEnglishForThai
     configObject.unitNumberToNames = configObject.createUnitNumberToNames(unitListEnglishForThai)
