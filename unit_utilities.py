@@ -37,6 +37,7 @@ knownLanguageValues = {
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "ENGLISH"},
     "SPANISH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "SPANISH"},
     "INDONESIAN": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "INDONESIAN"},
+    "THAI": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "ENGLISH"}
 }
 
 
