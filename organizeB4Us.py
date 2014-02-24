@@ -86,6 +86,8 @@ class organizeB4U():
 
     def unitNameMapCheck(self, fileName, unitMap):
         for unitName in unitMap.keys():
+            print unitName
+            print unitMap[unitName]
             listNames = unitMap[unitName]
             for name in listNames:
                 if name in fileName:
