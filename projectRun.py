@@ -1,18 +1,19 @@
-from organizeB4Us import organizeB4U
-import createUnits
-import createConfigYAML
 import os
 import shutil
-import SupplementalVocabularyCourses as SVC
-import QuickStartCourses as QS
-import SupplementalVocabularyCourseESLSPAco as SVCSPAco
-import SupplementalVocabularyCourseESLCMNcn as SVCCMNcn
-import SupplementalVocabularyCourseESLINDid as SVCINDid
-import SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 import time
 import re
 import fileinput
 import sys
+
+from courseConfigurations import SupplementalVocabularyCourseESLCMNcn as SVCCMNcn
+from organizeB4Us import organizeB4U
+import createUnits
+import createConfigYAML
+import courseConfigurations.SupplementalVocabularyCourses as SVC
+import QuickStartCourses as QS
+import courseConfigurations.SupplementalVocabularyCourseESLSPAco as SVCSPAco
+import courseConfigurations.SupplementalVocabularyCourseESLINDid as SVCINDid
+import courseConfigurations.SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 
 
 def runCreateYAML(course):
@@ -142,6 +143,9 @@ def createCourse(courseConfig):
 if __name__ == "__main__":
     qsConfig = QS.createConfiguration()
     createCourse(qsConfig)
+
+    EtoThaiConfig = QS.createConfigurationForEnglishForThai()
+    createCourse(EtoThaiConfig)
 
     eslSPAcoConfig = SVCSPAco.createSVCConfiguration()
     createCourse(eslSPAcoConfig)
