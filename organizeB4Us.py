@@ -89,7 +89,7 @@ class organizeB4U():
             print unitName
             print unitMap[unitName]
             print fileName
-            print self.unitNumber[unicode(unitName)]
+            print self.unitNumbers[unicode(unitName)]
             listNames = unitMap[unitName]
             for name in listNames:
                 if name in fileName:
