@@ -31,7 +31,8 @@ spanishActivityNameDict = dict(Reading=u"Comparación de idiomas", Preview=u"Ver
     Assessment=u"Evaluación")
 eslActivityNames = {"SPANISH": spanishActivityNameDict,
                     "INDONESIAN": activityName,
-                    "CHINESE": activityName}
+                    "CHINESE": activityName,
+                    "THAI": activityName}
 knownLanguageValues = {
     "CHINESE": {"uiFont": "Latin", "knownFont": "Chinese", "knownLanguage": "MANDARIN"},
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "ENGLISH"},
