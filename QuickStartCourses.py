@@ -142,10 +142,52 @@ Kemudian, lengkapi aktivitas menyimak dan mengetik untuk mempraktikkan produksi 
 
 Akhirnya, lengkapi aktivitas penilaian pada akhir unit untuk menguji pengetahuan Anda atas kata-kata dan frasa-frasa yang diberikan."""
 
-englishForThaiUnitObjectives = {"Quick Start Unit 1": "Unit ini mengajarkan kata-kata dan frasa-frasa penting yang terkait dengan sapaan umum, frasa dasar yang sopan, tempat-tempat sekitar, dan menyewa kamar di hotel." + "\n" + baseText,
-"Quick Start Unit 2": "Unit ini mengajarkan kata-kata dan frasa-frasa penting yang terkait dengan berbelanja di toko atau pasar, memesan di restoran, hari-hari dalam seminggu, cuaca, dan waktu." + "\n" + baseText,
-"Quick Start Unit 3": "Unit ini mengajarkan kata-kata dan frasa-frasa penting yang terkait dengan keterampilan bahasa Inggris, memberikan arah ke suatu lokasi, dan meminta bantuan dalam situasi darurat." + "\n" + baseText,
-}
+englishForThaiUnitObjectives = {"Quick Start Unit 1": """This unit teaches useful words and phrases related to common greetings, basic polite phrases, places around town, and renting a room at a hotel.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven multiple choice and matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the dictation and typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities  at the end of the unit to test your knowledge of the words and phrases..""",
+"Quick Start Unit 2": """This unit teaches useful words and phrases related to shopping at a store or market, ordering at a restaurant, the days of the week, weather, and time.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven multiple choice and matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the dictation and typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities  at the end of the unit to test your knowledge of the words and phrases.""",
+"Quick Start Unit 3": """This unit teaches useful words and phrases related to related to English language skills, giving basic directions to a location, and asking for help in an emergency situation.
+
+This unit will help you...
+
+- memorize words and phrases related to the topic
+- learn to read and type the words and phrases
+- recognize the sounds and be able to pronounce them correctly
+
+Begin with activities like Language Comparison and Pronunciation Practice to help you become familiar with the material.
+
+Continue on to the speech-driven multiple choice and matching activities to reinforce your recall of the words and phrases.
+
+Then, complete the dictation and typing activities to practice producing and writing the language.
+
+Finally, complete the assessment activities  at the end of the unit to test your knowledge of the words and phrases.
+"""}
 
 unitNumbersEnglishForThai = {"Quick Start Unit 1": 1,
                "Quick Start Unit 2": 2,
