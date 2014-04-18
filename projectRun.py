@@ -14,6 +14,7 @@ import QuickStartCourses as QS
 import courseConfigurations.SupplementalVocabularyCourseESLSPAco as SVCSPAco
 import courseConfigurations.SupplementalVocabularyCourseESLINDid as SVCINDid
 import courseConfigurations.SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
+import courseConfigurations.SupplementalVocabularyCourseESLFRAfr as SVCFRAfr
 
 
 def runCreateYAML(course):
@@ -141,23 +142,26 @@ def createCourse(courseConfig):
 
 
 if __name__ == "__main__":
-    qsConfig = QS.createConfiguration()
-    createCourse(qsConfig)
+    eslFRAfrConfig = SVCFRAfr.createSVCConfiguration()
+    createCourse(eslFRAfrConfig)
 
-    EtoThaiConfig = QS.createConfigurationForEnglishForThai()
-    createCourse(EtoThaiConfig)
-
-    eslSPAcoConfig = SVCSPAco.createSVCConfiguration()
-    createCourse(eslSPAcoConfig)
-
-    eslCMNcnConfig = SVCCMNcn.createSVCConfiguration()
-    createCourse(eslCMNcnConfig)
-
-    SVCJPNjpTConfig = SVCJPNjpT.createSVCConfiguration()
-    createCourse(SVCJPNjpTConfig)
-
-    supplementalConfig = SVC.createSVCConfiguration()
-    createCourse(supplementalConfig)
-
-    eslINDidConfig = SVCINDid.createSVCConfiguration()
-    createCourse(eslINDidConfig)
+    # qsConfig = QS.createConfiguration()
+    # createCourse(qsConfig)
+    #
+    # EtoThaiConfig = QS.createConfigurationForEnglishForThai()
+    # createCourse(EtoThaiConfig)
+    #
+    # eslSPAcoConfig = SVCSPAco.createSVCConfiguration()
+    # createCourse(eslSPAcoConfig)
+    #
+    # eslCMNcnConfig = SVCCMNcn.createSVCConfiguration()
+    # createCourse(eslCMNcnConfig)
+    #
+    # SVCJPNjpTConfig = SVCJPNjpT.createSVCConfiguration()
+    # createCourse(SVCJPNjpTConfig)
+    #
+    # supplementalConfig = SVC.createSVCConfiguration()
+    # createCourse(supplementalConfig)
+    #
+    # eslINDidConfig = SVCINDid.createSVCConfiguration()
+    # createCourse(eslINDidConfig)
