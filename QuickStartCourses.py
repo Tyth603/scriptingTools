@@ -256,7 +256,7 @@ unitMapEnglishForSwahili = {
         "10-Quick-Start",
     ]
 }
-baseSwahiliText = """
+baseSwahiliText = u"""
 
 Sura hii itakusaidia…
 
