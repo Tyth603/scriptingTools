@@ -17,6 +17,7 @@ import courseConfigurations.SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 import courseConfigurations.SupplementalVocabularyCourseESLFRAfr as SVCFRAfr
 import courseConfigurations.SupplementalVocabularyCoursesESLSWHke as SVCSWHke
 import courseConfigurations.SupplementalVocabularyCoursesESLPORbr as SVCPRObr
+import QuickStartCourses.createConfigurationForEnglishForSwahili as QSSHHkes
 
 
 def runCreateYAML(course):
@@ -144,8 +145,11 @@ def createCourse(courseConfig):
 
 
 if __name__ == "__main__":
-    eslPRObrConfig = SVCPRObr.createSVCConfiguration()
-    createCourse(eslPRObrConfig)
+    QSSHHkesConfig = QSSHHkes()
+    createCourse(QSSHHkesConfig)
+
+    # eslPRObrConfig = SVCPRObr.createSVCConfiguration()
+    # createCourse(eslPRObrConfig)
 
     # eslSWHkefrConfig = SVCSWHke.createSVCConfiguration()
     # createCourse(eslSWHkefrConfig)
