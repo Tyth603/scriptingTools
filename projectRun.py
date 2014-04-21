@@ -17,7 +17,7 @@ import courseConfigurations.SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 import courseConfigurations.SupplementalVocabularyCourseESLFRAfr as SVCFRAfr
 import courseConfigurations.SupplementalVocabularyCoursesESLSWHke as SVCSWHke
 import courseConfigurations.SupplementalVocabularyCoursesESLPORbr as SVCPRObr
-import QuickStartCourses.createConfigurationForEnglishForSwahili as QSSHHkes
+from QuickStartCourses import createConfigurationForEnglishForSwahili as QSSHHkes
 
 
 def runCreateYAML(course):
