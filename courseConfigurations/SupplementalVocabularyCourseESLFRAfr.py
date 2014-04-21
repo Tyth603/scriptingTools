@@ -303,6 +303,7 @@ u"Asking-for-Directions-2":"Asking-for-Directions-2",
 u"School-1":"School-1",
 u"School-2":"School-2",
 u"School-3":"School-3",
+u"Spices-Condiments": "Spices-Condiments",
 u"Musical-Instruments-1":"Musical-Instruments-1",
 u"Musical-Instruments-2":"Musical-Instruments-2",
 u"Recreation-1":"Recreation-1",
@@ -385,6 +386,7 @@ u"Prepositions-2":"Prepositions-2",
 u"Prepositions-3":"Prepositions-3",
 u"Prepositions-4":"Prepositions-4",
 u"Conjunctions":"Conjunctions",
+u"Personal-Pronouns": "Personal-Pronouns",
 }
 isTranslit = False
 
