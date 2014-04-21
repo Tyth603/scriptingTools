@@ -64,7 +64,7 @@ class organizeB4U():
         for directory, dirnames, filenames in os.walk(initialDir):
             for file in filenames:
                 if file.endswith(".b4u"):
-                    print file
+                    # print file
                     if self.unitNameMapCheck(file, self.unitMap) is not None:
                         unitName = self.unitNameMapCheck(file, self.unitMap)
                         finalPath = os.path.join(finalDir, unitName, file)
@@ -87,10 +87,10 @@ class organizeB4U():
 
     def unitNameMapCheck(self, fileName, unitMap):
         for unitName in unitMap.keys():
-            print unitName
-            print unitMap[unitName]
-            print fileName
-            print self.unitNumbers[unicode(unitName)]
+            # print unitName
+            # print unitMap[unitName]
+            # print fileName
+            # print self.unitNumbers[unicode(unitName)]
             listNames = unitMap[unitName]
             for name in listNames:
                 if name in fileName:
