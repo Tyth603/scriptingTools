@@ -384,7 +384,7 @@ u"Prepositions-2":"Prepositions-2",
 u"Prepositions-3":"Prepositions-3",
 u"Prepositions-4":"Prepositions-4",
 u"Conjunctions":"Conjunctions",
-u"Conjunctions":u"Conjunctions",}
+}
 isTranslit = False
 
 def createSVCConfiguration():
