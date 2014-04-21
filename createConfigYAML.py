@@ -29,7 +29,7 @@ def createYAML(course):
     modules = ["ListeningRecognitionA", "WrittenProduceA"]
     Line1 = "activities: %s \n" % activities
     Line2 = "tlx_activities: []\n"
-    Line3 = u"name: '%s' \n" % unicode(unit)
+    Line3 = u"""name: "%s" \n""" % unicode(unit)
     Line4 = "assessment: \n"
     Line5 = "  maxitems: %d \n" % maxItems
     Line6 = "  minscore: %d \n" % minScore

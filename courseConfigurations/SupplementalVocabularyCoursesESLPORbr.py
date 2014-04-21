@@ -3,7 +3,7 @@ __author__ = 'vagrant'
 
 from CourseConfiguration import courseConfiguration
 
-projectName = "supplementalVocabCoursesESLFRAfr"
+projectName = "supplementalVocabCoursesESLPORbr"
 languageDict = [
     ["x for French speakers", "English"],
 ]
@@ -59,8 +59,8 @@ unitMap = {unitNameList[0]: ["Meeting-and-Greeting-1",
            unitNameList[3]: ["Polite-Conversation-1",
                                       "Polite-Conversation-2",
                                       "Polite-Conversation-3",
-                                      # "Useful-Expressions-1",
-                                      # "Useful-Expressions-2"
+                                      "Useful-Expressions-1",
+                                      "Useful-Expressions-2"
            ],
            unitNameList[4]: ["Shapes",
                                                     "Colors"],
@@ -120,7 +120,7 @@ unitMap = {unitNameList[0]: ["Meeting-and-Greeting-1",
            unitNameList[20]: ["Dairy",
                            "Meat",
                            "Seafood",
-                           # "Spices-Condiments",
+                           "Spices-Condiments",
                            "Dessert"],
            unitNameList[21]: ["At-the-Restaurant-1",
                                    "At-the-Restaurant-2",
@@ -169,14 +169,14 @@ unitMap = {unitNameList[0]: ["Meeting-and-Greeting-1",
                                           "Seasons",
                                           "Weather-1",
                                           "Weather-2"],
-           # unitNameList[32]: ["Personal-Pronouns",
-           #                                                  "Possessive-Adjectives",
-           #                                                  "Conjunctions"],
-           unitNameList[32]: ["Adjectives-1",
+           unitNameList[32]: ["Personal-Pronouns",
+                                                            "Possessive-Adjectives",
+                                                            "Conjunctions"],
+           unitNameList[33]: ["Adjectives-1",
                                              "Adjectives-2",
                                              "Adjectives-3",
                                              "Adverbs"],
-           unitNameList[33]: ["Verbs-1",
+           unitNameList[34]: ["Verbs-1",
                           "Verbs-2",
                           "Verbs-3",
                           "Verbs-4",
@@ -184,63 +184,63 @@ unitMap = {unitNameList[0]: ["Meeting-and-Greeting-1",
                           "Verbs-6",
                           "Verbs-7",
                           "Verbs-8"],
-           unitNameList[34]: ["Prepositions-1",
+           unitNameList[35]: ["Prepositions-1",
                              "Prepositions-2",
                              "Prepositions-3",
                              "Prepositions-4"],
 }
 baseUnitObjectives = u"""
 
-Cette unité va vous aider à …
+Esta unidade irá ajudá-lo(a) a ...
 
-- mémoriser les mots et les phrases se rapportant au sujet
-- apprendre à lire et taper les mots et phrases
-- reconnaître les sons et être capable de les prononcer correctement
+- memorizar palavras e frases relacionadas ao tópico
+- aprender a ler e a escrever as palavras e frases
+- reconhecer os sons e poder pronunciá-los corretamente
 
-Commencez par les activités telles que Comparaison de Langues et Exercice de Prononciation pour vous aider à vous familiariser avec les données.
+Inicie com atividades como Comparando Idiomas e Prática de Pronúncia para se familiarizar com o material.
 
-Continuez avec les activités vocales de choix multiples et correspondances pour renforcer votre mémorisation des mots et des phrases.
+Prossiga com atividades dirigidas à prática da fala, como múltipla escolha e de correspondência, cujo objetivo é reforçar sua memorização das palavras e frases aprendidas.
 
-Ensuite, faites les activités de dictée et de dactylographie pour pratiquer la production et l'écriture de la langue.
+Em seguida, complete as atividades de ditado e escrita para praticar a produção e escrita do idioma.
 
-Enfin, faites les activités d'évaluation qui se trouvent à la fin de l'unité pour tester votre connaissance des mots et des phrases.
-"""
+Finalmente, para testar seu conhecimento das palavras e frases aprendidas, complete a avaliação no final da unidade. """
 unitObjectives = {
-    unitNameList[0]: u"Cette unité enseigne des mots et phrases utiles concernant les rendez-vous et les salutations." + baseUnitObjectives,
-    unitNameList[1]: u"Cette unité enseigne des mots et phrases utiles pour vous faire aider dans l'apprentissage de la langue."+ baseUnitObjectives,
-    unitNameList[2]: u"Cette unité enseigne des mots et phrases utiles pour vous faire aider davantage dans l'apprentissage de la langue." + baseUnitObjectives,
-    unitNameList[3]: u"Cette unité enseigne des mots et phrases utiles concernant les formules de politesse."+ baseUnitObjectives,
-    unitNameList[4]: u"Cette unité enseigne des mots et phrases utiles concernant les formes et les couleurs." + baseUnitObjectives,
-    unitNameList[5]: u"Cette unité enseigne des mots et phrases utiles concernant les vêtements." + baseUnitObjectives,
-    unitNameList[6]: u"Cette unité enseigne des mots et phrases utiles concernant les achats et les magasins."+ baseUnitObjectives,
-    unitNameList[7]: u"Cette unité enseigne des mots et phrases utiles concernant les maisons et les appartements." + baseUnitObjectives,
-    unitNameList[8]: u"Cette unité enseigne des mots et phrases utiles concernant les pièces d'une maison." + baseUnitObjectives ,
-    unitNameList[9]: u"Cette unité enseigne des mots et phrases utiles concernant la famille." + baseUnitObjectives,
-    unitNameList[10]: u"Cette unité enseigne des mots et phrases utiles concernant le bureau et les professions." + baseUnitObjectives,
-    unitNameList[11]: u"Cette unité enseigne des mots et phrases utiles concernant les parties du corps." + baseUnitObjectives,
-    unitNameList[12]: u"Cette unité enseigne des mots et phrases utiles concernant les urgences." + baseUnitObjectives,
-    unitNameList[13]: u"Cette unité enseigne des mots et phrases utiles concernant les endroits et pour demander des directions." + baseUnitObjectives,
-    unitNameList[14]: u"Cette unité enseigne des mots et phrases utiles concernant l'école." + baseUnitObjectives,
-    unitNameList[15]: u"Cette unité enseigne des mots et phrases utiles concernant les instruments de musique." + baseUnitObjectives,
-    unitNameList[16]: u"Cette unité enseigne des mots et phrases utiles concernant la loisirs." + baseUnitObjectives,
-    unitNameList[17]: u"Cette unité enseigne des mots et phrases utiles concernant la nature." + baseUnitObjectives,
-    unitNameList[18]: u"Cette unité enseigne des mots et phrases utiles concernant les animaux." + baseUnitObjectives,
-    unitNameList[19]: u"Cette unité enseigne des mots et phrases utiles concernant la nourriture." + baseUnitObjectives,
-    unitNameList[20]: u"Cette unité enseigne des mots et phrases utiles concernant la nourriture." + baseUnitObjectives,
-    unitNameList[21]: u"Cette unité enseigne des mots et phrases utiles pour aller au restaurant." + baseUnitObjectives,
-    unitNameList[22]: u"Cette unité enseigne des mots et phrases utiles concernant les langues." + baseUnitObjectives,
-    unitNameList[23]: u"Cette unité enseigne des mots et phrases utiles concernant les pays." + baseUnitObjectives,
-    unitNameList[24]: u"Cette unité enseigne des mots et phrases utiles concernant les voyages." + baseUnitObjectives,
-    unitNameList[25]: u"Cette unité enseigne des mots et phrases utiles pour acheter des billets." + baseUnitObjectives,
-    unitNameList[26]: u"Cette unité enseigne des mots et phrases utiles pour prendre un taxi." + baseUnitObjectives,
-    unitNameList[27]: u"Cette unité enseigne des mots et phrases utiles pour séjourner à l'hôtel." + baseUnitObjectives,
-    unitNameList[28]: u"Cette unité enseigne des mots et phrases utiles pour aller à la banque." + baseUnitObjectives,
-    unitNameList[29]: u"Cette unité enseigne des mots et phrases utiles concernant les nombres." + baseUnitObjectives,
-    unitNameList[30]: u"Cette unité enseigne des mots et phrases utiles concernant les jours de la semaine et l'heure." + baseUnitObjectives,
-    unitNameList[31]: u"Cette unité enseigne des mots et phrases utiles concernant les saisons et la météo." + baseUnitObjectives,
-    unitNameList[32]: u"Cette unité enseigne des mots et phrases utiles concernant les adjectifs et les adverbes." + baseUnitObjectives,
-    unitNameList[33]: u"Cette unité enseigne des mots et phrases utiles concernant les verbes." + baseUnitObjectives,
-    unitNameList[34]: u"Cette unité enseigne des mots et phrases utiles concernant les prépositions et les conjonctions." + baseUnitObjectives,
+unitNameList[0]: u"Esta unidade ensina palavras e frases úteis relacionadas a conhecendo e cumprimentando." + baseUnitObjectives,
+unitNameList[1]: u"Esta unidade ensina palavras e frases úteis relacionadas a conseguir solicitar ajuda com o aprendizado do idioma." + baseUnitObjectives,
+unitNameList[2]: u"Esta unidade ensina palavras e frases úteis relacionadas a conseguir solicitar mais ajuda com o aprendizado do idioma." + baseUnitObjectives,
+unitNameList[3]: u"Esta unidade ensina palavras e frases úteis relacionadas a conversa educada." + baseUnitObjectives,
+unitNameList[4]: u"Esta unidade ensina palavras e frases úteis relacionadas às formas e cores." + baseUnitObjectives,
+unitNameList[5]: u"Esta unidade ensina palavras e frases úteis relacionadas às roupas." + baseUnitObjectives,
+unitNameList[6]: u"Esta unidade ensina palavras e frases úteis relacionadas às compras e lojas." + baseUnitObjectives,
+unitNameList[7]: u"Esta unidade ensina palavras e frases úteis relacionadas à casa e ao apartamento." + baseUnitObjectives,
+unitNameList[8]: u"Esta unidade ensina palavras e frases úteis relacionadas aos cômodos de uma casa." + baseUnitObjectives,
+unitNameList[9]: u"Esta unidade ensina palavras e frases úteis relacionadas à família." + baseUnitObjectives,
+unitNameList[10]: u"Esta unidade ensina palavras e frases úteis relacionadas ao escritório e às profissões." + baseUnitObjectives,
+unitNameList[11]: u"Esta unidade ensina palavras e frases úteis relacionadas às partes do corpo." + baseUnitObjectives,
+unitNameList[12]: u"Esta unidade ensina palavras e frases úteis relacionadas às emergências." + baseUnitObjectives,
+unitNameList[13]: u"Esta unidade ensina palavras e frases úteis relacionadas a lugares e pedir informações." + baseUnitObjectives,
+unitNameList[14]: u"Esta unidade ensina palavras e frases úteis relacionadas à escola." + baseUnitObjectives,
+unitNameList[15]: u"Esta unidade ensina palavras e frases úteis relacionadas aos instrumentos musicais." + baseUnitObjectives,
+unitNameList[16]: u"Esta unidade ensina palavras e frases úteis relacionadas à recreação." + baseUnitObjectives,
+unitNameList[17]: u"Esta unidade ensina palavras e frases úteis relacionadas à natureza." + baseUnitObjectives,
+unitNameList[18]: u"Esta unidade ensina palavras e frases úteis relacionadas aos animais." + baseUnitObjectives,
+unitNameList[19]: u"Esta unidade ensina palavras e frases úteis relacionadas aos alimentos." + baseUnitObjectives,
+unitNameList[20]: u"Esta unidade ensina palavras e frases úteis relacionadas aos alimentos." + baseUnitObjectives,
+unitNameList[21]: u"Esta unidade ensina palavras e frases úteis relacionadas a ir ao restaurante." + baseUnitObjectives,
+unitNameList[22]: u"Esta unidade ensina palavras e frases úteis relacionadas aos idiomas." + baseUnitObjectives,
+unitNameList[23]: u"Esta unidade ensina palavras e frases úteis relacionadas aos países." + baseUnitObjectives,
+unitNameList[24]: u"Esta unidade ensina palavras e frases úteis relacionadas à viagem." + baseUnitObjectives,
+unitNameList[25]: u"Esta unidade ensina palavras e frases úteis relacionadas a comprar ingressos." + baseUnitObjectives,
+unitNameList[26]: u"Esta unidade ensina palavras e frases úteis relacionadas a pegando um táxi." + baseUnitObjectives,
+unitNameList[27]: u"Esta unidade ensina palavras e frases úteis relacionadas a hospedar-se em um hotel." + baseUnitObjectives,
+unitNameList[28]: u"Esta unidade ensina palavras e frases úteis relacionadas a ir ao banco." + baseUnitObjectives,
+unitNameList[29]: u"Esta unidade ensina palavras e frases úteis relacionadas aos numerais cardinais." + baseUnitObjectives,
+unitNameList[30]: u"Esta unidade ensina palavras e frases úteis relacionadas aos dias da semana e ao tempo." + baseUnitObjectives,
+unitNameList[31]: u"Esta unidade ensina palavras e frases úteis relacionadas às estações e ao clima." + baseUnitObjectives,
+unitNameList[32]: u"Esta unidade ensina palavras e frases úteis relacionadas aos pronomes pessoais e possessivos." + baseUnitObjectives,
+unitNameList[33]: u"Esta unidade ensina palavras e frases úteis relacionadas aos adjetivos e advérbios." + baseUnitObjectives,
+unitNameList[34]: u"Esta unidade ensina palavras e frases úteis relacionadas aos verbos." + baseUnitObjectives,
+unitNameList[35]: u"Esta unidade ensina palavras e frases úteis relacionadas às preposições." + baseUnitObjectives,
 }
 
 lessonOrder = unitMap
