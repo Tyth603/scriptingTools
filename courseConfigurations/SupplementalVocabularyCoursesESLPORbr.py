@@ -5,7 +5,7 @@ from CourseConfiguration import courseConfiguration
 
 projectName = "supplementalVocabCoursesESLPORbr"
 languageDict = [
-    ["x for French speakers", "English"],
+    ["x for Portuguese speakers", "English"],
 ]
 unitNameList = [u"Conhecendo e Cumprimentando",
 u"Conseguir Solicitar Ajuda com o Aprendizado do Idioma",

@@ -34,7 +34,8 @@ eslActivityNames = {"SPANISH": spanishActivityNameDict,
                     "CHINESE": activityName,
                     "THAI": activityName,
                     "SWAHILI": activityName,
-                    "FRENCH": activityName}
+                    "FRENCH": activityName,
+                    "PORTUGUESE": activityName}
 knownLanguageValues = {
     "CHINESE": {"uiFont": "Latin", "knownFont": "Chinese", "knownLanguage": "MANDARIN"},
     "ENGLISH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "ENGLISH"},
@@ -42,7 +43,8 @@ knownLanguageValues = {
     "INDONESIAN": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "INDONESIAN"},
     "THAI": {"uiFont": "Latin", "knownFont": "Thai", "knownLanguage": "THAI"},
     "SWAHILI": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "SWAHILI"},
-    "FRENCH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "FRENCH"}
+    "FRENCH": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "FRENCH"},
+    "PORTUGUESE": {"uiFont": "Latin", "knownFont": "Latin", "knownLanguage": "PORTUGUESE"}
 }
 
 

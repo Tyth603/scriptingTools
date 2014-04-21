@@ -16,6 +16,7 @@ import courseConfigurations.SupplementalVocabularyCourseESLINDid as SVCINDid
 import courseConfigurations.SupplementalVocabularyCoursesJPNjpT as SVCJPNjpT
 import courseConfigurations.SupplementalVocabularyCourseESLFRAfr as SVCFRAfr
 import courseConfigurations.SupplementalVocabularyCoursesESLSWHke as SVCSWHke
+import courseConfigurations.SupplementalVocabularyCoursesESLPORbr as SVCPRObr
 
 
 def runCreateYAML(course):
@@ -143,8 +144,11 @@ def createCourse(courseConfig):
 
 
 if __name__ == "__main__":
-    eslSWHkefrConfig = SVCSWHke.createSVCConfiguration()
-    createCourse(eslSWHkefrConfig)
+    eslPRObrConfig = SVCPRObr.createSVCConfiguration()
+    createCourse(eslPRObrConfig)
+
+    # eslSWHkefrConfig = SVCSWHke.createSVCConfiguration()
+    # createCourse(eslSWHkefrConfig)
 
     # eslFRAfrConfig = SVCFRAfr.createSVCConfiguration()
     # createCourse(eslFRAfrConfig)
