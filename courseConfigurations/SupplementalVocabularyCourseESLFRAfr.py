@@ -387,6 +387,7 @@ u"Prepositions-3":"Prepositions-3",
 u"Prepositions-4":"Prepositions-4",
 u"Conjunctions":"Conjunctions",
 u"Personal-Pronouns": "Personal-Pronouns",
+u"Possessive-Adjectives": "Possessive-Adjectives",
 }
 isTranslit = False
 
