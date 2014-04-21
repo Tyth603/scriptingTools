@@ -258,7 +258,7 @@ unitMapEnglishForSwahili = {
 }
 baseSwahiliText = u"""
 
-Sura hii itakusaidia…
+Sura hii itakusaidia...
 
 - kukariri maneno na misemo inayohusika na mada
 - kujifunze kusoma  na kupiga chapa maneno na misemo
