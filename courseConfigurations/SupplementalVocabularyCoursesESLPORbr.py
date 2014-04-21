@@ -388,6 +388,8 @@ u"Prepositions-4":"Prepositions-4",
 u"Conjunctions":"Conjunctions",
 u"Personal-Pronouns": "Personal-Pronouns",
 u"Possessive-Adjectives": "Possessive-Adjectives",
+u"Useful-Expressions-1": "Useful-Expressions-1",
+u"Useful-Expressions-2": "Useful-Expressions-2",
 }
 isTranslit = False
 
